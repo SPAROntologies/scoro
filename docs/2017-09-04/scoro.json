@@ -1,0 +1,3518 @@
+[
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Person",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "person"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/manager",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person responsible for managing the day-to-day activities of an activity, enterprise or organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "manager"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/isEqualToContributionSituation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#TransitiveProperty",
+      "http://www.w3.org/2002/07/owl#SymmetricProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows the link of two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is equal to contribution situation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/withJobTitle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A data property connecting an agent's role in time to a job title that characterizes that role.  This data property complements the definition of that role in time specified by scoro:Role.  For example, for the scoro:OrganizationalRole 'Head of Department', the specific Job Title might be 'Linacre Professor of Zoology' or 'Regius Professor of Moral Philosophy'. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pro/RoleInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "with job title"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/title",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/manages-project",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of project management.  \n\nNote that an individual other than the person holding the formal role of project manager may make considerable contributions to the management of a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "manages project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/DataRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to data.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/photographer",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a photographer of, or for, some entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "photographer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/repository-manager",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a manager of a repository where entities are given secure long-term storage, typically digital repository for information objects, for example a data repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "repository manager"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-administrative-support",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing administrative support for the research project.  "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides administrative support"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/date",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/research-student",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis in part fulfilment of the requirements of that degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "research student"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ContributionEffort",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the effort expended in making a contribution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contribution effort"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/organizer",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who organizes something, such as a conference, a private meeting or a public event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "organizer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/data-creator",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a creator, originator, gatherer or collector of new data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data creator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/hasPersonalIdentifier",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": " owl:equivalentProperty <http://purl.org/spar/frapo/hasPersonalIdentifier> ."
+      },
+      {
+        "@language": "en",
+        "@value": " owl:equivalentProperty <http://purl.org/spar/datacite/hasPersonalIdentifier> ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A data property specifying a unique and unambiguous identifier for an individual person within a given context, specified by the object property scoro:usesPersonalIdentifierScheme and an individual member of the class scoro:PersonalIdentifierScheme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has personal identifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/hasContributionContext",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property relating a contribution situation to an entity representing the context for that situation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has contribution context"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/isRelatedToContributionSituation"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-tools-equipment-or-facilities",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing tools, equipment or facilities for the research, while not actively participating in the work."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides tools, equipment or facilities"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/chief-scientist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A senior scientist who takes a leadership role in an organization or group."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "chief scientist"
+      }
+    ]
+  },
+  {
+    "@id": "_:N5c3f850314474524a81bd5ae18130a77",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/AuthorshipContribution"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/ExperimentalContribution"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/IntellectualContribution"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/OrganizationalContribution"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/approves-final-manuscript",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of approving the final version of the manuscript, prior to submission for publication. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "approves final manuscript"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-exising-data",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing pre-existing data for re-use in the research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides existing data"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/contractor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who enters into a contract to undertake specified work or to supply specified services in return for payment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contractor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/access-provider",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an agent who provides access to a resource, for example an online data repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "access provider"
+      }
+    ]
+  },
+  {
+    "@id": "_:N282b01ec7cdc43c38aa7abff5bf843f8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDifferent"
+    ],
+    "http://www.w3.org/2002/07/owl#distinctMembers": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/article-guarantor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-reagents-specimens-or-materials",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing reagents, specimens or materials, including living organisms and cells, for example those not readily obtainable from commercial sources, to make possible the research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides reagents, specimens or materials"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/revises-manuscript",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of critically reviewing and revising drafts of the manuscript of the research paper."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "revises manuscript"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/vice-chancellor",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by the chief executive officer of a university, responsible for directing and managing its business and academic activities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "vice-chancellor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/consultant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a consultant who is providing expertise or services."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "consultant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/college-head",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a senior academic who heads a college and acts as its CEO.  Among the many alternative titles give to this role, the most common are President or Master of the college."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "college head"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/lead-applicant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ProjectRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being the lead applicant on the grant application to obtain funding to fund an endeavour such as a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "lead applicant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/doctoral-student",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/EducationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person registerd for a Ph.D. degree at a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "doctoral student"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/chief-technology-officer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is the chief technology officer of an organization, responsible for directing and managing technical developments for that organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "chief technology officer"
+      },
+      {
+        "@language": "en",
+        "@value": "CTO"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/claimant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person making a financial claim, for example for refund of travel expenses from a project grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "claimant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-student",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report in part fulfilment of the requirements of that degree."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project student"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pro/author",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/principal-author",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role an author has of being the principal or primary author of the document, who has contributed most to the work described.  \n\n(In some communities, but not all, the principal author is named first in the author list.  Two or more authors can have the role of principal author if they contributed equally to the work.  This role should not be employed in communities in which no primacy of authorship is asserted, but where all authors are deemed to have made an equal contribution to the work.)"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "principal author"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/AuthorshipRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that a person might hold as an author of a publication or the creator of a work.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "authorship role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/OrganizationalContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the type or nature of an organizational or administrative contribution.  Individual members of this class are used to specify particular contributions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "organizational contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/stakeholder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent with an interest or concern in something, for example the creation of a new university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "stakeholder"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/co-investigator",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a co-investigator for a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "co-investigator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/leads-investigation",
+    "@type": [
+      "http://purl.org/spar/scoro/IntellectualContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing intellectual leadership and direction for the research.  \n\nNote that an individual other than the principal investigator and the co-investigators may make considerable leadership contributions to a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "leads investigation"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/workpackage-leader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ProjectRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person or institution has of being leader for a workpackage or sub-project within a project such as a research project, with responsibility for ensuring that the proposed work is undertaken and documented, the generated data are properly curated and archived, and the results are published and reported to the funding agency."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "workpackage leader"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/Contribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the type or nature of a contribution made by an agent.  Individual members of this class or its sub-classes are used to specify particular contributions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionEffort"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/creates-novel-reagents",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of creating novel physical or chemical compounds, or molecular biology constructs, either for use in the research, or as a research output of use to others."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "creates novel reagents"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/formulates-research-questions",
+    "@type": [
+      "http://purl.org/spar/scoro/IntellectualContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of formulating the questions to be answered and the hypotheses to be tested by the research to be undertaken."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "formulates research questions"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/departmental-administrator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is the administrator of a department within a larger organization, for example of a university academic department."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "departmental administrator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/technician",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a technician, providing technical assistance in some endeavour such as a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "technician"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/financial-controller",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent of controlling the finances, for example the finances of an organization, a building project or a research project.  This role extends to the control of or the authorisation of expenditure from a budget, and may be undertaken by a computational agent."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "financial controller"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/employee",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person employed for wages or a salary by an organization, to undertake work for that organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "employee"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/postgraduate-student",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/EducationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person registerd for a graduate (masters or doctoral) degree at a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "postgraduate student"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2002/07/owl#versionInfo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/corresponding-author",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role an author has of being the corresponding author of the document, with whom editors and readers should correspond concerning it. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "corresponding author"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/isRelatedToContributionSituation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property relating an entity to the contribution situation for which that entity provides the context."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is related to contribution situation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/employer",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent that employs one or more people to undertake work on that agent's behalf."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "employer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/rights-holder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who holds, owns and manages the legal rights to a project or activity and its products and outcomes, for example the exploitation, licensing and intellectual property rights.  \n\n[See also http://purl.org/spar/scoro/patent-holder and http://purl.org/spar/pro/copyright-owner]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "rights holder"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/withValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/builds-and-or-maintains-instruments",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of building instruments, equipment or scientific apparatus and/or maintaining the same in a workable condition for use in experiments."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "builds and/or maintains instruments"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/chief-executive-officer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is the chief executive officer of an organization, responsible for directing and managing the business of that organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "CEO"
+      },
+      {
+        "@language": "en",
+        "@value": "chief executive officer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/writes-manuscript-draft",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of writing the initial draft of the manuscript of the research paper."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "writes manuscript draft"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/possessor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent as possessor or owner of some entity such as an address or a telephone number."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "possessor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/data-manager",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a data manager, responsible for day-to-day management, maintenance and back-up of data, for example those arising from the research project or held in a repository."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data manager"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/supplier",
+    "@type": [
+      "http://purl.org/spar/scoro/FinancialRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent of providing goods or services in exchange for payment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "supplier"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/master-student",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/EducationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person registerd for a master degree at a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "master student"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/article-guarantor",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "article guarantor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/senior-author",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role an author has of being the senior author of the document. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "senior author"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-patients",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing access to medical or veterinary patients, to make possible the research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides patients"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/designs-experiments",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of experimental design and planning."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "designs experiments"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/auditor",
+    "@type": [
+      "http://purl.org/spar/scoro/FinancialRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who conducts a formal audit of financial accounts."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "auditor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/principal-investigator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being the principal investigator for a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "principal investigator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/FinancialRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to academic and project finance.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "financial role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/analyses-data",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of data analysis.  This might include statistical analysis, bioinformatics analysis, or image analysis."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "analyses data"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/faculty-member",
+    "@type": [
+      "http://purl.org/spar/scoro/EducationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an academic employed to undertake research and teaching within a university department, school or institute."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "faculty member"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/director",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is in charge of an organization or activity, for example a research institute or a dramatic performance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "director"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/web-master",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/DataRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person responsible for maintaining a web site and its content."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "web-master"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/prepares-supplementary-information",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of preparing the supplementary information files submitted with the manuscript. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "prepares supplementary information"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/successor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The relationship held by an entity that succeeds another, for example a new electron microscope that replaces an out-dated one, a research project that follows on from a preceding project, or a faculty member who succeeds a colleague as head of department."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "successor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/sponsor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent that provides funds or support for a person, project or activity, often in return for access to the exploitable commercial potential associated with that person’s work, or that project or activity’s output, for example through equity sharing or publicity.\n\n[Note: there are also several other non-financial meaning of 'sponsor'.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "sponsor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/accountant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person whose job is to manage financial accounts, for example the accounts of an organization, or of a particular funded project or activity of that organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "accountant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/partner",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is a partner with one or more other people in an organization, project, endeavour, activity or sphere of common interest."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "partner"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/funding-recipient",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who is the official recipient of funding, for example the university of which a funded research project leader is a member."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "funding recipient"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/registrar",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent responsible for maintaining official records, for example the records of student enrollment and academic standing held by a college or university, or the records of securities owned by a financial institution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "registrar"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/interprets-results",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of interpretation of experimental results."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "interprets results"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/administrator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent responsible for the day-to-day management and running of an organization or activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "administrator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/publishes-data",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of publishing in a public database or data repository data arising from the research.  \n\nNote that this activity is distinct from that of publishing a journal article containing a selection of these data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "publishes data"
+      }
+    ]
+  },
+  {
+    "@id": "_:N401afcdb1bb644d7897c0359b80cb813",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/scoro/withContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/affiliate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": "The affiliation of a person to an organization or institution can be specified by using the property pro:relatesToEntity, as shown in the following example:\n\nfoaf:Person scoro:holdsOrganizationalRole [ pro:withRole pro:affiliate ; pro:relatesToEntity _:aff ] .\n\n_:aff a foaf:Organization ; vcard:extended-address 'Department of Zoology, University of Oxford, United Kingdom' ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role an agent has of being affiliated to some organization or institution in a context of some entity or activity, for example a document, a project or an internship."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "affiliate"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/collaborator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person, typically from another research group or institution, who collaborates with the team undertaking a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "collaborator"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/makesContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An object property linking an agent to a contribution.  This is done via the indirection: foaf:Agent scoro:makesContribution [ a scoro:ContributionSituation ; scoro:withContribution scoro:Contribution ; scoro:withEffort scoro:ContributionEffort ] .  The ontology permits one to specify the time period over which a contribution is made, and the other contextual entities to which that agent's contribution relates."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "makes contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/hasValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/host-institution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a institution of hosting some initiative, people, or event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "host institution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/supervisor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/EducationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person who guides and oversees the research activities of a team member, or who formally supervises a student during that student's research project undertaken as part of a degree course at a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "supervisor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/embargo-controller",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/DataRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of the person who has responsibility for setting and lifting embargos that restrict access to a dataset (or a document) for a specified period of time."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "embargo controller"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/obtains-and-or-prepares-specimens",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of obtaining and/or preparing specimens in a manner requiring research expertise or skill, for example collecting and preparing fossils, or preparing electron microscope specimens for examination.  "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "obtains and/or prepared specimens"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/maintains-research-facility",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of managing and operating a research facility, for example a confocal microscopy facility."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "maintains research facility"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/EducationalRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to an educational organization or activity.  Individual members of this class are used to specify particular educational roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "educational role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/InvestigationRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to an investigation.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "investigation role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-manager",
+    "@type": [
+      "http://purl.org/spar/scoro/ProjectRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being project manager for a project such as a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project manager"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.essepuntato.it/2012/04/tvc/withinContext",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/member",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent of belonging to a group or organization."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "member"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/agent",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An agent that acts on behalf of another agent."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/funder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent of providing funds, for example for a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "funder"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/develops-methodology",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of developing experimental methodology that enables research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "develops methodology"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/creates-novel-organisms-or-cells",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. tranformed cell lines), either for use in the research, or as a research output of use to others."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "creates novel organisms or cells"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/illustrator",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being an illustrator of, or for, some entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "illustrator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/elements/1.1/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/controls-project-finances",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "controls project finances"
+      }
+    ]
+  },
+  {
+    "@id": "_:Nb76ff8fdc0da4ab291043d3903d57b0c",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/AuthorshipRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/DataRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/FinancialRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/InvestigationRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/OrganizationalRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/ProjectRole"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/scholar",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an academic who undertakes scholarly activities, including research investigations.  This role is particularly used to describe endeavours in the arts and humanites that are frequently undertaken without financial support from a particular funded project dedicated to these scholarly activities."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "scholar"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/data-publisher",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an agent who publishes data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data publisher"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/AuthorshipContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the type or nature of a contribution made with respect to the authorship of a publication such as a journal article.  Individual members of this class are used to specify particular authorship contributions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "authorship contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/minor-effort",
+    "@type": [
+      "http://purl.org/spar/scoro/ContributionEffort",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contributor provided a minor effort towards achieving this contribution. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contributed minor effort"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pro/Role",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/processes-data",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of processing, cleaning, assembling, condensing or refining the data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "processs data"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/curator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/DataRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an agent that documents, cares for and manages collections of objects (for example in a museum) or of data (as in a data repository or database).  [A data curator is a curator who specializes in digital data, while a librarian is a type of curator specializing in textual publications.]"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "curator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/spokesperson",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who makes statements on behalf of another individual, a group, a project or an institution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "spokesperson"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-service",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing a research service, for example a DNA sequencing service or a custom peptide synthesis service."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provided service"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/withContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#FunctionalProperty",
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An object property connecting an agent's contribution situation to a definition of the contribution made by this agent, specified as an instance of the class scoro:Contribution or of one of its sub-classes."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "with contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/withValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/sub-contractor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/FinancialRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who enters into a contract to take over part of another contractor's obligation to undertake specified work or supply specified services in return for payment."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "sub-contractor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/programme-manager",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is in charge of a programme of related activities or projects, for example on behalf of a funding agency."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "programme manager"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/registration-authority",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an agent with responsibility for registering and maintaining international standards, internet domain names, patents, controlled vocabularies and other similar entities required for reliable international cooperatative activities.  For example, the International DOI Foundation (IDF) is the Registration Authority for DOIs."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "registration authority"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://purl.org/dc/elements/1.1/creator": [
+      {
+        "@value": "Silvio Peroni"
+      },
+      {
+        "@value": "David Shotton"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/date": [
+      {
+        "@value": "2017-09-04"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@id": "http://purl.org/spar/scoro/scoro.png"
+      },
+      {
+        "@language": "en",
+        "@value": "SCoRO, the Scholarly Contributions and Roles Ontology, is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research.\n\nIn this ontology, the object properties (e.g. scoro:makesContribution) and the individuals within classes (e.g. scoro:conducts-experiments) are expressed in the present tense, as is conventional for ontologies, but should be taken as potentially referring to past, present or future roles and contributions.\n\nSince roles have contexts and times that are important to take into account (for example, a person can be author of one paper and reviewer of another, while another person will be editor of a journal only for a defined period, not for ever), the SCORO ontology permit these contexts to be specified, using an ontological design pattern called the time-indexed value in context (TVC) (http://www.essepuntato.it/2012/04/tvc) which is part of the PRO ontology (http://purl.org/spar/pro) imported by SCORO.\n \nThis ontology design pattern permits one to construct the following RDF statements:\n       foaf:Agent pro:holdsRoleInTime [ a pro:RoleInTime pro:withRole pro:editor ] .\n\nThus the domain of pro:withRole is not foaf:Agent, but rather an anonymous member of the class pro:RoleInTime, which itself is the range of the property pro:holdsRoleInTime, for which the domain is foaf:Agent. \n\nThe range of pro:withRole is the class pro:Role, and its sub-classes pro:PublishingRole, scoro:InvestigationalRole, scoro:OrganizationalRole, etc., whose members permit specific roles to be specified.  \n   \nThis single step of indirection permits other contextual and temporal attributes (not shown here) to be specified for this member of the class pro:RoleInTime, putting that role into context.\n\nExemplar usage: \n\n\tfabio:Dataset  dcterms:contributor  [ rdf:type foaf:Organization ; \n\t   foaf:name \"Met Office\" ;  \n\t   foaf:homepage <http://www.metoffice.gov.uk/>  ; \n\t   pro:holdsRoleInTime [ a pro:RoleInTime \n\t\t  pro:withRole  scoro:data-creator ]  ] .\n\nExactly the same use of TVC and of individuals within the class scoro:Contribution and its sub-classes is used for scoro:withContribution, enabling contributions to be time-limited and given contexts.\n"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/rights": [
+      {
+        "@language": "en",
+        "@value": "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "en",
+        "@value": "SCoRO, the Scholarly Contributions and Roles Ontology"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "SCoRO is written in OWL 2 DL, and imports FOAF, the Friend of a Friend Ontology (http://xmlns.com/foaf/spec/) and PRO the Publishing Roles Ontology (http://purl.org/spar/pro/).   This ontology is available at http://purl.org/spar/scoro, and uses the namespace prefix 'scoro'.\n\nIt is designed to be used in conjunction with FRAPO, the Funding, Research Administration and Projects Ontology (http://purl.org/cerif/frapo), and with FaBiO, the FRBR-aligned Bibliographic Ontology (http://purl.org/spar/fabio).\n\nAlternatively, an Excel Scholarly Contributions Report Form based on this ontology, created using RightField (http://www.sysmo-db.org/rightfield) also for use in creating metadata to describe authorship roles and scholarly contributions to journal articles and their underlying research, is available from https://sparontologies.github.io/scoro/material/scorf.xls."
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#imports": [
+      {
+        "@id": "http://purl.org/spar/pro"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#priorVersion": [
+      {
+        "@id": "https://svn.code.sf.net/p/sempublishing/code/SCoRO/2016-01-19-SCoRO-1_9.owl"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionIRI": [
+      {
+        "@id": "http://purl.org/spar/scoro/2017-09-04"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.9.1"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/inventor",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being the inventor or some entity (for example a computer algorithm, or an experimental procedure)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "inventor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ProjectRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to a project.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/percentageFTE",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A data property permitting specification of the proportion of a person's full time activity that is dedicated to a particular role (e.g. for part-time employment, 50% FTE)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pro/RoleInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "percentage full-time equivalent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/performs-experiments",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of performing experiments."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "performs experiments"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/purchaser",
+    "@type": [
+      "http://purl.org/spar/scoro/FinancialRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent of making purchases of goods or services, the cost of which is typically charged to a particular academic budget, for example a project manager placing an order to purchase equipment funded from a research grant."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "purchaser"
+      }
+    ]
+  },
+  {
+    "@id": "http://xmlns.com/foaf/0.1/Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/solo-effort",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ContributionEffort"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contributor was the only person who provided effort in achieving this contribution, which was entirely due to this contributor."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contributed all the effort"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ContributionSituation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": "A contribution situation describes always:\n- a particular contribution C\n- a particular agent A making contribution C\n- a particular time interval T in which A makes C (optional)\n- a particular contribution effort E \n- one or more entities (e.g. an investigation or data) that defines a context for C contributed by A. (At least one contextual entity should be specified for a particular contribution)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article.  The type or nature of the contribution is defined by the object of the object property scoro:withContribution, which is an individual in the class scoro:Contribution or one of its sub-classes.  The entity to which the contribution relates is specified using the object property scoro:relatesToEntity or one of its sub-properties, and the effort expended in making that contribution is specified using the object property scoro:withContributionEffort."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contribution situation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      },
+      {
+        "@id": "_:N401afcdb1bb644d7897c0359b80cb813"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/isContributionIn",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The property relating the definition of a specific contribution to the contribution situation of an agent making that contribution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is contribution in"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/withContribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ensures-regulatory-compliance",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of ensuring regulatory compliance for the research undertaken, for example in obtaining informed consent from patients, approval from research ethics or radiation safety committees, or a license for animal experimentation.  "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "ensures regulatory compliance"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/head-of-department",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who is the chief executive officer of a department within a larger organization, for example a senior academic who is head of a university academic department."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "head of department"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/researcher",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a researcher involved in a research investigation, for example by conducting experiments, collecting and analyzing data, or undertaking formal study."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "researcher"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/collects-data",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of making experimental observations and collecting data, for example using a telescope, a microscope or an analytical instrument."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "collects data"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-technical-support",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing technical support that facilitates research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides technical support"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/non-academic-staff-member",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person employed within a university department, school or institute who is not a member of the academic faculty."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "non-academic staff member"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/withEffort",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An object property connecting an agent's contribution with respect to a particular entity to the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "with contribution effort"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionEffort"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/hasORCID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "en",
+        "@value": "owl:equivalentProperty <http://purl.org/spar/frapo/hasORCID> ."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A data property relating an individual to his/her Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Person"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "has ORCID"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/hasPersonalIdentifier"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/college-fellow",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an academic as a senior member of a college."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "college fellow"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/participant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who takes part in something, for example a conference, a private meeting or a public event."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "participant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/isEqualToRoleInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "This property allows the link of two roles in time as being equal, and is particularly useful for specifying that two principal authorship roles are equal."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/pro/RoleInTime"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is equal to role in time"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://purl.org/spar/pro/RoleInTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/secures-funding",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of securing funding for the research project.  \n\nNote that an individual other than the lead applicant and the co-applicants on a grant application may make contributions to securing funding for a research project, for example by assisting in writing the grant application."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "secures funding"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/contact-person",
+    "@type": [
+      "http://purl.org/spar/scoro/OrganizationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person who serves as the primary contact and information provider for third parties wishing to find out more about an organization or an activity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contact person"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/major-effort",
+    "@type": [
+      "http://purl.org/spar/scoro/ContributionEffort",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contributor provided a major effort towards achieving this contribution.  (It would be unusual for more than three contributors to be described as providing major effort towards achieving any particular contribution)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contributed major effort"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/consortium-author",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The authorship role of an organisation or consortium that has contributed collectively to the work described in the publication and is named in the list of authors, e.g. 'Wellcome Trust Case Control Consortium' or 'Malaria Genomic Epidemiology Network'.  (The members of such a group should be separately listed elsewhere in the document)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "consortium author"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/prepares-illustrations",
+    "@type": [
+      "http://purl.org/spar/scoro/AuthorshipContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "prepares illustrations"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/conceives-project",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of conceiving the research project in the first place.  \n\nNote that an individual other than the lead applicant and the co-applicants on a grant application may make considerable contributions to conceiving a research project, but may be prevented from being a formal applicant by reason of affiliation or status (e.g. as a non-academic partner, or a research student)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "conceives project"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/undergraduate-student",
+    "@type": [
+      "http://purl.org/spar/scoro/EducationalRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of a person registerd for an undergraduate degree at a university."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "undergraduate student"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/creates-software",
+    "@type": [
+      "http://purl.org/spar/scoro/ExperimentalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of creating computer software, including software for experimental control, analytical tools, mathematical model and computational simulations for use in the research, or of creating an IT service (e.g. a bioinformatics database or Web service) of use to others.  "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "creates software"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/IntellectualContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the type or nature of an intellectual contribution made to the research described in a journal article.  Individual members of this class are used to specify particular contributions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "intellectual contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/data-curator",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a data curator, responsible reviewing, enhancing, cleaning, or standardizing data and their associated metadata, for example those arising from the research project, and for their long-term preservation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data curator"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/maintains-organisms-or-cells",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of maintaining multicellular organisms (plants, animals or fungi) or cell cultures used as experimental subjects, and of breeding these where appropriate.  \n\n[Note that there may be occasions when it is inappropriate to acknowledge such contributions, for fear of personal reprisals on the individuals involved from animal rights activists]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "maintains organisms or cell cultures"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/research-assistant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/InvestigationRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a research assistant involved in a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "research assistant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-advice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing advice to facilitate the research, while not actively participating in the work."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides advice"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/service-engineer",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by a person who services, maintains and repairs equipment, facilities or technical infrastructure. "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "service engineer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/provides-software",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of providing software to facilitate the research, while not actively participating in the work."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "provides software"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/OrganizationalRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to an organization and its administration, particularly within an academic context.  Individual members of this class are used to specify particular roles."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "organizational role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/owner",
+    "@type": [
+      "http://purl.org/spar/scoro/FinancialRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who is the owner of something with actual or potential financial value, for example a building, a piece of equipment, the copyright of a document, or the intellectual property rights relating to an idea or discovery."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "owner"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-member",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ProjectRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a member of a project such as a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project member"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/pro/RoleInTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ComputationalAgent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A computer system or software program whose action has an effect on external events, for example a laboratory robot that undertakes your experiments, or the financial control system that controls an institution's payrole, or that, following programmed business rules, prevents the principal investigator from placing an order for research equipment because there is insufficient money left in the project budget."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "computational agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/computer-programmer",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being someone who develops computer software."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "computer programmer"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/project-leader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ProjectRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person or an institution has of being project leader for a resource or a project such as a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "project leader"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/co-applicant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ProjectRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a co-applicant on the grant application to obtain funding to fund an endeavour such as a research project."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "co-applicant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/patent-holder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role held by an agent who holds a patent.\n\n[See also http://purl.org/spar/scoro/rights-holder and http://purl.org/spar/pro/copyright-owner]."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "patent holder"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/maintains-IT-Infrastructure",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of maintaining the IT infrastructure required for the research."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "maintains IT infrastructure"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/ExperimentalContribution",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Defines the type or nature of a practical or experimental contribution made to the research.  Individual members of this class are used to specify particular contributions."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "experimental contribution"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/registration-agency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalRole"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role of an agent officially appointed by a Registration Authority that acts to register things. For example, CrossRef is a registration agency for DOIs relating to documents, while DataCite is a registration agency for DOIs relating to datasets, both acting for the Registration Authority for DOIs, namely the International DOI Foundation (IDF)."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "registration agency"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/data-user",
+    "@type": [
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a user or re-user of existing data."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "data user"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/isMadeBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A property relating a contribution situation that an agent makes, to that agent."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://purl.org/spar/scoro/ContributionSituation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is made by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://xmlns.com/foaf/0.1/Agent"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://purl.org/spar/scoro/makesContribution"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/undertakes-modelling",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/IntellectualContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of design, implementation and analysis of mathematical models or computer simulations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "undertakes modelling"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/supervises-colleagues",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationalContribution"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The contribution of supervising, mentoring, instructing or training colleagues, particularly junior research assistants and research students, in aspects of the research or its methodologies."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Supervises, mentors or trains colleagues"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/scoro/postdoctoral-researcher",
+    "@type": [
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being a post-doctoral researcher involved in a research investigation."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "postdoctoral researcher"
+      }
+    ]
+  }
+]
