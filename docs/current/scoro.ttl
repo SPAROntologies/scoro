@@ -59,11 +59,15 @@ Exactly the same use of TVC and of individuals within the class scoro:Contributi
 """@en ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
     dc:title "SCoRO, the Scholarly Contributions and Roles Ontology"@en ;
-    rdfs:comment """SCoRO is written in OWL 2 DL, and imports FOAF, the Friend of a Friend Ontology (http://xmlns.com/foaf/spec/) and PRO the Publishing Roles Ontology (http://purl.org/spar/pro/).   This ontology is available at http://purl.org/spar/scoro, and uses the namespace prefix 'scoro'.
+    rdfs:comment """The Scholarly Contributions and Roles Ontology (SCoRO) is an ontology based on PRO for describing the contributions that may be made, and the roles that may be held by a person with respect to a journal article or other publication (e.g. the role of article guarantor or illustrator).
 
-It is designed to be used in conjunction with FRAPO, the Funding, Research Administration and Projects Ontology (http://purl.org/cerif/frapo), and with FaBiO, the FRBR-aligned Bibliographic Ontology (http://purl.org/spar/fabio).
+**URL:** http://purl.org/spar/scoro
 
-Alternatively, an Excel Scholarly Contributions Report Form based on this ontology, created using RightField (http://www.sysmo-db.org/rightfield) also for use in creating metadata to describe authorship roles and scholarly contributions to journal articles and their underlying research, is available from https://sparontologies.github.io/scoro/material/scorf.xls."""@en ;
+**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
+
+**Website:** http://www.sparontologies.net/ontologies/scoro"""@en ;
     owl:imports <http://purl.org/spar/pro> ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/SCoRO/2016-01-19-SCoRO-1_9.owl> ;
     owl:versionIRI <http://purl.org/spar/scoro/2017-09-04> ;
@@ -948,8 +952,8 @@ pro:Role a owl:Class .
     owl:distinctMembers ( :article-guarantor ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( :AuthorshipContribution :ExperimentalContribution :IntellectualContribution :OrganizationalContribution ) .
+    owl:members ( :AuthorshipRole :DataRole :FinancialRole :InvestigationRole :OrganizationalRole :ProjectRole ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( :AuthorshipRole :DataRole :FinancialRole :InvestigationRole :OrganizationalRole :ProjectRole ) .
+    owl:members ( :AuthorshipContribution :ExperimentalContribution :IntellectualContribution :OrganizationalContribution ) .
 
