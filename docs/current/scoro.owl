@@ -1419,7 +1419,7 @@ Note that an individual other than the person holding the formal role of project
     <owl:NamedIndividual rdf:about="http://purl.org/spar/scoro/processes-data">
         <rdf:type rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
         <rdfs:comment xml:lang="en">The contribution of processing, cleaning, assembling, condensing or refining the data.</rdfs:comment>
-        <rdfs:label xml:lang="en">processs data</rdfs:label>
+        <rdfs:label xml:lang="en">processes data</rdfs:label>
     </owl:NamedIndividual>
     
 
