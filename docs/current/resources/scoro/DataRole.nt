@@ -1,0 +1,22 @@
+_:n734c349fce05485697ea023043dc8c36b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b6 .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2000/01/rdf-schema#label> "data role"@en .
+_:n734c349fce05485697ea023043dc8c36b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/InvestigationRole> .
+_:n734c349fce05485697ea023043dc8c36b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ProjectRole> .
+_:n734c349fce05485697ea023043dc8c36b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n734c349fce05485697ea023043dc8c36b4 <http://www.w3.org/2002/07/owl#members> _:n734c349fce05485697ea023043dc8c36b5 .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n734c349fce05485697ea023043dc8c36b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/DataRole> .
+_:n734c349fce05485697ea023043dc8c36b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n734c349fce05485697ea023043dc8c36b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b10 .
+_:n734c349fce05485697ea023043dc8c36b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b9 .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/pro/Role> .
+_:n734c349fce05485697ea023043dc8c36b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipRole> .
+<http://purl.org/spar/scoro/DataRole> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:repository-manager .\n\n    scoro:repository-manager a scoro:DataRole .\n    " .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en .
+_:n734c349fce05485697ea023043dc8c36b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationRole> .
+_:n734c349fce05485697ea023043dc8c36b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/FinancialRole> .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n734c349fce05485697ea023043dc8c36b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b7 .
+<http://purl.org/spar/scoro/DataRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an agent might hold with respect to data."@en .
+_:n734c349fce05485697ea023043dc8c36b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b8 .

@@ -1,0 +1,65 @@
+[
+  {
+    "@id": "http://purl.org/spar/scoro/ContributionSituation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:interprets-results .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contribution situation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n734c349fce05485697ea023043dc8c36b1"
+      },
+      {
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nA contribution situation describes always:\n- a particular contribution C\n- a particular agent A making contribution C\n- a particular time interval T in which A makes C (optional)\n- a particular contribution effort E \n- one or more entities (e.g. an investigation or data) that defines a context for C contributed by A. (At least one contextual entity should be specified for a particular contribution).\n\nThe type or nature of the contribution is defined by the object of the object property `scoro:withContribution`, which is an individual in the class `scoro:Contribution` or one of its sub-classes. \nThe entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.\n"
+      }
+    ]
+  },
+  {
+    "@id": "_:n734c349fce05485697ea023043dc8c36b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/spar/scoro/withContribution"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/scoro/Contribution"
+      }
+    ]
+  }
+]

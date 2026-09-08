@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:hasContributionContext a owl:ObjectProperty ;
+    rdfs:label "has contribution context"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:formulates-research-questions ;
+        scoro:hasContributionContext :my-entity .
+    """ ;
+    rdfs:comment "A relation between a contribution situation and an entity representing the context for that situation."@en ;
+    rdfs:domain scoro:ContributionSituation ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subPropertyOf tvc:withinContext ;
+    owl:inverseOf scoro:isRelatedToContributionSituation ;
+    vs:term_status reg:statusStable .
+

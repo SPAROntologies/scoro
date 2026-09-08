@@ -1,0 +1,10 @@
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/scoro/ContributionSituation> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contribution in"@en .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/scoro/withContribution> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between a specific contribution and the contribution situation of an agent making that contribution."@en .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/scoro/Contribution> .
+<http://purl.org/spar/scoro/isContributionIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#hasTimeIndexedSetting> .
+<http://purl.org/spar/scoro/isContributionIn> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation .\n    \n    scoro:interprets-results a scoro:Contribution ;\n        scoro:isContributionIn :my-person-contribution .\n    " .

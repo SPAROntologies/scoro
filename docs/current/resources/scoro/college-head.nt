@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/2000/01/rdf-schema#label> "college head"@en .
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/OrganizationRole> .
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/2000/01/rdf-schema#comment> "The role held by a senior academic who heads a college and acts as its CEO. Among the many alternative titles give to this role, the most common are President or Master of the college."@en .
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/college-head> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:college-head .\n    " .
+<http://purl.org/spar/scoro/college-head> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .

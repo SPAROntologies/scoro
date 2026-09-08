@@ -1,0 +1,9 @@
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/scoro/ContributionSituation> .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/spar/scoro/isRelatedToContributionSituation> .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/scoro/hasContributionContext> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:formulates-research-questions ;\n        scoro:hasContributionContext :my-entity .\n    " .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.essepuntato.it/2012/04/tvc/withinContext> .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a contribution situation and an entity representing the context for that situation."@en .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2000/01/rdf-schema#label> "has contribution context"@en .
+<http://purl.org/spar/scoro/hasContributionContext> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .

@@ -1,0 +1,26 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:isRelatedToContributionSituation a owl:ObjectProperty ;
+    rdfs:label "is related to contribution situation"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:writes-manuscript-draft .
+
+    :my-entity
+        scoro:isRelatedToContributionSituation :my-person-contribution .
+    """ ;
+    rdfs:comment "A relation between an entity and the contribution situation for which that entity provides the context."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range scoro:ContributionSituation ;
+    rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
+    vs:term_status reg:statusStable .
+

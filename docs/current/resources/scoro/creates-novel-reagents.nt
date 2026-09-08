@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/2000/01/rdf-schema#comment> "The contribution of creating novel physical or chemical compounds, or molecular biology constructs, either for use in the research, or as a research output of use to others."@en .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:creates-novel-reagents .\n    " .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/ExperimentalContribution> .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/creates-novel-reagents> <http://www.w3.org/2000/01/rdf-schema#label> "creates novel reagents"@en .

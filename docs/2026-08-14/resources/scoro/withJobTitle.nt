@@ -1,0 +1,8 @@
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2000/01/rdf-schema#label> "with job title"@en .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "A job title that characterizes an agent's role in time."@en .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/pro/RoleInTime> .
+<http://purl.org/spar/scoro/withJobTitle> <http://www.w3.org/2004/02/skos/core#note> "\nThis data property complements the definition of that role in time specified by `scoro:Role`. For example, for the `scoro:OrganizationRole` 'Head of Department', the specific Job Title might be 'Linacre Professor of Zoology' or 'Regius Professor of Moral Philosophy'.\n    "@en .
+<http://purl.org/spar/scoro/withJobTitle> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:head-of-department ;\n        scoro:withJobTitle 'Linacre Professor of Zoology' .\n    " .

@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:affiliate a scoro:OrganizationRole,
+        owl:NamedIndividual ;
+    rdfs:label "affiliate"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:affiliate .
+    """ ;
+    rdfs:comment "The role an agent has of being affiliated to some organization or institution in a context of some entity or activity, for example a document, a project or an internship."@en ;
+    rdfs:isDefinedBy scoro: ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+The affiliation of a person to an organization or institution can be specified by using the property `pro:relatesToEntity`.
+"""@en .
+

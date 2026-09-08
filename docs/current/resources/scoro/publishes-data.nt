@@ -1,0 +1,8 @@
+<http://purl.org/spar/scoro/publishes-data> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:publishes-data .\n    " .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/2004/02/skos/core#note> "\nNote that this activity is distinct from that of publishing a journal article containing a selection of these data.\n"@en .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe contribution of publishing in a public database or data repository data arising from the research.  \n"@en .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/AuthorshipContribution> .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/2000/01/rdf-schema#label> "publishes data"@en .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/publishes-data> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

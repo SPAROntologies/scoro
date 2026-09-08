@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/co-investigator> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:co-investigator .\n    " .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/InvestigationRole> .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/2000/01/rdf-schema#comment> "The role a person has of being a co-investigator for a research investigation."@en .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/co-investigator> <http://www.w3.org/2000/01/rdf-schema#label> "co-investigator"@en .

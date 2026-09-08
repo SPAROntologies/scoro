@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/2000/01/rdf-schema#comment> "The contribution of obtaining and/or preparing specimens in a manner requiring research expertise or skill, for example collecting and preparing fossils, or preparing electron microscope specimens for examination."@en .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:obtains-and-or-prepares-specimens .\n    " .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/2000/01/rdf-schema#label> "obtains and/or prepared specimens"@en .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/ExperimentalContribution> .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/obtains-and-or-prepares-specimens> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

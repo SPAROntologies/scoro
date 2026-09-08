@@ -1,0 +1,8 @@
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or nature of a contribution made by an agent. Individual members of this class or its sub-classes are used to specify particular contributions."@en .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2000/01/rdf-schema#label> "contribution"@en .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/scoro/Contribution> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:prepares-illustrations .\n\n    scoro:prepares-illustrations a scoro:Contribution .\n    " .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/scoro/ContributionEffort> .
+<http://purl.org/spar/scoro/Contribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .

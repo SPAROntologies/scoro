@@ -1,0 +1,8 @@
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between two roles in time as being equal, and is particularly useful for specifying that two principal authorship roles are equal."@en .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/pro/RoleInTime> .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime \n            :my-person-role ,\n            :my-other-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:data-curator ;\n        scoro:isEqualToRoleInTime :my-other-role .\n\n    :my-other-role a pro:RoleInTime ;\n        pro:withRole scoro:data-creator .\n    " .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/pro/RoleInTime> .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#label> "is equal to role in time"@en .
+<http://purl.org/spar/scoro/isEqualToRoleInTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
