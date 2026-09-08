@@ -1,0 +1,30 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:isEqualToContributionSituation a owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "is equal to contribution situation"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime 
+            :my-person-contribution ,
+            :my-other-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:interprets-results ;
+        scoro:isEqualToContributionSituation :my-other-contribution .
+
+    :my-other-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:collects-data .
+    """ ;
+    rdfs:comment "The relation between two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."@en ;
+    rdfs:domain scoro:ContributionSituation ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range scoro:ContributionSituation ;
+    vs:term_status reg:statusStable .
+

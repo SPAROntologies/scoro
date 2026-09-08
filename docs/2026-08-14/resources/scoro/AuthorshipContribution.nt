@@ -1,0 +1,18 @@
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:prepares-illustrations .\n\n    scoro:prepares-illustrations a scoro:AuthorshipContribution .\n    " .
+_:n734c349fce05485697ea023043dc8c36b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b15 .
+_:n734c349fce05485697ea023043dc8c36b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ExperimentalContribution> .
+_:n734c349fce05485697ea023043dc8c36b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b13 .
+_:n734c349fce05485697ea023043dc8c36b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipContribution> .
+_:n734c349fce05485697ea023043dc8c36b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationalContribution> .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular contributions.\n    "@en .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2000/01/rdf-schema#label> "authorship contribution"@en .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n734c349fce05485697ea023043dc8c36b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/IntellectualContribution> .
+_:n734c349fce05485697ea023043dc8c36b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b14 .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+_:n734c349fce05485697ea023043dc8c36b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/scoro/Contribution> .
+<http://purl.org/spar/scoro/AuthorshipContribution> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or nature of a contribution made with respect to the authorship of a publication such as a journal article."@en .
+_:n734c349fce05485697ea023043dc8c36b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n734c349fce05485697ea023043dc8c36b11 <http://www.w3.org/2002/07/owl#members> _:n734c349fce05485697ea023043dc8c36b12 .

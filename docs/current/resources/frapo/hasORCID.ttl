@@ -1,0 +1,9 @@
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+frapo:hasORCID a owl:DatatypeProperty ;
+    rdfs:label "has orcid"@en ;
+    rdfs:comment "An individual's Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en ;
+    rdfs:isDefinedBy frapo: .
+

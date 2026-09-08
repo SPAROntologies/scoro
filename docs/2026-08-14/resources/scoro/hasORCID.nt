@@ -1,0 +1,9 @@
+<http://purl.org/spar/scoro/hasORCID> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:hasORCID '0000-4567-8965-1234' ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:formulates-research-questions .\n    " .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://purl.org/cerif/frapo/hasORCID> .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2000/01/rdf-schema#label> "has ORCID"@en .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an individual and their Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/hasORCID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/spar/scoro/hasPersonalIdentifier> .

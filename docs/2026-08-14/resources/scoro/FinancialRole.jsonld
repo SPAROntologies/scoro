@@ -1,0 +1,76 @@
+[
+  {
+    "@id": "http://purl.org/spar/scoro/FinancialRole",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:sponsor .\n    \n    scoro:sponsor a scoro:FinancialRole .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A role that an agent might hold with respect to academic and project finance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "financial role"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/pro/Role"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nIndividual members of this class are used to specify particular roles.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:n734c349fce05485697ea023043dc8c36b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/AuthorshipRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/DataRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/FinancialRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/InvestigationRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/OrganizationRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/ProjectRole"
+          }
+        ]
+      }
+    ]
+  }
+]

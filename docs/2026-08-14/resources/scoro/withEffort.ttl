@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix tisit: <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:withEffort a owl:ObjectProperty ;
+    rdfs:label "with contribution effort"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:analyses-data ;
+        scoro:withEffort scoro:major-effort .
+    """ ;
+    rdfs:comment "A relation between an agent's contribution with respect to a particular entity and the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort."@en ;
+    rdfs:domain scoro:ContributionSituation ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range scoro:ContributionEffort ;
+    rdfs:subPropertyOf tisit:forEntity ;
+    vs:term_status reg:statusStable .
+

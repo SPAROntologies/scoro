@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:withJobTitle a owl:DatatypeProperty ;
+    rdfs:label "with job title"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:head-of-department ;
+        scoro:withJobTitle 'Linacre Professor of Zoology' .
+    """ ;
+    rdfs:comment "A job title that characterizes an agent's role in time."@en ;
+    rdfs:domain pro:RoleInTime ;
+    rdfs:isDefinedBy scoro: ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This data property complements the definition of that role in time specified by `scoro:Role`. For example, for the `scoro:OrganizationRole` 'Head of Department', the specific Job Title might be 'Linacre Professor of Zoology' or 'Regius Professor of Moral Philosophy'.
+    """@en .
+

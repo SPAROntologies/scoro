@@ -1,0 +1,484 @@
+<!doctype html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><title>LODE 2.0 - Semantic Artefact Viewer</title><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet><link href=../../static/style.css rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css rel=stylesheet><body><div class="container-fluid px-4 py-4"><details class=metadata-accordion><summary class=metadata-accordion-summary><div class=resource-frontmatter><h1 class=resource-title>illustrator</h1><div class=resource-meta-line><span class="resource-meta-uri font-monospace text-truncate">http://purl.org/spar/scoro/illustrator</span><a title="Go to Resource" class=resource-meta-link href=http://purl.org/spar/scoro/illustrator target=_blank> <i class="bi bi-box-arrow-up-right"></i> </a></div><p class=resource-subtitle>as defined in <span class=resource-subtitle-ontology> The Scholarly Contributions and Roles Ontology (SCoRO) </span> <button title="Show/hide ontology metadata" class=metadata-accordion-toggle onclick=toggleMetadataAccordion(event) type=button><i class="bi bi-chevron-down"></i></button></div></summary> <div class=p-3><section class=metadata-block><dl class="row mb-0 lead fs-6"><dt class="text-capitalize fs-7 fw-bold">bibliographic citation<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Shotton, D., &amp; Peroni, S. (2017). SCoRO, the scholarly contributions and roles ontology. http://purl.org/spar/scoro.</div></div></div><dt class="text-capitalize fs-7 fw-bold">changes<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
+* **v1.10.1**: added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
+    </div></div></div><dt class="text-capitalize fs-7 fw-bold">code repository<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/scoro target=_blank>https://github.com/SPAROntologies/scoro</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">contributor<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</div></div></div><dt class="text-capitalize fs-7 fw-bold">created<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2016-01-19</div></div></div><dt class="text-capitalize fs-7 fw-bold">creator<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">David Shotton (https://orcid.org/0000-0001-5506-523X)</div></div></div><dt class="text-capitalize fs-7 fw-bold">date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-08-14</div></div></div><dt class="text-capitalize fs-7 fw-bold">description<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
+The **_Scholarly Contributions and Roles Ontology (SCoRO)_** is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research.
+
+![The architecture of SCoRO.](scoro.png)
+
+SCoRO offers a limited controlled vocabulary of generic terms to describe contributions within the following four general categories:
+* intellectual contributions (`scoro:IntellectualContribution`), including the conception and design of experiments;
+* experimental contributions (`scoro:ExperimentalContribution`), including provision of experimental material, undertaking experiments and analyzing data;
+* organizational contributions (`scoro:OrganizationalContribution`), including fund-raising and project management; and
+* authorship contributions (`scoro:AuthorshipContribution`), such as drafting the paper and preparing the illustrations.
+
+It also provides the option of specifying the effort for each contribution (`scoro:ContributionEffort`), relative to that of others:
+* solely responsible for this contribution (`scoro:solo-effort`);
+* contributed major effort (`scoro:major-effort`);
+* contributed minor effort (`scoro:minor-effort`).
+
+The default position is that a person played no part in a particular contribution, which is assumed unless one of the other effort categories is specified.
+
+In addition to specifying such contributions, SCoRO extends PRO by adding subclasses of pro:Role so as to distinguish and permit the separate definition of individuals&#39; roles, under the following categories:
+* investigation roles (`scoro:InvestigationRole`), such as principal investigator, research assistant or technician;
+* project roles (`scoro:ProjectRole`), including project leader and project manager;
+* data roles (`scoro:DataRole`), such as data creator, data manager or curator;
+* authorship roles (`scoro:AuthorshipRole`), including corresponding author, senior author, article guarantor, and consortium author (to cover entries in author lists such as &#39;... and members of the MalariaGen Consortium&#39;);
+* organizational roles (`scoro:OrganizationRole`), including contact person, partner, rights holder.
+
+Since roles have contexts and times that are important to take into account (for example, a person can be author of one paper and reviewer of another, while another person will be editor of a journal only for a defined period, not for ever), the SCORO ontology permit these contexts to be specified, using an ontological design pattern called the [Time-indexed Value in Context (TVC)](http://www.essepuntato.it/2012/04/tvc) which is part of the [PRO ontology](http://purl.org/spar/pro) imported by SCORO.
+ 
+This ontology design pattern permits one to construct the following RDF statements:
+    
+    foaf:Agent pro:holdsRoleInTime [ a pro:RoleInTime 
+                                     pro:withRole pro:editor ] .
+
+Thus the domain of `pro:withRole` is not `foaf:Agent`, but rather an anonymous member of the class `pro:RoleInTime`, which itself is the range of the property `pro:holdsRoleInTime`, for which the domain is `foaf:Agent`. 
+
+The range of `pro:withRole` is the class `pro:Role`, and its sub-classes `pro:PublishingRole`, `scoro:InvestigationalRole`, `scoro:OrganizationRole`, etc., whose members permit specific roles to be specified.  
+   
+This single step of indirection permits other contextual and temporal attributes to be specified for this member of the class `pro:RoleInTime`, putting that role into context.
+
+Exemplar usage: 
+
+	fabio:Dataset  dcterms:contributor  [ rdf:type foaf:Organization ; 
+	   foaf:name &#39;Met Office&#39; ;  
+	   foaf:homepage &lt;http://www.metoffice.gov.uk/&gt;  ; 
+	   pro:holdsRoleInTime [ a pro:RoleInTime 
+		  pro:withRole  scoro:data-creator ]  ] .
+
+Exactly the same use of TVC and of individuals within the class `scoro:Contribution` and its sub-classes is used for `scoro:withContribution`, enabling contributions to be time-limited and given contexts.
+
+## Examples of use
+
+In the following subsections, we introduce some examples to showcase how to use SCoRO. 
+
+The prefixes that are used in all the examples provided below are defined as follows:
+
+    @prefix : &lt;http://www.sparontologies.net/example/&gt; .
+    @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+    @prefix fabio: &lt;http://purl.org/spar/fabio/&gt; .
+    @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+    @prefix frapo: &lt;http://purl.org/cerif/frapo/&gt; .
+    @prefix prism: &lt;http://prismstandard.org/namespaces/basic/2.0/&gt; .
+    @prefix pro: &lt;http://purl.org/spar/pro/&gt; .
+    @prefix scoro: &lt;http://purl.org/spar/scoro/&gt; .
+    @prefix ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt; .
+    @prefix tvc: &lt;http://www.essepuntato.it/2012/04/tvc/&gt; .
+    @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+### Specifying roles and contributions of an investigation
+
+Providing a description of how a certain research is described in a published paper, highlighting the various roles of the people who were involved and indicating explicitly their contribution, is crucial in research communications. 
+Here we show how to provide an RDF description of all these information related to a particular article, i.e., &#39;Adventures in semantic publishing: exemplar semantic enhancement of a research article&#39;, by means of SCoRO. 
+While SCoRO is used for describing person&#39;s roles and contributions, in the example it is used in combination with FaBiO, that provides structured vocabulary terms to characterize scholarly publications, and with FRAPO, that provides structured vocabulary terms to describe research administration, research funding, and the projects and investigations that such funding supports.
+
+    :shotton-et-al-investigation a frapo:Investigation ;
+        dcterms:title &#39;Experiments in Semantic Publishing&#39; ;
+        frapo:hasOutput
+            &lt;http://dx.doi.org/10.1371/journal.pcbi.1000361&gt; .
+
+    &lt;http://dx.doi.org/10.1371/journal.pcbi.1000361&gt;
+        a fabio:JournalArticle ;
+        dcterms:bibliographicCitation
+            &#39;Shotton D, Portwin K, Klyne G, Miles A (2009). Adventures
+            in semantic publishing: exemplar semantic enhancement of
+            a research article. PLoS Computational Biology 5: e1000361.&#39; ;
+        dcterms:creator :shotton , :portwin , :klyne , :miles ;
+        prism:doi &#39;10.1371/journal.pcbi.1000361&#39; .
+
+    :shotton a foaf:Person ;
+        foaf:name &#39;David Shotton&#39; ;
+        scoro:hasORCID &#39;0000-0001-5506-523X&#39; ;
+        pro:holdsRoleInTime
+            :shotton-author ,
+            :shotton-pi ,
+            :shotton-contribution .
+
+    :shotton-author a pro:RoleInTime ;
+        pro:withRole
+            pro:author ,
+            scoro:senior-author ;
+        pro:relatesToDocument
+            &lt;http://dx.doi.org/10.1371/journal.pcbi.1000361&gt; .
+
+    :shotton-pi a pro:RoleInTime ;
+        pro:withRole scoro:principal-investigator ;
+        tvc:atTime :pi-time ;
+        pro:relatesToEntity :shotton-et-al-investigation .
+
+    :pi-time a ti:timeInterval ;
+        ti:hasIntervalStartDate &#39;2008-05-01&#39;^^xsd:date ;
+        ti:hasIntervalEndDate &#39;2009-04-17&#39;^^xsd:date .
+
+    :shotton-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:conceives-project ;
+        scoro:withEffort scoro:major-effort ;
+        scoro:hasContributionContext :shotton-et-al-investigation .
+
+### Defining equal principal authorship roles
+
+The order in which the authors of a paper appear on the author list of the paper it self does not provide any clue about the actual authorship role of such authors, since there is no standard way to understand who is the principal author of the paper, who is a secondary author, and the like.
+
+SCoRO makes it easy to assert in a machine-readable manner that two authors on a paper, for example the first and second authors in an author list, have equal principal authorship roles by means of the object property `scoro:isEqualToRoleInTime`, that allows one to link two `pro:RoleInTimesituations` (in principle involving two different people) as semantically equal from what concern the role they describe with regard to a certain publication. 
+Note that, in a similar manner, two contributions can be declared to be the same, using the property `scoro:isEqualToContributionSituation` to equate one `scoro:ContributionSituation` with another.
+
+    :silvio-peroni a foaf:Person ;
+        foaf:givenName &#39;Silvio&#39; ;
+        foaf:familyName &#39;Peroni&#39; ;
+        pro:holdsRoleInTime :sp-principal-author .
+
+    :sp-principal-author a pro:RoleInTime ;
+        pro:withRole scoro:principal-author ;
+        pro:relatesToDocument
+            &lt;http://dx.doi.org/10.1016/j.websem.2012.08.001&gt; .
+
+    :david-shotton a foaf:Person ;
+        foaf:givenName &#39;David&#39; ;
+        foaf:familyName &#39;Shotton&#39; ;
+        pro:holdsRoleInTime :ds-principal-author .
+
+    :ds-principal-author a pro:RoleInTime ;
+        pro:withRole scoro:principal-author ;
+        pro:relatesToDocument
+            &lt;http://dx.doi.org/10.1016/j.websem.2012.08.001&gt; ;
+        scoro:isEqualToRoleInTime :sp-principal-author .
+
+    &lt;http://dx.doi.org/10.1016/j.websem.2012.08.001&gt;
+        a fabio:JournalArticle ;
+        dcterms:title
+            &#39;FaBiO and CiTO: ontologies for describing
+            bibliographic resources and citations&#39; ;
+        dcterms:creator :silvio-peroni , :david-shotton .
+
+## Competency Questions
+
+SCoRO can be used for answering several questions related to contributions in the publication process.
+In the following subsections, some of them are introduced together with their respective SPARQL queries. 
+
+The prefixes that are used in all the SPARQL queries provided below are defined as follows:
+
+    PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+    PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+    PREFIX pro: &lt;http://purl.org/spar/pro/&gt;
+    PREFIX scoro: &lt;http://purl.org/spar/scoro/&gt;
+    PREFIX tvc: &lt;http://www.essepuntato.it/2012/04/tvc/&gt;
+    PREFIX ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;
+
+### CQ1
+
+Which role does a person hold in relation to an entity, and during what time interval?
+
+    SELECT ?person ?entity ?role ?startDate ?endDate
+    WHERE {
+        ?person a foaf:Person ;
+            pro:holdsRoleInTime ?roleInTime .
+        ?roleInTime pro:withRole ?role ;
+            scoro:relatesToEntity ?entity .
+        OPTIONAL {
+            ?roleInTime tvc:atTime ?timeInterval .
+            OPTIONAL { ?timeInterval ti:hasIntervalStartDate ?startDate . }
+            OPTIONAL { ?timeInterval ti:hasIntervalEndDate ?endDate . }
+        }
+    }
+
+### CQ2
+
+What specific contribution and level of effort did a person provide in the context of an investigation?
+
+    SELECT ?person ?investigation ?contribution ?effort
+    WHERE {
+        ?person a foaf:Person ;
+            pro:holdsRoleInTime ?situation .
+        ?situation a scoro:ContributionSituation ;
+            scoro:hasContributionContext ?investigation ;
+            scoro:withContribution ?contribution .
+        OPTIONAL { ?situation scoro:withEffort ?effort . }
+    }
+
+### CQ3
+
+Which persons hold equal roles in time with respect to the same document?
+
+    SELECT ?document ?person1 ?person2 ?role
+    WHERE {
+        ?person1 a foaf:Person ;
+            pro:holdsRoleInTime ?roleInTime1 .
+        ?person2 a foaf:Person ;
+            pro:holdsRoleInTime ?roleInTime2 .
+        ?roleInTime1 pro:relatesToDocument ?document ;
+            pro:withRole ?role ;
+            scoro:isEqualToRoleInTime ?roleInTime2 .
+        FILTER(?person1 != ?person2)
+    }
+
+</div></div></div><dt class="text-capitalize fs-7 fw-bold">doi<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">https://doi.org/10.25504/FAIRsharing.c86b48</div></div></div><dt class="text-capitalize fs-7 fw-bold">image<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/scoro/blob/master/docs/current/scoro.png target=_blank>https://github.com/SPAROntologies/scoro/blob/master/docs/current/scoro.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">imports<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/pro target=_blank>http://purl.org/spar/pro</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">included in data catalog<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://fairsharing.org/ target=_blank>https://fairsharing.org/</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">is backward compatible with<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/scoro/2017-09-04 target=_blank>http://purl.org/spar/scoro/2017-09-04</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">issued<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2017-09-04</div></div></div><dt class="text-capitalize fs-7 fw-bold">keywords<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">bibliometrics</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scholarly roles</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scientometrics</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scholarly contributions</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scholarly publishing</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">semantic publishing</div></div></div><dt class="text-capitalize fs-7 fw-bold">license<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://creativecommons.org/licenses/by/4.0/ target=_blank>http://creativecommons.org/licenses/by/4.0/</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">logo<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/scoro/blob/master/spar.png target=_blank>https://github.com/SPAROntologies/scoro/blob/master/spar.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">modified<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-08-14</div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace prefix<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scoro</div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace uri<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">http://purl.org/spar/scoro</div></div></div><dt class="text-capitalize fs-7 fw-bold">prior version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/scoro/2017-09-04 target=_blank>http://purl.org/spar/scoro/2017-09-04</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">publisher<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://ror.org/00wb4mk85 target=_blank>https://ror.org/00wb4mk85</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">see also<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://www.sparontologies.net/ontologies/scoro target=_blank>http://www.sparontologies.net/ontologies/scoro</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">source<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/sparontologies/scoro/docs/cq.md target=_blank>https://github.com/sparontologies/scoro/docs/cq.md</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">status<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/ontology/bibo/status/published target=_blank>http://purl.org/ontology/bibo/status/published</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">title<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">The Scholarly Contributions and Roles Ontology (SCoRO)</div></div></div><dt class="text-capitalize fs-7 fw-bold">version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/scoro/2026-08-14 target=_blank>http://purl.org/spar/scoro/2026-08-14</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">version info<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">1.10.1</div></div></div><dt class="text-capitalize fs-7 fw-bold">Other visualisation<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href="https://service.tib.eu/webvowl/#iri=http://purl.org/spar/scoro" target=_blank><i class="bi bi-share"></i> WebVOWL</a> <a class="btn btn-sm btn-outline-dark" href=http://purl.org/spar/scoro target=_blank><i class="bi bi-file-code"></i> Source</a></dl></section></div></details><section class="metadata-block export-block"><dl class="mb-0 pb-3"><dt class="fs-7 fw-bold mb-1">Export<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href=illustrator.ttl> <i class="bi bi-filetype-raw"></i> Turtle </a> <a class="btn btn-sm btn-outline-dark me-2" href=illustrator.rdf> <i class="bi bi-file-code"></i> RDF/XML </a> <a class="btn btn-sm btn-outline-dark me-2" href=illustrator.jsonld> <i class="bi bi-filetype-json"></i> JSON-LD </a> <a class="btn btn-sm btn-outline-dark me-2" href=illustrator.nt> <i class="bi bi-file-text"></i> N-Triples </a></dl></section><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>illustrator</div> <sup class="badge bg-light text-secondary ni" title="Named Individual">ni</sup></h4></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://purl.org/spar/scoro/illustrator <a title="Go to resource documentation" class=ms-2 href=../scoro/illustrator.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
+                                            data-md="The role a person has of being an illustrator of, or for, some entity.">The role a person has of being an illustrator of, or for, some entity.
+                                        </div> <sup class="badge text-secondary lan" title=English>en</sup></div></div></div></div><div class="attribute p-3 border-top border-bottom bg-light-subtle"><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is defined by</h6><div class=ms-2><div class=d-inline-block><span class=external-ref title=http://purl.org/spar/scoro/>http://purl.org/spar/scoro/</span></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">label</h6><div class=ms-2><div class="markdown-with-badge text-dark mb-0 render-markdown inline-markdown "
+                                            data-md="illustrator">illustrator</div> <sup class="badge text-secondary lan" title=English>en</sup></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">type</h6><div class=ms-2><div class=d-inline-block><a href=../scoro/AuthorshipRole.html title=http://purl.org/spar/scoro/AuthorshipRole>authorship role</a><sup class="badge text-secondary c" title=Class>c</sup></div></div></div></div><div class="p-3 statement"><div><h6 class="fw-bold text-dark pb-0 mb-0">term status</h6><div class=ms-2><div class="d-flex flex-column gap-1"><div><a class=external-ref href=http://purl.org/linked-data/registry#statusStable rel=noopener target=_blank title=http://purl.org/linked-data/registry#statusStable>status stable<i class="bi bi-box-arrow-up-right ms-1"></i></a></div></div></div></div><div><h6 class="fw-bold text-dark pb-0 mb-0">example</h6><div class=ms-2><div class="d-flex flex-column gap-1"><div><div><div class="markdown-with-badge  render-markdown inline-markdown"
+                title="None"
+                data-md="
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:illustrator .
+    ">
+                    
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:illustrator .
+    
+                </div></div></div></div></div></div></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov aria-expanded=false data-bs-target=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_head data-bs-parent=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_acc id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_1 data-bs-toggle=tab role=tab type=button>Turtle</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_2 data-bs-toggle=tab role=tab type=button>RDF/XML</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_3 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_4 data-bs-toggle=tab role=tab type=button>N-Triples</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: &lt;http://purl.org/linked-data/registry#> .
+@prefix scoro: &lt;http://purl.org/spar/scoro/> .
+@prefix vann: &lt;http://purl.org/vocab/vann/> .
+@prefix vs: &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:illustrator a scoro:AuthorshipRole,
+        owl:NamedIndividual ;
+    rdfs:label "illustrator"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:illustrator .
+    """ ;
+    rdfs:comment "The role a person has of being an illustrator of, or for, some entity."@en ;
+    rdfs:isDefinedBy scoro: ;
+    vs:term_status reg:statusStable .
+
+</code></pre></div><div class="tab-pane fade" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_2 role=tabpanel><pre class="mb-0 small"><code>&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  &lt;rdf:Description rdf:about="http://purl.org/spar/scoro/illustrator">
+    &lt;rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    &lt;rdfs:label xml:lang="en">illustrator&lt;/rdfs:label>
+    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    &lt;rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+    &lt;rdfs:comment xml:lang="en">The role a person has of being an illustrator of, or for, some entity.&lt;/rdfs:comment>
+    &lt;vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    &lt;vann:example>
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:illustrator .
+    &lt;/vann:example>
+  &lt;/rdf:Description>
+&lt;/rdf:RDF>
+</code></pre></div><div class="tab-pane fade" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_3 role=tabpanel><pre class="mb-0 small"><code>[
+  {
+    "@id": "http://purl.org/spar/scoro/illustrator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/AuthorshipRole"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:illustrator .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The role a person has of being an illustrator of, or for, some entity."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "illustrator"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]</code></pre></div><div class="tab-pane fade" id=id_469581bbb861ffdc4cec700e6e3ac7d2_Individual_prov_4 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/2000/01/rdf-schema#label> "illustrator"@en .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#NamedIndividual> .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://purl.org/spar/scoro/AuthorshipRole> .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:illustrator .\n    " .
+&lt;http://purl.org/spar/scoro/illustrator> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The role a person has of being an illustrator of, or for, some entity."@en .
+</code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
+
+                // Security hooks
+                DOMPurify.addHook('afterSanitizeAttributes', function(node) {
+                    if (node.tagName === 'A') {
+                        node.setAttribute('target', '_blank');
+                        node.setAttribute('rel', 'noopener noreferrer');
+                    }
+                    if (node.tagName === 'IMG') {
+                        node.setAttribute('class', 'img-fluid border rounded mt-2 mb-2');
+                    }
+                });
+
+                marked.use({
+                    gfm: true,
+                    breaks: false // So line breaks not be added
+                });
+
+                const mdElements = document.querySelectorAll('.render-markdown');
+
+                mdElements.forEach(function(el) {
+                    try {
+                        let rawText = el.dataset.md ?? el.textContent;
+
+                        // Rimuove solo righe vuote iniziali/finali, preserva l'indentazione delle righe
+                        rawText = rawText.replace(/^([ \t]*\n)+/, '').replace(/(\n[ \t]*)+$/, '');
+                        // 2. Strip ANY XML namespace prefix (Turns <html:div> into <div>, </xhtml:p> into </p>)
+                        let cleanText = rawText.replace(/<(\/?)[a-zA-Z0-9_-]+:([a-zA-Z0-9]+)/gi, '<$1$2');
+
+                        // 3. Strip xmlns attributes
+                        cleanText = cleanText.replace(/ xmlns(:[a-zA-Z0-9_-]+)?="[^"]*"/gi, '');
+
+                        let rawHTML = "";
+
+                        // 4. Smart Routing
+                        if (el.tagName === 'SPAN' || el.tagName === 'A') {
+                            rawHTML = marked.parseInline(cleanText);
+                        } else {
+                            rawHTML = marked.parse(cleanText);
+                        }
+
+                        // 5. Sanitize
+                        const cleanHTML = DOMPurify.sanitize(rawHTML, {
+                            ADD_TAGS: ['img'],
+                            ADD_ATTR: ['target', 'src', 'alt', 'title', 'class']
+                        });
+
+                        el.innerHTML = cleanHTML;
+                    } catch (e) {
+                        console.error("Error rendering markdown/html:", e);
+                    }
+                });
+            });
+
+            function exportGraph(mime, ext, navQs, resource) {
+                let qs = navQs;
+                if (resource) qs += "&resource=" + encodeURIComponent(resource);
+                fetch(`/extract?${qs}`, { headers: { "Accept": mime } })
+                    .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+                    .then(blob => {
+                        const a = document.createElement("a");
+                        const slug = resource ? resource.split(/[#/]/).pop() : "ontology";
+                        a.href = URL.createObjectURL(blob);
+                        a.download = `${slug}.${ext}`;
+                        a.click();
+                        URL.revokeObjectURL(a.href);
+                    })
+                    .catch(e => alert("Export failed: " + e.message));
+            }
+
+            function toggleMetadataAccordion(event) {
+                event.preventDefault();   // blocca il comportamento nativo/bubbling incoerente
+                event.stopPropagation();  // evita il doppio-toggle se il summary lo cattura comunque
+                const details = event.currentTarget.closest('details.metadata-accordion');
+                if (details) details.open = !details.open;
+            }
+            
+            /* SEARCHBAR */
+            (function () {
+                const wrap = document.getElementById('toc-float-search');
+                const toggle = document.getElementById('toc-float-search-toggle');
+                const input = document.getElementById('toc-float-search-input');
+                const countEl = document.getElementById('toc-float-search-count');
+                const prevBtn = document.getElementById('toc-float-search-prev');
+                const nextBtn = document.getElementById('toc-float-search-next');
+                if (!wrap || !toggle || !input) return;
+
+                const cards = Array.from(document.querySelectorAll('.container-fluid .card[id]'));
+                let matches = [];
+                let current = -1;
+
+                function updateCount() {
+                    countEl.textContent = matches.length ? `${current + 1}/${matches.length}` : (input.value ? '0/0' : '');
+                }
+
+                function clearHighlight() {
+                    cards.forEach(c => c.classList.remove('toc-search-current'));
+                }
+
+                function goTo(index) {
+                    if (!matches.length) return;
+                    current = (index + matches.length) % matches.length;
+                    clearHighlight();
+                    const card = matches[current];
+                    card.classList.add('toc-search-current');
+                    card.scrollIntoView({ block: 'start' });
+                    updateCount();
+                }
+
+                function runSearch() {
+                    const q = input.value.trim().toLowerCase();
+                    clearHighlight();
+
+                    // Sidebar: dim + disable non-matching
+                    const sidebar = document.getElementById('toc-sidebar');
+                    if (sidebar) {
+                        sidebar.querySelectorAll('.toc-sidebar-section').forEach(section => {
+                            let anyMatch = false;
+                            section.querySelectorAll('.toc-sidebar-list li').forEach(li => {
+                                const match = !q || li.textContent.toLowerCase().includes(q);
+                                li.classList.toggle('toc-search-dim', !match);
+                                if (match) anyMatch = true;
+                            });
+                            section.classList.toggle('toc-search-dim', q.length > 0 && !anyMatch);
+                            if (q && anyMatch) section.open = true;
+                        });
+                    }
+
+                    if (!q) {
+                        matches = [];
+                        current = -1;
+                        updateCount();
+                        return;
+                    }
+                    matches = cards.filter(card => {
+                        const label = card.querySelector('.card-header h4')?.textContent.toLowerCase() || '';
+                        return label.includes(q);
+                    });
+                    current = -1;
+                    updateCount();
+                    if (matches.length) goTo(0);
+                }
+
+                toggle.addEventListener('click', function () {
+                    const open = wrap.classList.toggle('open');
+                    if (open) {
+                        input.focus();
+                    } else {
+                        input.value = '';
+                        runSearch();
+                    }
+                });
+
+                input.addEventListener('input', runSearch);
+
+                input.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        if (e.shiftKey) goTo(current - 1);
+                        else goTo(current + 1);
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => goTo(current - 1));
+                nextBtn.addEventListener('click', () => goTo(current + 1));
+            })();</script></div>

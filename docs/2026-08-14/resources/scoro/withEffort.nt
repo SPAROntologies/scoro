@@ -1,0 +1,9 @@
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#forEntity> .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#label> "with contribution effort"@en .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between an agent's contribution with respect to a particular entity and the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort."@en .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/withEffort> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:analyses-data ;\n        scoro:withEffort scoro:major-effort .\n    " .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/spar/scoro/ContributionEffort> .
+<http://purl.org/spar/scoro/withEffort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/spar/scoro/ContributionSituation> .

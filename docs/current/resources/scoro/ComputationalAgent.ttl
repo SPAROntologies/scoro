@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:ComputationalAgent a owl:Class ;
+    rdfs:label "computational agent"@en ;
+    vann:example """
+    :my-program a scoro:ComputationalAgent ;
+        pro:holdsRoleInTime :my-program-role .
+
+    :my-program-role a pro:RoleInTime ;
+        pro:withRole scoro:analyses-data .
+    """ ;
+    rdfs:comment "A computer system or software program whose action has an effect on external events, for example a laboratory robot that undertakes your experiments, or the financial control system that controls an institution's payrole, or that, following programmed business rules, prevents the principal investigator from placing an order for research equipment because there is insufficient money left in the project budget."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subClassOf foaf:Agent ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:principal-author a scoro:AuthorshipRole,
+        owl:NamedIndividual ;
+    rdfs:label "principal author"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:principal-author .
+    """ ;
+    rdfs:comment """
+The role an author has of being the principal or primary author of the document, who has contributed most to the work described.  
+"""@en ;
+    rdfs:isDefinedBy scoro: ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+In some communities, but not all, the principal author is named first in the author list. 
+Two or more authors can have the role of principal author if they contributed equally to the work. 
+This role should not be employed in communities in which no primacy of authorship is asserted, but where all authors are deemed to have made an equal contribution to the work.
+"""@en .
+

@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/OrganizationRole> .
+<http://purl.org/spar/scoro/partner> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:partner .\n    " .
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/2000/01/rdf-schema#label> "partner"@en .
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/2000/01/rdf-schema#comment> "The role held by a person who is a partner with one or more other people in an organization, project, endeavour, activity or sphere of common interest."@en .
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/partner> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

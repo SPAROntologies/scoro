@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/2000/01/rdf-schema#label> "repository manager"@en .
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/repository-manager> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:repository-manager .\n    " .
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/DataRole> .
+<http://purl.org/spar/scoro/repository-manager> <http://www.w3.org/2000/01/rdf-schema#comment> "The role a person has of being a manager of a repository where entities are given secure long-term storage, typically digital repository for information objects, for example a data repository."@en .

@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/OrganizationalContribution> .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/2000/01/rdf-schema#comment> "The contribution of ensuring regulatory compliance for the research undertaken, for example in obtaining informed consent from patients, approval from research ethics or radiation safety committees, or a license for animal experimentation."@en .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:ensures-reguloratory-compliance .\n    " .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/ensures-regulatory-compliance> <http://www.w3.org/2000/01/rdf-schema#label> "ensures regulatory compliance"@en .

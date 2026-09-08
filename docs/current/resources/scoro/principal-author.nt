@@ -1,0 +1,8 @@
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/AuthorshipRole> .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/2000/01/rdf-schema#label> "principal author"@en .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/2000/01/rdf-schema#comment> "\nThe role an author has of being the principal or primary author of the document, who has contributed most to the work described.  \n"@en .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/2004/02/skos/core#note> "\nIn some communities, but not all, the principal author is named first in the author list. \nTwo or more authors can have the role of principal author if they contributed equally to the work. \nThis role should not be employed in communities in which no primacy of authorship is asserted, but where all authors are deemed to have made an equal contribution to the work.\n"@en .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/principal-author> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:principal-author .\n    " .
+<http://purl.org/spar/scoro/principal-author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

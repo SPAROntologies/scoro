@@ -1,0 +1,7 @@
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/2000/01/rdf-schema#comment> "The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency."@en .
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/controls-project-finances> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:controls-project-finances .\n    " .
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/OrganizationalContribution> .
+<http://purl.org/spar/scoro/controls-project-finances> <http://www.w3.org/2000/01/rdf-schema#label> "controls project finances"@en .

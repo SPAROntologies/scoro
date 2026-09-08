@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:withContribution a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "with contribution"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:writes-manuscript-draft .    
+    """ ;
+    rdfs:comment "A relation between an agent's contribution situation and a definition of the contribution made by this agent."@en ;
+    rdfs:domain scoro:ContributionSituation ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range scoro:Contribution ;
+    rdfs:subPropertyOf tvc:withValue ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+This is specified as an instance of the class `scoro:Contribution` or of one of its sub-classes.
+    """@en .
+

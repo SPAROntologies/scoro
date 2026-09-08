@@ -1,0 +1,37 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:ContributionSituation a owl:Class ;
+    rdfs:label "contribution situation"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:interprets-results .
+    """ ;
+    rdfs:comment "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty scoro:withContribution ;
+            owl:someValuesFrom scoro:Contribution ],
+        tvc:ValueInTime ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+A contribution situation describes always:
+- a particular contribution C
+- a particular agent A making contribution C
+- a particular time interval T in which A makes C (optional)
+- a particular contribution effort E 
+- one or more entities (e.g. an investigation or data) that defines a context for C contributed by A. (At least one contextual entity should be specified for a particular contribution).
+
+The type or nature of the contribution is defined by the object of the object property `scoro:withContribution`, which is an individual in the class `scoro:Contribution` or one of its sub-classes. 
+The entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.
+"""@en .
+

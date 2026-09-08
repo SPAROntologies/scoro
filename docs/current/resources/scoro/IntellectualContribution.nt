@@ -1,0 +1,18 @@
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/scoro/Contribution> .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:leads-investigation .\n    \n    scoro:leads-investigation a scoro:IntellectualContribution .\n    " .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2000/01/rdf-schema#label> "intellectual contribution"@en .
+_:n734c349fce05485697ea023043dc8c36b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b15 .
+_:n734c349fce05485697ea023043dc8c36b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ExperimentalContribution> .
+_:n734c349fce05485697ea023043dc8c36b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b13 .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular contributions.\n    "@en .
+_:n734c349fce05485697ea023043dc8c36b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipContribution> .
+_:n734c349fce05485697ea023043dc8c36b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationalContribution> .
+_:n734c349fce05485697ea023043dc8c36b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/IntellectualContribution> .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or nature of an intellectual contribution made to the research described in a journal article."@en .
+<http://purl.org/spar/scoro/IntellectualContribution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n734c349fce05485697ea023043dc8c36b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n734c349fce05485697ea023043dc8c36b14 .
+_:n734c349fce05485697ea023043dc8c36b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n734c349fce05485697ea023043dc8c36b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n734c349fce05485697ea023043dc8c36b11 <http://www.w3.org/2002/07/owl#members> _:n734c349fce05485697ea023043dc8c36b12 .
