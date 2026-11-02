@@ -1,11 +1,7 @@
 [project]
 name = "scoro"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.10.2"
+description = "The Scholarly Contributions and Roles Ontology (SCoRO) is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = [
-    "codespell>=2.4.3",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []
