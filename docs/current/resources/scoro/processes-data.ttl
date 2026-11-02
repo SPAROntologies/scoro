@@ -7,7 +7,7 @@
 
 scoro:processes-data a scoro:ExperimentalContribution,
         owl:NamedIndividual ;
-    rdfs:label "processs data"@en ;
+    rdfs:label "processes data"@en ;
     vann:example """
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .

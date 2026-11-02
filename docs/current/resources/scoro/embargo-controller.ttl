@@ -15,7 +15,7 @@ scoro:embargo-controller a scoro:DataRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:embargo-controller .
     """ ;
-    rdfs:comment "The role of the person who has responsibility for setting and lifting embargos that restrict access to a dataset (or a document) for a specified period of time."@en ;
+    rdfs:comment "The role of the person who has responsibility for setting and lifting embargoes that restrict access to a dataset (or a document) for a specified period of time."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 

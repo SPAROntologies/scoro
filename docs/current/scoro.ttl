@@ -48,7 +48,7 @@ pro:author a scoro:AuthorshipRole,
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)"^^xsd:string,
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-08-14" ;
+    dc:date "2026-10-05" ;
     dc:description """
 The **_Scholarly Contributions and Roles Ontology (SCoRO)_** is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research.
 
@@ -262,31 +262,33 @@ Which persons hold equal roles in time with respect to the same document?
 
 """@en ;
     dc:title "The Scholarly Contributions and Roles Ontology (SCoRO)"@en ;
-    dcterms:bibliographicCitation "Shotton, D., & Peroni, S. (2017). SCoRO, the scholarly contributions and roles ontology. http://purl.org/spar/scoro." ;
+    dcterms:bibliographicCitation "Shotton, D., & Peroni, S. The Scholarly Contributions and Roles Ontology (SCoRO). Revision 1.10.2. http://purl.org/spar/scoro." ;
     dcterms:created "2016-01-19" ;
     dcterms:issued "2017-09-04" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-08-14" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/sparontologies/scoro/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.c86b48" ;
     bibo:status <http://purl.org/ontology/bibo/status/published> ;
-    vann:changes """
-* **v1.10.1**: added new documentation, including annotation properties (e.g., `bibo:doi`, `schema:codeRepository`, etc.), term properties (e.g., `vann:example`, `vs:term_status`, etc.), exemplary competency questions with their respective SPARQL queries, and a Grafoo diagram.
-    """@en ;
+    vann:changes <https://github.com/SPAROntologies/scoro/blob/master/CHANGELOG.md> ;
     vann:preferredNamespacePrefix "scoro"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/scoro"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/scoro> ;
-    owl:backwardCompatibleWith scoro:2017-09-04 ;
+    owl:backwardCompatibleWith scoro:2026-08-14 ;
     owl:imports <http://purl.org/spar/pro> ;
-    owl:priorVersion scoro:2017-09-04 ;
-    owl:versionIRI scoro:2026-08-14 ;
-    owl:versionInfo "1.10.1"^^xsd:string ;
-    foaf:logo <https://github.com/SPAROntologies/scoro/blob/master/spar.png> ;
+    owl:priorVersion scoro:2026-08-14 ;
+    owl:versionIRI scoro:2026-10-05 ;
+    owl:versionInfo "1.10.2"^^xsd:string ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/scoro> ;
     schema:image <https://github.com/SPAROntologies/scoro/blob/master/docs/current/scoro.png> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "bibliometrics"@en,
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliometrics"@en,
         "scholarly contributions"@en,
         "scholarly publishing"@en,
         "scholarly roles"@en,
@@ -705,7 +707,7 @@ scoro:creates-novel-organisms-or-cells a scoro:ExperimentalContribution,
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:creates-novel-organisms-or-cells .
     """ ;
-    rdfs:comment "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. tranformed cell lines), either for use in the research, or as a research output of use to others."@en ;
+    rdfs:comment "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. transformed cell lines), either for use in the research, or as a research output of use to others."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -887,7 +889,7 @@ scoro:doctoral-student a scoro:EducationalRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:doctoral-student .
     """ ;
-    rdfs:comment "The role of a person registerd for a Ph.D. degree at a university."@en ;
+    rdfs:comment "The role of a person registered for a Ph.D. degree at a university."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -901,7 +903,7 @@ scoro:embargo-controller a scoro:DataRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:embargo-controller .
     """ ;
-    rdfs:comment "The role of the person who has responsibility for setting and lifting embargos that restrict access to a dataset (or a document) for a specified period of time."@en ;
+    rdfs:comment "The role of the person who has responsibility for setting and lifting embargoes that restrict access to a dataset (or a document) for a specified period of time."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -1339,7 +1341,7 @@ scoro:master-student a scoro:EducationalRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:master-student .
     """ ;
-    rdfs:comment "The role of a person registerd for a master degree at a university."@en ;
+    rdfs:comment "The role of a person registered for a master degree at a university."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -1537,7 +1539,7 @@ scoro:postgraduate-student a scoro:EducationalRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:postgraduate-student .
     """ ;
-    rdfs:comment "The role of a person registerd for a graduate (masters or doctoral) degree at a university."@en ;
+    rdfs:comment "The role of a person registered for a graduate (masters or doctoral) degree at a university."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -1606,7 +1608,7 @@ scoro:principal-investigator a scoro:InvestigationRole,
 
 scoro:processes-data a scoro:ExperimentalContribution,
         owl:NamedIndividual ;
-    rdfs:label "processs data"@en ;
+    rdfs:label "processes data"@en ;
     vann:example """
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -1684,7 +1686,7 @@ scoro:project-student a scoro:InvestigationRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:project-student .
     """ ;
-    rdfs:comment "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report in part fulfilment of the requirements of that degree."@en ;
+    rdfs:comment "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report, fulfilling in part the requirements of that degree."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -1726,7 +1728,7 @@ scoro:provides-exising-data a scoro:ExperimentalContribution,
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:provides-existing-data .
     """ ;
-    rdfs:comment "The contribution of providing pre-existing data for re-use in the research."@en ;
+    rdfs:comment "The contribution of providing pre-existing data for reuse in the research."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -1927,7 +1929,7 @@ scoro:research-student a scoro:InvestigationRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:research-student .
     """ ;
-    rdfs:comment "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis in part fulfilment of the requirements of that degree."@en ;
+    rdfs:comment "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis, fulfilling in part the requirements of that degree."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 
@@ -2173,7 +2175,7 @@ scoro:undergraduate-student a scoro:EducationalRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:undergraduate-student .
     """ ;
-    rdfs:comment "The role of a person registerd for an undergraduate degree at a university."@en ;
+    rdfs:comment "The role of a person registered for an undergraduate degree at a university."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 

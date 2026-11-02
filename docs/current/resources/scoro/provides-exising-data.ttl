@@ -15,7 +15,7 @@ scoro:provides-exising-data a scoro:ExperimentalContribution,
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:provides-existing-data .
     """ ;
-    rdfs:comment "The contribution of providing pre-existing data for re-use in the research."@en ;
+    rdfs:comment "The contribution of providing pre-existing data for reuse in the research."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 

@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/develops-methodology",
     "@type": [
-      "http://purl.org/spar/scoro/ExperimentalContribution",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
     ],
     "http://purl.org/vocab/vann/example": [
       {

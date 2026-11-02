@@ -1,0 +1,25 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix tvc: <http://www.essepuntato.it/2012/04/tvc/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:makesContribution a owl:ObjectProperty ;
+    rdfs:label "makes contribution"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:writes-manuscript-draft .
+    """ ;
+    rdfs:comment "A relation between an agent and a contribution."@en ;
+    rdfs:domain foaf:Agent ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range scoro:ContributionSituation ;
+    rdfs:subPropertyOf tvc:hasValue ;
+    vs:term_status reg:statusStable .
+

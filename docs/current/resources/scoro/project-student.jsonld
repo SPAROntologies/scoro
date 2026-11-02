@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/project-student",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/scoro/InvestigationRole"
+      "http://purl.org/spar/scoro/InvestigationRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report in part fulfilment of the requirements of that degree."
+        "@value": "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report, fulfilling in part the requirements of that degree."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

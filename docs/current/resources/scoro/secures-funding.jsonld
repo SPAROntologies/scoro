@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/secures-funding",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/scoro/OrganizationalContribution"
+      "http://purl.org/spar/scoro/OrganizationalContribution",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {

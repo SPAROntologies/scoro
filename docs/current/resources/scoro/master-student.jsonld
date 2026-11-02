@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/master-student",
     "@type": [
-      "http://purl.org/spar/scoro/EducationalRole",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/EducationalRole"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The role of a person registerd for a master degree at a university."
+        "@value": "The role of a person registered for a master degree at a university."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
