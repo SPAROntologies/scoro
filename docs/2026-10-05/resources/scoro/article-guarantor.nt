@@ -1,0 +1,11 @@
+_:nf902792def4b4c3e8e451e249f986428b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:nf902792def4b4c3e8e451e249f986428b7 <http://www.w3.org/2002/07/owl#distinctMembers> _:nf902792def4b4c3e8e451e249f986428b8 .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/2000/01/rdf-schema#label> "article guarantor"@en .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:nf902792def4b4c3e8e451e249f986428b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/article-guarantor> .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/spar/scoro/AuthorshipRole> .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/2000/01/rdf-schema#comment> "The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article."@en .
+<http://purl.org/spar/scoro/article-guarantor> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:article-guarantor .\n    " .
+_:nf902792def4b4c3e8e451e249f986428b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/scoro/article-guarantor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

@@ -1,0 +1,22 @@
+_:nf902792def4b4c3e8e451e249f986428b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/DataRole> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:nf902792def4b4c3e8e451e249f986428b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipRole> .
+<http://purl.org/spar/scoro/ProjectRole> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:workpackage-leader .\n\n    scoro:workpackage-leader a scoro:ProjectRole .\n    " .
+_:nf902792def4b4c3e8e451e249f986428b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b12 .
+_:nf902792def4b4c3e8e451e249f986428b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/FinancialRole> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#label> "project role"@en .
+_:nf902792def4b4c3e8e451e249f986428b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b15 .
+_:nf902792def4b4c3e8e451e249f986428b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:nf902792def4b4c3e8e451e249f986428b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ProjectRole> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/pro/Role> .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an agent might hold with respect to a project."@en .
+<http://purl.org/spar/scoro/ProjectRole> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en .
+_:nf902792def4b4c3e8e451e249f986428b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b11 .
+_:nf902792def4b4c3e8e451e249f986428b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b13 .
+_:nf902792def4b4c3e8e451e249f986428b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationRole> .
+_:nf902792def4b4c3e8e451e249f986428b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/InvestigationRole> .
+_:nf902792def4b4c3e8e451e249f986428b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:nf902792def4b4c3e8e451e249f986428b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b14 .
+_:nf902792def4b4c3e8e451e249f986428b9 <http://www.w3.org/2002/07/owl#members> _:nf902792def4b4c3e8e451e249f986428b10 .

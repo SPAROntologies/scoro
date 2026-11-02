@@ -1,0 +1,40 @@
+[
+  {
+    "@id": "http://purl.org/spar/scoro/ContributionEffort",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:analyses-data ;\n        scoro:withEffort scoro:major-effort .\n    \n    scoro:major-effort a ContributionEffort .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The effort expended in making a contribution."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/scoro/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contribution effort"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#Thing"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  }
+]

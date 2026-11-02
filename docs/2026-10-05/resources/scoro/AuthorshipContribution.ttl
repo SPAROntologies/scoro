@@ -1,0 +1,31 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:AuthorshipContribution a owl:Class ;
+    rdfs:label "authorship contribution"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        scoro:makesContribution :my-person-contribution .
+
+    :my-person-contribution a scoro:ContributionSituation ;
+        scoro:withContribution scoro:prepares-illustrations .
+
+    scoro:prepares-illustrations a scoro:AuthorshipContribution .
+    """ ;
+    rdfs:comment "The type or nature of a contribution made with respect to the authorship of a publication such as a journal article."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subClassOf scoro:Contribution ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+Individual members of this class are used to specify particular contributions.
+    """@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( scoro:AuthorshipContribution scoro:ExperimentalContribution scoro:IntellectualContribution scoro:OrganizationalContribution ) .
+

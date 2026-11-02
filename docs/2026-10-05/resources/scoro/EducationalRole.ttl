@@ -1,0 +1,28 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:EducationalRole a owl:Class ;
+    rdfs:label "educational role"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:master-student .
+    
+    scoro:master-student a scoro:EducationalRole .
+    """ ;
+    rdfs:comment "A role that an agent might hold with respect to an educational organization or activity."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subClassOf pro:Role ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+Individual members of this class are used to specify particular roles.
+    """@en .
+

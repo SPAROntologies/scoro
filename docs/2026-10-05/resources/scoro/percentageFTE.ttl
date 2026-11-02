@@ -1,0 +1,23 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:percentageFTE a owl:DatatypeProperty ;
+    rdfs:label "percentage full-time equivalent"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:patent-holder ;
+        scoro:percentageFTE '100%' .
+    """ ;
+    rdfs:comment "The proportion of a person's full time activity that is dedicated to a particular role (e.g. for part-time employment, 50% FTE)."@en ;
+    rdfs:domain pro:RoleInTime ;
+    rdfs:isDefinedBy scoro: ;
+    vs:term_status reg:statusStable .
+
