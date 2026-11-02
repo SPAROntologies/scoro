@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/processes-data",
     "@type": [
-      "http://purl.org/spar/scoro/ExperimentalContribution",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/ExperimentalContribution"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -24,7 +24,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "processs data"
+        "@value": "processes data"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

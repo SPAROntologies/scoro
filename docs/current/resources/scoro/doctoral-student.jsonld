@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The role of a person registerd for a Ph.D. degree at a university."
+        "@value": "The role of a person registered for a Ph.D. degree at a university."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

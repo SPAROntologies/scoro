@@ -15,7 +15,7 @@ scoro:research-student a scoro:InvestigationRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:research-student .
     """ ;
-    rdfs:comment "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis in part fulfilment of the requirements of that degree."@en ;
+    rdfs:comment "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis, fulfilling in part the requirements of that degree."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 

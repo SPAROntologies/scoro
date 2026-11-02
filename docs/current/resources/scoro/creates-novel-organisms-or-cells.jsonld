@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. tranformed cell lines), either for use in the research, or as a research output of use to others."
+        "@value": "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. transformed cell lines), either for use in the research, or as a research output of use to others."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
