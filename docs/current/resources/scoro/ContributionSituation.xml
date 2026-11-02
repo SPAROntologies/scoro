@@ -8,9 +8,8 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/ContributionSituation">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
-    <rdfs:subClassOf rdf:nodeID="nf902792def4b4c3e8e451e249f986428b1"/>
+    <rdfs:comment xml:lang="en">The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article.</rdfs:comment>
+    <rdfs:label xml:lang="en">contribution situation</rdfs:label>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -18,9 +17,9 @@
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:interprets-results .
     </vann:example>
-    <rdfs:label xml:lang="en">contribution situation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b1"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2012/04/tvc/ValueInTime"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
     <skos:note xml:lang="en">
 A contribution situation describes always:
 - a particular contribution C
@@ -32,11 +31,12 @@ A contribution situation describes always:
 The type or nature of the contribution is defined by the object of the object property `scoro:withContribution`, which is an individual in the class `scoro:Contribution` or one of its sub-classes. 
 The entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.
 </skos:note>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b1">
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/spar/scoro/withContribution"/>
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/scoro/Contribution"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

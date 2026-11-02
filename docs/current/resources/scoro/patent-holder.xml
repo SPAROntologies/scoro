@@ -6,14 +6,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/patent-holder">
-    <rdfs:seeAlso rdf:resource="http://purl.org/spar/pro/copyright-owner"/>
-    <rdfs:seeAlso rdf:resource="http://purl.org/spar/scoro/rights-holder"/>
+    <rdf:type rdf:resource="http://purl.org/spar/scoro/OrganizationRole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
     <rdfs:comment xml:lang="en">
 The role held by an agent who holds a patent.
 </rdfs:comment>
     <rdfs:label xml:lang="en">patent holder</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/scoro/rights-holder"/>
+    <rdfs:seeAlso rdf:resource="http://purl.org/spar/pro/copyright-owner"/>
     <vann:example>
     :my-person a foaf:Person ;
         pro:holdsRoleInTime :my-person-role .
@@ -21,7 +22,6 @@ The role held by an agent who holds a patent.
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:patent-holder .
     </vann:example>
-    <rdf:type rdf:resource="http://purl.org/spar/scoro/OrganizationRole"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
   </rdf:Description>
 </rdf:RDF>

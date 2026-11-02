@@ -6,9 +6,12 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/prepares-illustrations">
+    <rdfs:comment xml:lang="en">The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. </rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">prepares illustrations</rdfs:label>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -16,8 +19,5 @@
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:prepares-illustrations .
     </vann:example>
-    <rdfs:comment xml:lang="en">The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. </rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
-    <rdfs:label xml:lang="en">prepares illustrations</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

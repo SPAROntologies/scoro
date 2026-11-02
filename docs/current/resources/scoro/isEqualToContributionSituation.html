@@ -278,9 +278,9 @@ Which persons hold equal roles in time with respect to the same document?
       {
         "@id": "http://purl.org/spar/scoro/isEqualToContributionSituation",
         "@type": [
-          "http://www.w3.org/2002/07/owl#TransitiveProperty",
           "http://www.w3.org/2002/07/owl#SymmetricProperty",
-          "http://www.w3.org/2002/07/owl#ObjectProperty"
+          "http://www.w3.org/2002/07/owl#ObjectProperty",
+          "http://www.w3.org/2002/07/owl#TransitiveProperty"
         ],
         "http://purl.org/vocab/vann/example": [
           {
@@ -323,16 +323,16 @@ Which persons hold equal roles in time with respect to the same document?
     ],
     "@id": "http://purl.org/spar/scoro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_8a08395f5f9f1a6b328ce010b3180fe2_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#TransitiveProperty> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."@en &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#SymmetricProperty> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is equal to contribution situation"@en &lt;http://purl.org/spar/scoro> .
+]</code></pre></div><div class="tab-pane fade" id=id_8a08395f5f9f1a6b328ce010b3180fe2_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#domain> &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime \n            :my-person-contribution ,\n            :my-other-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:interprets-results ;\n        scoro:isEqualToContributionSituation :my-other-contribution .\n\n    :my-other-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:collects-data .\n    " &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "is equal to contribution situation"@en &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#SymmetricProperty> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The relation between two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."@en &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#TransitiveProperty> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#range> &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/isEqualToContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../scoro.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 
