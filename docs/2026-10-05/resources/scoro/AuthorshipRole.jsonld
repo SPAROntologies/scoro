@@ -1,35 +1,5 @@
 [
   {
-    "@id": "_:nf902792def4b4c3e8e451e249f986428b9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/scoro/AuthorshipRole"
-          },
-          {
-            "@id": "http://purl.org/spar/scoro/DataRole"
-          },
-          {
-            "@id": "http://purl.org/spar/scoro/FinancialRole"
-          },
-          {
-            "@id": "http://purl.org/spar/scoro/InvestigationRole"
-          },
-          {
-            "@id": "http://purl.org/spar/scoro/OrganizationRole"
-          },
-          {
-            "@id": "http://purl.org/spar/scoro/ProjectRole"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/scoro/AuthorshipRole",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -70,6 +40,36 @@
       {
         "@language": "en",
         "@value": "\nIndividual members of this class are used to specify particular roles.\n    "
+      }
+    ]
+  },
+  {
+    "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/AuthorshipRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/DataRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/FinancialRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/InvestigationRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/OrganizationRole"
+          },
+          {
+            "@id": "http://purl.org/spar/scoro/ProjectRole"
+          }
+        ]
       }
     ]
   }

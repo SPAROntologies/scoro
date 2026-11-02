@@ -6,9 +6,9 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/postgraduate-student">
-    <rdfs:comment xml:lang="en">The role of a person registered for a graduate (masters or doctoral) degree at a university.</rdfs:comment>
     <rdf:type rdf:resource="http://purl.org/spar/scoro/EducationalRole"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:comment xml:lang="en">The role of a person registered for a graduate (masters or doctoral) degree at a university.</rdfs:comment>
     <vann:example>
     :my-person a foaf:Person ;
         pro:holdsRoleInTime :my-person-role .
