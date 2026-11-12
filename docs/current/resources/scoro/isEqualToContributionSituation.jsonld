@@ -2,9 +2,9 @@
   {
     "@id": "http://purl.org/spar/scoro/isEqualToContributionSituation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#TransitiveProperty",
       "http://www.w3.org/2002/07/owl#SymmetricProperty",
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
     ],
     "http://purl.org/vocab/vann/example": [
       {

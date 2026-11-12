@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+        "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b1"
       },
       {
-        "@id": "_:nf902792def4b4c3e8e451e249f986428b1"
+        "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -47,7 +47,7 @@
     ]
   },
   {
-    "@id": "_:nf902792def4b4c3e8e451e249f986428b1",
+    "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

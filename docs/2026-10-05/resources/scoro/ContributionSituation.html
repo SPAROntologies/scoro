@@ -273,7 +273,7 @@ The entity to which the contribution relates is specified using the object prope
     """ ;
         rdfs:comment "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en ;
         rdfs:isDefinedBy scoro: ;
-        rdfs:subClassOf _:nf902792def4b4c3e8e451e249f986428b1,
+        rdfs:subClassOf _:nbebde1d080f14e2f928ceb53b7f89d95b1,
             tvc:ValueInTime ;
         vs:term_status reg:statusStable ;
         skos:note """
@@ -288,7 +288,7 @@ The type or nature of the contribution is defined by the object of the object pr
 The entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.
 """@en .
 
-    _:nf902792def4b4c3e8e451e249f986428b1 a owl:Restriction ;
+    _:nbebde1d080f14e2f928ceb53b7f89d95b1 a owl:Restriction ;
         owl:onProperty scoro:withContribution ;
         owl:someValuesFrom scoro:Contribution .
 }
@@ -325,10 +325,10 @@ The entity to which the contribution relates is specified using the object prope
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
+            "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b1"
           },
           {
-            "@id": "_:nf902792def4b4c3e8e451e249f986428b1"
+            "@id": "http://www.essepuntato.it/2012/04/tvc/ValueInTime"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -344,7 +344,7 @@ The entity to which the contribution relates is specified using the object prope
         ]
       },
       {
-        "@id": "_:nf902792def4b4c3e8e451e249f986428b1",
+        "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b1",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -362,18 +362,18 @@ The entity to which the contribution relates is specified using the object prope
     ],
     "@id": "http://purl.org/spar/scoro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_b0ec9431ae50a0903de2827f308c426a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.essepuntato.it/2012/04/tvc/ValueInTime> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b1 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/scoro/withContribution> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b1 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/scoro/Contribution> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:interprets-results .\n    " &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nf902792def4b4c3e8e451e249f986428b1 &lt;http://purl.org/spar/scoro> .
+]</code></pre></div><div class="tab-pane fade" id=id_b0ec9431ae50a0903de2827f308c426a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#label> "contribution situation"@en &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2004/02/skos/core#note> "\nA contribution situation describes always:\n- a particular contribution C\n- a particular agent A making contribution C\n- a particular time interval T in which A makes C (optional)\n- a particular contribution effort E \n- one or more entities (e.g. an investigation or data) that defines a context for C contributed by A. (At least one contextual entity should be specified for a particular contribution).\n\nThe type or nature of the contribution is defined by the object of the object property `scoro:withContribution`, which is an individual in the class `scoro:Contribution` or one of its sub-classes. \nThe entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.\n"@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b1 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:interprets-results .\n    " &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:nbebde1d080f14e2f928ceb53b7f89d95b1 &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b1 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/spar/scoro/withContribution> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2004/02/skos/core#note> "\nA contribution situation describes always:\n- a particular contribution C\n- a particular agent A making contribution C\n- a particular time interval T in which A makes C (optional)\n- a particular contribution effort E \n- one or more entities (e.g. an investigation or data) that defines a context for C contributed by A. (At least one contextual entity should be specified for a particular contribution).\n\nThe type or nature of the contribution is defined by the object of the object property `scoro:withContribution`, which is an individual in the class `scoro:Contribution` or one of its sub-classes. \nThe entity to which the contribution relates is specified using the object property `scoro:relatesToEntity` or one of its sub-properties, and the effort expended in making that contribution is specified using the object property `scoro:withContributionEffort`.\n"@en &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/ContributionSituation> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://www.essepuntato.it/2012/04/tvc/ValueInTime> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b1 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/scoro/Contribution> &lt;http://purl.org/spar/scoro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../scoro.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -270,61 +270,31 @@ Individual members of this class are used to specify particular roles.
 Individual members of this class are used to specify particular roles.
     """@en .
 
-    _:nf902792def4b4c3e8e451e249f986428b9 a owl:AllDisjointClasses ;
-        owl:members _:nf902792def4b4c3e8e451e249f986428b10 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b9 a owl:AllDisjointClasses ;
+        owl:members _:nbebde1d080f14e2f928ceb53b7f89d95b10 .
 
-    _:nf902792def4b4c3e8e451e249f986428b10 rdf:first scoro:AuthorshipRole ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b11 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b10 rdf:first scoro:AuthorshipRole ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b11 .
 
-    _:nf902792def4b4c3e8e451e249f986428b11 rdf:first scoro:DataRole ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b12 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b11 rdf:first scoro:DataRole ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b12 .
 
-    _:nf902792def4b4c3e8e451e249f986428b12 rdf:first scoro:FinancialRole ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b13 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b12 rdf:first scoro:FinancialRole ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b13 .
 
-    _:nf902792def4b4c3e8e451e249f986428b13 rdf:first scoro:InvestigationRole ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b14 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b13 rdf:first scoro:InvestigationRole ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b14 .
 
-    _:nf902792def4b4c3e8e451e249f986428b14 rdf:first scoro:OrganizationRole ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b15 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b14 rdf:first scoro:OrganizationRole ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b15 .
 
-    _:nf902792def4b4c3e8e451e249f986428b15 rdf:first scoro:ProjectRole ;
+    _:nbebde1d080f14e2f928ceb53b7f89d95b15 rdf:first scoro:ProjectRole ;
         rdf:rest () .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_a1aef78222507e6394370656efd49cd2_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
   {
     "@graph": [
-      {
-        "@id": "_:nf902792def4b4c3e8e451e249f986428b9",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-        ],
-        "http://www.w3.org/2002/07/owl#members": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/spar/scoro/AuthorshipRole"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/DataRole"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/FinancialRole"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/InvestigationRole"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/OrganizationRole"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/ProjectRole"
-              }
-            ]
-          }
-        ]
-      },
       {
         "@id": "http://purl.org/spar/scoro/InvestigationRole",
         "@type": [
@@ -368,32 +338,62 @@ Individual members of this class are used to specify particular roles.
             "@value": "\nIndividual members of this class are used to specify particular roles.\n    "
           }
         ]
+      },
+      {
+        "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b9",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+        ],
+        "http://www.w3.org/2002/07/owl#members": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/scoro/AuthorshipRole"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/DataRole"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/FinancialRole"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/InvestigationRole"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/OrganizationRole"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/ProjectRole"
+              }
+            ]
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/scoro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_a1aef78222507e6394370656efd49cd2_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#label> "investigation role"@en &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/DataRole> &lt;http://purl.org/spar/scoro> .
+]</code></pre></div><div class="tab-pane fade" id=id_a1aef78222507e6394370656efd49cd2_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nbebde1d080f14e2f928ceb53b7f89d95b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/AuthorshipRole> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/OrganizationRole> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#label> "investigation role"@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b14 &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/ProjectRole> &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A role that an agent might hold with respect to an investigation."@en &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/AuthorshipRole> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b12 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/FinancialRole> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b15 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/ProjectRole> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/pro/Role> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b11 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b13 &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b13 &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b12 &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b15 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b9 &lt;http://www.w3.org/2002/07/owl#members> _:nbebde1d080f14e2f928ceb53b7f89d95b10 &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/pro/Role> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b10 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b11 &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:technician .\n\n    scoro:technician a scoro:InvestigationRole .\n    " &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/OrganizationRole> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b9 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b13 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b14 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b9 &lt;http://www.w3.org/2002/07/owl#members> _:nf902792def4b4c3e8e451e249f986428b10 &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b12 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/FinancialRole> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b14 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b15 &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/InvestigationRole> &lt;http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b11 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/DataRole> &lt;http://purl.org/spar/scoro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../scoro.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

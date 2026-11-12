@@ -6,11 +6,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/provides-technical-support">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
     <rdfs:label xml:lang="en">provides technical support</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
     <rdfs:comment xml:lang="en">The contribution of providing technical support that facilitates research.</rdfs:comment>
     <vann:example>
     :my-person a foaf:Person ;

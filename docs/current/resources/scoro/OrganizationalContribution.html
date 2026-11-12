@@ -269,49 +269,25 @@ Individual members of this class are used to specify particular contributions.
 Individual members of this class are used to specify particular contributions.
     """@en .
 
-    _:nf902792def4b4c3e8e451e249f986428b2 a owl:AllDisjointClasses ;
-        owl:members _:nf902792def4b4c3e8e451e249f986428b3 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b2 a owl:AllDisjointClasses ;
+        owl:members _:nbebde1d080f14e2f928ceb53b7f89d95b3 .
 
-    _:nf902792def4b4c3e8e451e249f986428b3 rdf:first scoro:AuthorshipContribution ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b4 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b3 rdf:first scoro:AuthorshipContribution ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b4 .
 
-    _:nf902792def4b4c3e8e451e249f986428b4 rdf:first scoro:ExperimentalContribution ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b5 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b4 rdf:first scoro:ExperimentalContribution ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b5 .
 
-    _:nf902792def4b4c3e8e451e249f986428b5 rdf:first scoro:IntellectualContribution ;
-        rdf:rest _:nf902792def4b4c3e8e451e249f986428b6 .
+    _:nbebde1d080f14e2f928ceb53b7f89d95b5 rdf:first scoro:IntellectualContribution ;
+        rdf:rest _:nbebde1d080f14e2f928ceb53b7f89d95b6 .
 
-    _:nf902792def4b4c3e8e451e249f986428b6 rdf:first scoro:OrganizationalContribution ;
+    _:nbebde1d080f14e2f928ceb53b7f89d95b6 rdf:first scoro:OrganizationalContribution ;
         rdf:rest () .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_ee65d4095de22251e459cd8babd4ccc1_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
   {
     "@graph": [
-      {
-        "@id": "_:nf902792def4b4c3e8e451e249f986428b2",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-        ],
-        "http://www.w3.org/2002/07/owl#members": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/spar/scoro/AuthorshipContribution"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/ExperimentalContribution"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/IntellectualContribution"
-              },
-              {
-                "@id": "http://purl.org/spar/scoro/OrganizationalContribution"
-              }
-            ]
-          }
-        ]
-      },
       {
         "@id": "http://purl.org/spar/scoro/OrganizationalContribution",
         "@type": [
@@ -355,28 +331,52 @@ Individual members of this class are used to specify particular contributions.
             "@value": "\nIndividual members of this class are used to specify particular contributions.\n    "
           }
         ]
+      },
+      {
+        "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b2",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+        ],
+        "http://www.w3.org/2002/07/owl#members": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/scoro/AuthorshipContribution"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/ExperimentalContribution"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/IntellectualContribution"
+              },
+              {
+                "@id": "http://purl.org/spar/scoro/OrganizationalContribution"
+              }
+            ]
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/scoro"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_ee65d4095de22251e459cd8babd4ccc1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nf902792def4b4c3e8e451e249f986428b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/ExperimentalContribution> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/AuthorshipContribution> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#label> "organizational contribution"@en &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/IntellectualContribution> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The type or nature of an organizational or administrative contribution."@en &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/scoro/Contribution> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b2 &lt;http://www.w3.org/2002/07/owl#members> _:nf902792def4b4c3e8e451e249f986428b3 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b5 &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b6 &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nf902792def4b4c3e8e451e249f986428b4 &lt;http://purl.org/spar/scoro> .
-_:nf902792def4b4c3e8e451e249f986428b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/scoro> .
-&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular contributions.\n    "@en &lt;http://purl.org/spar/scoro> .
+]</code></pre></div><div class="tab-pane fade" id=id_ee65d4095de22251e459cd8babd4ccc1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:nbebde1d080f14e2f928ceb53b7f89d95b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/IntellectualContribution> &lt;http://purl.org/spar/scoro> .
 &lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        scoro:makesContribution :my-person-contribution .\n\n    :my-person-contribution a scoro:ContributionSituation ;\n        scoro:withContribution scoro:provides-administrative-support .\n    \n    scoro:provides-administrative-support a scoro:OrganizationalContribution .\n    " &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#label> "organizational contribution"@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b2 &lt;http://www.w3.org/2002/07/owl#members> _:nbebde1d080f14e2f928ceb53b7f89d95b3 &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/scoro/> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/ExperimentalContribution> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b4 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b5 &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular contributions.\n    "@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b5 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b6 &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b2 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The type or nature of an organizational or administrative contribution."@en &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b6 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/scoro/AuthorshipContribution> &lt;http://purl.org/spar/scoro> .
+&lt;http://purl.org/spar/scoro/OrganizationalContribution> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/scoro/Contribution> &lt;http://purl.org/spar/scoro> .
+_:nbebde1d080f14e2f928ceb53b7f89d95b3 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b4 &lt;http://purl.org/spar/scoro> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../scoro.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

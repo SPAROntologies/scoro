@@ -7,23 +7,22 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b4">
-    <rdf:first rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
-    <rdf:rest rdf:nodeID="nf902792def4b4c3e8e451e249f986428b5"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b6">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b6">
     <rdf:first rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b5">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
+    <rdf:rest rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b6"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/scoro/AuthorshipContribution">
-    <rdfs:label xml:lang="en">authorship contribution</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:comment xml:lang="en">The type or nature of a contribution made with respect to the authorship of a publication such as a journal article.</rdfs:comment>
     <skos:note xml:lang="en">
 Individual members of this class are used to specify particular contributions.
     </skos:note>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">The type or nature of a contribution made with respect to the authorship of a publication such as a journal article.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/scoro/Contribution"/>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -33,18 +32,19 @@ Individual members of this class are used to specify particular contributions.
 
     scoro:prepares-illustrations a scoro:AuthorshipContribution .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/scoro/Contribution"/>
+    <rdfs:label xml:lang="en">authorship contribution</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b3">
-    <rdf:first rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
-    <rdf:rest rdf:nodeID="nf902792def4b4c3e8e451e249f986428b4"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b5">
-    <rdf:first rdf:resource="http://purl.org/spar/scoro/IntellectualContribution"/>
-    <rdf:rest rdf:nodeID="nf902792def4b4c3e8e451e249f986428b6"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b2">
-    <owl:members rdf:nodeID="nf902792def4b4c3e8e451e249f986428b3"/>
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b2">
+    <owl:members rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b3"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b4">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/ExperimentalContribution"/>
+    <rdf:rest rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b3">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+    <rdf:rest rdf:nodeID="nbebde1d080f14e2f928ceb53b7f89d95b4"/>
   </rdf:Description>
 </rdf:RDF>

@@ -6,10 +6,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/registration-agency">
-    <rdfs:label xml:lang="en">registration agency</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://purl.org/spar/scoro/OrganizationRole"/>
+    <rdfs:comment xml:lang="en">The role of an agent officially appointed by a Registration Authority that acts to register things. For example, CrossRef is a registration agency for DOIs relating to documents, while DataCite is a registration agency for DOIs relating to datasets, both acting for the Registration Authority for DOIs, namely the International DOI Foundation (IDF).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">registration agency</rdfs:label>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
     :my-organization a foaf:Organization ;
@@ -18,6 +19,5 @@
     :my-organization-role a pro:RoleInTime ;
         pro:withRole scoro:registration-agency .
     </vann:example>
-    <rdfs:comment xml:lang="en">The role of an agent officially appointed by a Registration Authority that acts to register things. For example, CrossRef is a registration agency for DOIs relating to documents, while DataCite is a registration agency for DOIs relating to datasets, both acting for the Registration Authority for DOIs, namely the International DOI Foundation (IDF).</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

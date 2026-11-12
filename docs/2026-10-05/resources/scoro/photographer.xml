@@ -8,6 +8,9 @@
   <rdf:Description rdf:about="http://purl.org/spar/scoro/photographer">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">The role a person has of being a photographer of, or for, some entity.</rdfs:comment>
+    <rdfs:label xml:lang="en">photographer</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
     <vann:example>
     :my-person a foaf:Person ;
@@ -16,8 +19,5 @@
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:photographer .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">photographer</rdfs:label>
-    <rdfs:comment xml:lang="en">The role a person has of being a photographer of, or for, some entity.</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>

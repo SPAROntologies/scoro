@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/rights-holder",
     "@type": [
-      "http://purl.org/spar/scoro/OrganizationRole",
-      "http://www.w3.org/2002/07/owl#NamedIndividual"
+      "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "http://purl.org/spar/scoro/OrganizationRole"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -29,10 +29,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "http://purl.org/spar/pro/copyright-owner"
+        "@id": "http://purl.org/spar/scoro/patent-holder"
       },
       {
-        "@id": "http://purl.org/spar/scoro/patent-holder"
+        "@id": "http://purl.org/spar/pro/copyright-owner"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
