@@ -2,8 +2,8 @@
   {
     "@id": "http://purl.org/spar/scoro/embargo-controller",
     "@type": [
-      "http://www.w3.org/2002/07/owl#NamedIndividual",
-      "http://purl.org/spar/scoro/DataRole"
+      "http://purl.org/spar/scoro/DataRole",
+      "http://www.w3.org/2002/07/owl#NamedIndividual"
     ],
     "http://purl.org/vocab/vann/example": [
       {
@@ -13,7 +13,7 @@
     "http://www.w3.org/2000/01/rdf-schema#comment": [
       {
         "@language": "en",
-        "@value": "The role of the person who has responsibility for setting and lifting embargos that restrict access to a dataset (or a document) for a specified period of time."
+        "@value": "The role of the person who has responsibility for setting and lifting embargoes that restrict access to a dataset (or a document) for a specified period of time."
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [

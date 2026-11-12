@@ -1,0 +1,29 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:isEqualToRoleInTime a owl:ObjectProperty ;
+    rdfs:label "is equal to role in time"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime 
+            :my-person-role ,
+            :my-other-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:data-curator ;
+        scoro:isEqualToRoleInTime :my-other-role .
+
+    :my-other-role a pro:RoleInTime ;
+        pro:withRole scoro:data-creator .
+    """ ;
+    rdfs:comment "The relation between two roles in time as being equal, and is particularly useful for specifying that two principal authorship roles are equal."@en ;
+    rdfs:domain pro:RoleInTime ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:range pro:RoleInTime ;
+    vs:term_status reg:statusStable .
+

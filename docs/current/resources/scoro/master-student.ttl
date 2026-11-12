@@ -15,7 +15,7 @@ scoro:master-student a scoro:EducationalRole,
     :my-person-role a pro:RoleInTime ;
         pro:withRole scoro:master-student .
     """ ;
-    rdfs:comment "The role of a person registerd for a master degree at a university."@en ;
+    rdfs:comment "The role of a person registered for a master degree at a university."@en ;
     rdfs:isDefinedBy scoro: ;
     vs:term_status reg:statusStable .
 

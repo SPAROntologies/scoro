@@ -1,5 +1,20 @@
 [
   {
+    "@id": "_:nf902792def4b4c3e8e451e249f986428b7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDifferent"
+    ],
+    "http://www.w3.org/2002/07/owl#distinctMembers": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/scoro/article-guarantor"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/scoro/article-guarantor",
     "@type": [
       "http://www.w3.org/2002/07/owl#NamedIndividual",
@@ -30,21 +45,6 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:n734c349fce05485697ea023043dc8c36b2",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDifferent"
-    ],
-    "http://www.w3.org/2002/07/owl#distinctMembers": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/scoro/article-guarantor"
-          }
-        ]
       }
     ]
   }

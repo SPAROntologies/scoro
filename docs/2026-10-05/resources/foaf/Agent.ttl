@@ -1,0 +1,9 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+foaf:Agent a owl:Class ;
+    rdfs:label "agent"@en ;
+    rdfs:comment "Any kind of agents, such as a person, a group, an organization or a software agent."@en ;
+    rdfs:isDefinedBy foaf: .
+

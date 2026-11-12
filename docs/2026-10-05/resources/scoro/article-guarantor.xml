@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+    <owl:distinctMembers rdf:nodeID="nf902792def4b4c3e8e451e249f986428b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/article-guarantor">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdfs:label xml:lang="en">article guarantor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+    <rdfs:comment xml:lang="en">The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:article-guarantor .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="nf902792def4b4c3e8e451e249f986428b8">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/article-guarantor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

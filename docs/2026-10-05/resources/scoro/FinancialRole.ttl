@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+scoro:FinancialRole a owl:Class ;
+    rdfs:label "financial role"@en ;
+    vann:example """
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:sponsor .
+    
+    scoro:sponsor a scoro:FinancialRole .
+    """ ;
+    rdfs:comment "A role that an agent might hold with respect to academic and project finance."@en ;
+    rdfs:isDefinedBy scoro: ;
+    rdfs:subClassOf pro:Role ;
+    vs:term_status reg:statusStable ;
+    skos:note """
+Individual members of this class are used to specify particular roles.
+    """@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( scoro:AuthorshipRole scoro:DataRole scoro:FinancialRole scoro:InvestigationRole scoro:OrganizationRole scoro:ProjectRole ) .
+
