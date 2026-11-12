@@ -1,0 +1,22 @@
+_:n052048f53e85452b9f9f97bd4254dd6fb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/InvestigationRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb11 .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an agent might hold with respect to an investigation."@en .
+_:n052048f53e85452b9f9f97bd4254dd6fb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ProjectRole> .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en .
+_:n052048f53e85452b9f9f97bd4254dd6fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n052048f53e85452b9f9f97bd4254dd6fb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb14 .
+_:n052048f53e85452b9f9f97bd4254dd6fb9 <http://www.w3.org/2002/07/owl#members> _:n052048f53e85452b9f9f97bd4254dd6fb10 .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/pro/Role> .
+_:n052048f53e85452b9f9f97bd4254dd6fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb13 .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro> .
+_:n052048f53e85452b9f9f97bd4254dd6fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/DataRole> .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/2000/01/rdf-schema#label> "investigation role"@en .
+_:n052048f53e85452b9f9f97bd4254dd6fb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb12 .
+_:n052048f53e85452b9f9f97bd4254dd6fb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb15 .
+_:n052048f53e85452b9f9f97bd4254dd6fb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/scoro/InvestigationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/scoro/InvestigationRole> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:technician .\n\n    scoro:technician a scoro:InvestigationRole .\n    " .
+_:n052048f53e85452b9f9f97bd4254dd6fb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/FinancialRole> .
