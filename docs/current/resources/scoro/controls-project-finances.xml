@@ -6,9 +6,7 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/controls-project-finances">
-    <rdfs:comment xml:lang="en">The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro"/>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -16,8 +14,10 @@
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:controls-project-finances .
     </vann:example>
-    <rdfs:label xml:lang="en">controls project finances</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/scoro/OrganizationalContribution"/>
+    <rdfs:comment xml:lang="en">The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency.</rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">controls project finances</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

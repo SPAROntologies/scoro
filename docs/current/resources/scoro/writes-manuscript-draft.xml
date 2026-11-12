@@ -6,6 +6,11 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/writes-manuscript-draft">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
+    <rdfs:label xml:lang="en">writes manuscript draft</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">The contribution of writing the initial draft of the manuscript of the research paper.</rdfs:comment>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -13,11 +18,6 @@
     :my-person-contribution a scoro:ContributionSituation ;
         scoro:withContribution scoro:writes-manuscript-draft .
     </vann:example>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://purl.org/spar/scoro/AuthorshipContribution"/>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">The contribution of writing the initial draft of the manuscript of the research paper.</rdfs:comment>
-    <rdfs:label xml:lang="en">writes manuscript draft</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro"/>
   </rdf:Description>
 </rdf:RDF>

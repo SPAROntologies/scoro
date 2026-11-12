@@ -19,7 +19,7 @@ scoro:principal-author a scoro:AuthorshipRole,
     rdfs:comment """
 The role an author has of being the principal or primary author of the document, who has contributed most to the work described.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 In some communities, but not all, the principal author is named first in the author list. 

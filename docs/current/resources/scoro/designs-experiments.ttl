@@ -16,6 +16,6 @@ scoro:designs-experiments a scoro:IntellectualContribution,
         scoro:withContribution scoro:designs-experiments .
     """ ;
     rdfs:comment "The contribution of experimental design and planning."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

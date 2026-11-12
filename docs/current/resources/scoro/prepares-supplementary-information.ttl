@@ -16,6 +16,6 @@ scoro:prepares-supplementary-information a scoro:AuthorshipContribution,
         scoro:withContribution scoro:prepares-supplementary-information .
     """ ;
     rdfs:comment "The contribution of preparing the supplementary information files submitted with the manuscript. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

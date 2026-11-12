@@ -16,6 +16,6 @@ scoro:auditor a scoro:FinancialRole,
         pro:withRole scoro:auditor .
     """ ;
     rdfs:comment "The role held by a person who conducts a formal audit of financial accounts."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

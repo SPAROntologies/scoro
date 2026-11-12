@@ -16,6 +16,6 @@ scoro:revises-manuscript a scoro:AuthorshipContribution,
         scoro:withContribution scoro:revises-manuscript .
     """ ;
     rdfs:comment "The contribution of critically reviewing and revising drafts of the manuscript of the research paper."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

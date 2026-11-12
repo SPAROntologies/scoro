@@ -19,7 +19,7 @@ scoro:AuthorshipContribution a owl:Class ;
     scoro:prepares-illustrations a scoro:AuthorshipContribution .
     """ ;
     rdfs:comment "The type or nature of a contribution made with respect to the authorship of a publication such as a journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """

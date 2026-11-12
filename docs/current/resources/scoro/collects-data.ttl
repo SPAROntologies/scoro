@@ -16,6 +16,6 @@ scoro:collects-data a scoro:ExperimentalContribution,
         scoro:withContribution scoro:collects-data .
     """ ;
     rdfs:comment "The contribution of making experimental observations and collecting data, for example using a telescope, a microscope or an analytical instrument."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

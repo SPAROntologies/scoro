@@ -18,7 +18,7 @@ scoro:makesContribution a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between an agent and a contribution."@en ;
     rdfs:domain foaf:Agent ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tvc:hasValue ;
     vs:term_status reg:statusStable .

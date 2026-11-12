@@ -19,7 +19,7 @@ scoro:manages-project a scoro:OrganizationalContribution,
     rdfs:comment """
 The contribution of project management.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the person holding the formal role of project manager may make considerable contributions to the management of a research project.

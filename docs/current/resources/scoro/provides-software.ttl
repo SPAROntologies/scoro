@@ -16,6 +16,6 @@ scoro:provides-software a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-software .
     """ ;
     rdfs:comment "The contribution of providing software to facilitate the research, while not actively participating in the work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

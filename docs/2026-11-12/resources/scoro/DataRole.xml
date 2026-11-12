@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/scoro/DataRole">
+    <rdfs:comment xml:lang="en">A role that an agent might hold with respect to data.</rdfs:comment>
+    <rdfs:label xml:lang="en">data role</rdfs:label>
+    <vann:example>
+    :my-person a foaf:Person ;
+        pro:holdsRoleInTime :my-person-role .
+
+    :my-person-role a pro:RoleInTime ;
+        pro:withRole scoro:repository-manager .
+
+    scoro:repository-manager a scoro:DataRole .
+    </vann:example>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/pro/Role"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro"/>
+    <skos:note xml:lang="en">
+Individual members of this class are used to specify particular roles.
+    </skos:note>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb13">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/InvestigationRole"/>
+    <rdf:rest rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb10">
+    <rdf:rest rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb11"/>
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/AuthorshipRole"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb15">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/ProjectRole"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb12">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/FinancialRole"/>
+    <rdf:rest rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb11">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/DataRole"/>
+    <rdf:rest rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb14">
+    <rdf:first rdf:resource="http://purl.org/spar/scoro/OrganizationRole"/>
+    <rdf:rest rdf:nodeID="n052048f53e85452b9f9f97bd4254dd6fb15"/>
+  </rdf:Description>
+</rdf:RDF>

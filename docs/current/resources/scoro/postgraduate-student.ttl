@@ -16,6 +16,6 @@ scoro:postgraduate-student a scoro:EducationalRole,
         pro:withRole scoro:postgraduate-student .
     """ ;
     rdfs:comment "The role of a person registered for a graduate (masters or doctoral) degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

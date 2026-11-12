@@ -16,6 +16,6 @@ scoro:co-investigator a scoro:InvestigationRole,
         pro:withRole scoro:co-investigator .
     """ ;
     rdfs:comment "The role a person has of being a co-investigator for a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

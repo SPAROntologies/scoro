@@ -16,6 +16,6 @@ scoro:college-head a scoro:OrganizationRole,
         pro:withRole scoro:college-head .
     """ ;
     rdfs:comment "The role held by a senior academic who heads a college and acts as its CEO. Among the many alternative titles give to this role, the most common are President or Master of the college."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

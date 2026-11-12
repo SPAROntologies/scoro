@@ -16,6 +16,6 @@ scoro:creates-novel-organisms-or-cells a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-novel-organisms-or-cells .
     """ ;
     rdfs:comment "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. transformed cell lines), either for use in the research, or as a research output of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

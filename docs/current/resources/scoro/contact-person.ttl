@@ -16,6 +16,6 @@ scoro:contact-person a scoro:OrganizationRole,
         pro:withRole scoro:contact-person .
     """ ;
     rdfs:comment "The role of a person who serves as the primary contact and information provider for third parties wishing to find out more about an organization or an activity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

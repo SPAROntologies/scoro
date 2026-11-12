@@ -16,6 +16,6 @@ scoro:undertakes-modelling a scoro:IntellectualContribution,
         scoro:withContribution scoro:undertakes-modelling .
     """ ;
     rdfs:comment "The contribution of design, implementation and analysis of mathematical models or computer simulations."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

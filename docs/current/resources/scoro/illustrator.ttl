@@ -16,6 +16,6 @@ scoro:illustrator a scoro:AuthorshipRole,
         pro:withRole scoro:illustrator .
     """ ;
     rdfs:comment "The role a person has of being an illustrator of, or for, some entity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:member a scoro:OrganizationRole,
         pro:withRole scoro:member .
     """ ;
     rdfs:comment "The role held by an agent of belonging to a group or organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

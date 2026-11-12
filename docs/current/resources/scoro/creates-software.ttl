@@ -16,6 +16,6 @@ scoro:creates-software a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-software .
     """ ;
     rdfs:comment "The contribution of creating computer software, including software for experimental control, analytical tools, mathematical model and computational simulations for use in the research, or of creating an IT service (e.g. a bioinformatics database or Web service) of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

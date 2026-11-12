@@ -16,6 +16,6 @@ scoro:master-student a scoro:EducationalRole,
         pro:withRole scoro:master-student .
     """ ;
     rdfs:comment "The role of a person registered for a master degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

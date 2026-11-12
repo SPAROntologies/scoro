@@ -18,17 +18,17 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/scoro/"
+        "@id": "http://purl.org/spar/scoro"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "CEO"
+        "@value": "chief executive officer"
       },
       {
         "@language": "en",
-        "@value": "chief executive officer"
+        "@value": "CEO"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [

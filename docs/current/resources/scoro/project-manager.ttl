@@ -16,6 +16,6 @@ scoro:project-manager a scoro:ProjectRole,
         pro:withRole scoro:project-manager .
     """ ;
     rdfs:comment "The role a person has of being project manager for a project such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -17,6 +17,6 @@ pro:author a scoro:AuthorshipRole,
         pro:withRole pro:author .
     """ ;
     rdfs:comment "author"@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:inventor a scoro:InvestigationRole,
         pro:withRole scoro:inventor .
     """ ;
     rdfs:comment "The role a person has of being the inventor or some entity (for example, a computer algorithm, or an experimental procedure)."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

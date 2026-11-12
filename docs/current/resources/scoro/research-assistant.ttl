@@ -16,6 +16,6 @@ scoro:research-assistant a scoro:InvestigationRole,
         pro:withRole scoro:research-assistant .
     """ ;
     rdfs:comment "The role a person has of being a research assistant involved in a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

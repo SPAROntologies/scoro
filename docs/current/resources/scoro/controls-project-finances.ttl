@@ -16,6 +16,6 @@ scoro:controls-project-finances a scoro:OrganizationalContribution,
         scoro:withContribution scoro:controls-project-finances .
     """ ;
     rdfs:comment "The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

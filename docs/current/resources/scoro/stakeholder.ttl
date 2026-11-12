@@ -16,6 +16,6 @@ scoro:stakeholder a scoro:OrganizationRole,
         pro:withRole scoro:stakeholder .
     """ ;
     rdfs:comment "The role held by an agent with an interest or concern in something, for example the creation of a new university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

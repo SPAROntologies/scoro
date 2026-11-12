@@ -18,7 +18,7 @@ scoro:withEffort a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between an agent's contribution with respect to a particular entity and the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionEffort ;
     rdfs:subPropertyOf tisit:forEntity ;
     vs:term_status reg:statusStable .

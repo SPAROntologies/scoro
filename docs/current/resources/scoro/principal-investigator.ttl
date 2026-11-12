@@ -16,6 +16,6 @@ scoro:principal-investigator a scoro:InvestigationRole,
         pro:withRole scoro:principal-investigator .
     """ ;
     rdfs:comment "The role a person has of being the principal investigator for a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

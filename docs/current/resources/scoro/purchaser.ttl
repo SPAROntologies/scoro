@@ -16,6 +16,6 @@ scoro:purchaser a scoro:FinancialRole,
         pro:withRole scoro:purchaser .
     """ ;
     rdfs:comment "The role held by an agent of making purchases of goods or services, the cost of which is typically charged to a particular academic budget, for example a project manager placing an order to purchase equipment funded from a research grant."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:computer-programmer a scoro:InvestigationRole,
         pro:withRole scoro:computer-programmer .
     """ ;
     rdfs:comment "The role a person has of being someone who develops computer software."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

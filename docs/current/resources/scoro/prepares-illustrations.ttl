@@ -16,6 +16,6 @@ scoro:prepares-illustrations a scoro:AuthorshipContribution,
         scoro:withContribution scoro:prepares-illustrations .
     """ ;
     rdfs:comment "The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

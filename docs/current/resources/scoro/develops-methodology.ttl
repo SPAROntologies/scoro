@@ -16,6 +16,6 @@ scoro:develops-methodology a scoro:ExperimentalContribution,
         scoro:withContribution scoro:develops-methodology .
     """ ;
     rdfs:comment "The contribution of developing experimental methodology that enables research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

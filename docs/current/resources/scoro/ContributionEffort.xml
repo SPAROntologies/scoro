@@ -6,9 +6,9 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/ContributionEffort">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
-    <rdfs:comment xml:lang="en">The effort expended in making a contribution.</rdfs:comment>
+    <rdfs:label xml:lang="en">contribution effort</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro"/>
     <vann:example>
     :my-person a foaf:Person ;
         scoro:makesContribution :my-person-contribution .
@@ -19,8 +19,8 @@
     
     scoro:major-effort a ContributionEffort .
     </vann:example>
+    <rdfs:comment xml:lang="en">The effort expended in making a contribution.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:label xml:lang="en">contribution effort</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

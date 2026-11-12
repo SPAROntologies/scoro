@@ -20,7 +20,7 @@ scoro:ProjectRole a owl:Class ;
     scoro:workpackage-leader a scoro:ProjectRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to a project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """

@@ -19,7 +19,7 @@ scoro:hasORCID a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "A relation between an individual and their Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en ;
     rdfs:domain foaf:Person ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subPropertyOf scoro:hasPersonalIdentifier ;
     owl:equivalentProperty frapo:hasORCID ;
     vs:term_status reg:statusStable .

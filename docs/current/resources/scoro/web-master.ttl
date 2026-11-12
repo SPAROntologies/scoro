@@ -16,6 +16,6 @@ scoro:web-master a scoro:DataRole,
         pro:withRole scoro:web-master .
     """ ;
     rdfs:comment "The role of a person responsible for maintaining a web site and its content."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

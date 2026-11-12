@@ -19,7 +19,7 @@ scoro:OrganizationalContribution a owl:Class ;
     scoro:provides-administrative-support a scoro:OrganizationalContribution .
     """ ;
     rdfs:comment "The type or nature of an organizational or administrative contribution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """

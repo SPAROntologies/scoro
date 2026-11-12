@@ -19,7 +19,7 @@ scoro:leads-investigation a scoro:IntellectualContribution,
     rdfs:comment """
 The contribution of providing intellectual leadership and direction for the research.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the principal investigator and the co-investigators may make considerable leadership contributions to a research investigation.

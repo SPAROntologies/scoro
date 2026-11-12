@@ -17,7 +17,7 @@ scoro:Contribution a owl:Class ;
     scoro:prepares-illustrations a scoro:Contribution .
     """ ;
     rdfs:comment "The type or nature of a contribution made by an agent. Individual members of this class or its sub-classes are used to specify particular contributions."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf owl:Thing ;
     owl:disjointWith scoro:ContributionEffort ;
     vs:term_status reg:statusStable .

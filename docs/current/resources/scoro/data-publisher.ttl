@@ -16,6 +16,6 @@ scoro:data-publisher a scoro:DataRole,
         pro:withRole scoro:data-publisher .
     """ ;
     rdfs:comment "The role of an agent who publishes data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

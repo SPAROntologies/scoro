@@ -16,6 +16,6 @@ scoro:owner a scoro:FinancialRole,
         pro:withRole scoro:owner .
     """ ;
     rdfs:comment "The role held by an agent who is the owner of something with actual or potential financial value, for example a building, a piece of equipment, the copyright of a document, or the intellectual property rights relating to an idea or discovery."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

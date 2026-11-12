@@ -16,6 +16,6 @@ scoro:doctoral-student a scoro:EducationalRole,
         pro:withRole scoro:doctoral-student .
     """ ;
     rdfs:comment "The role of a person registered for a Ph.D. degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:employee a scoro:OrganizationRole,
         pro:withRole scoro:employee .
     """ ;
     rdfs:comment "The role held by a person employed for wages or a salary by an organization, to undertake work for that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

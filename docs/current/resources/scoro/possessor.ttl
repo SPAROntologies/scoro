@@ -16,6 +16,6 @@ scoro:possessor a scoro:OrganizationRole,
         pro:withRole scoro:possessor .
     """ ;
     rdfs:comment "The role held by an agent as possessor or owner of some entity such as an address or a telephone number."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

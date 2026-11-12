@@ -16,6 +16,6 @@ scoro:claimant a scoro:FinancialRole,
         pro:withRole scoro:claimant .
     """ ;
     rdfs:comment "The role held by a person making a financial claim, for example for refund of travel expenses from a project grant."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

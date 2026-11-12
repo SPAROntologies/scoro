@@ -5,5 +5,5 @@
 frapo:hasORCID a owl:DatatypeProperty ;
     rdfs:label "has orcid"@en ;
     rdfs:comment "An individual's Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en ;
-    rdfs:isDefinedBy frapo: .
+    rdfs:isDefinedBy <http://purl.org/cerif/frapo> .
 

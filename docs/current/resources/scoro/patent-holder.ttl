@@ -19,7 +19,7 @@ scoro:patent-holder a scoro:OrganizationRole,
     rdfs:comment """
 The role held by an agent who holds a patent.
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:seeAlso pro:copyright-owner,
         scoro:rights-holder ;
     vs:term_status reg:statusStable .

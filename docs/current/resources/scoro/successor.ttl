@@ -16,6 +16,6 @@ scoro:successor a scoro:OrganizationRole,
         pro:withRole scoro:successor .
     """ ;
     rdfs:comment "The relationship held by an entity that succeeds another, for example a new electron microscope that replaces an out-dated one, a research project that follows on from a preceding project, or a faculty member who succeeds a colleague as head of department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

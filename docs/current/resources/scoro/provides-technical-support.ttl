@@ -16,6 +16,6 @@ scoro:provides-technical-support a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-technical-support .
     """ ;
     rdfs:comment "The contribution of providing technical support that facilitates research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

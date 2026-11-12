@@ -19,7 +19,7 @@ scoro:IntellectualContribution a owl:Class ;
     scoro:leads-investigation a scoro:IntellectualContribution .
     """ ;
     rdfs:comment "The type or nature of an intellectual contribution made to the research described in a journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """

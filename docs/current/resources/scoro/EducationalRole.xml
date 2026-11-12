@@ -7,14 +7,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/scoro/EducationalRole">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/pro/Role"/>
     <rdfs:comment xml:lang="en">A role that an agent might hold with respect to an educational organization or activity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">educational role</rdfs:label>
     <skos:note xml:lang="en">
 Individual members of this class are used to specify particular roles.
     </skos:note>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/scoro/"/>
-    <rdfs:label xml:lang="en">educational role</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-person a foaf:Person ;
         pro:holdsRoleInTime :my-person-role .
@@ -24,6 +25,5 @@ Individual members of this class are used to specify particular roles.
     
     scoro:master-student a scoro:EducationalRole .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/pro/Role"/>
   </rdf:Description>
 </rdf:RDF>

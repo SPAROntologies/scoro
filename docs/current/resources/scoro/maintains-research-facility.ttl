@@ -16,6 +16,6 @@ scoro:maintains-research-facility a scoro:ExperimentalContribution,
         scoro:withContribution scoro:maintains-research-facility .
     """ ;
     rdfs:comment "The contribution of managing and operating a research facility, for example a confocal microscopy facility."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

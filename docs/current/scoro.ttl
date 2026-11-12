@@ -40,7 +40,7 @@ pro:author a scoro:AuthorshipRole,
         pro:withRole pro:author .
     """ ;
     rdfs:comment "author"@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 <http://purl.org/spar/scoro> a owl:Ontology ;
@@ -48,7 +48,7 @@ pro:author a scoro:AuthorshipRole,
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)"^^xsd:string,
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-10-05" ;
+    dc:date "2026-11-12" ;
     dc:description """
 The **_Scholarly Contributions and Roles Ontology (SCoRO)_** is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research.
 
@@ -266,7 +266,7 @@ Which persons hold equal roles in time with respect to the same document?
     dcterms:created "2016-01-19" ;
     dcterms:issued "2017-09-04" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-12" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/sparontologies/scoro/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.c86b48" ;
@@ -275,11 +275,11 @@ Which persons hold equal roles in time with respect to the same document?
     vann:preferredNamespacePrefix "scoro"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/scoro"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/scoro> ;
-    owl:backwardCompatibleWith scoro:2026-08-14 ;
+    owl:backwardCompatibleWith scoro:2026-10-05 ;
     owl:imports <http://purl.org/spar/pro> ;
-    owl:priorVersion scoro:2026-08-14 ;
-    owl:versionIRI scoro:2026-10-05 ;
-    owl:versionInfo "1.10.2"^^xsd:string ;
+    owl:priorVersion scoro:2026-10-05 ;
+    owl:versionIRI scoro:2026-11-12 ;
+    owl:versionInfo "1.10.3"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/scoro> ;
     schema:image <https://github.com/SPAROntologies/scoro/blob/master/docs/current/scoro.png> ;
@@ -287,12 +287,12 @@ Which persons hold equal roles in time with respect to the same document?
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
-        "bibliometrics"@en,
-        "scholarly contributions"@en,
-        "scholarly publishing"@en,
-        "scholarly roles"@en,
-        "scientometrics"@en,
+        "OWL ontology"@en ,
+        "bibliometrics"@en ,
+        "scholarly contributions"@en ,
+        "scholarly communication"@en ,
+        "scholarly roles"@en ,
+        "scientometrics"@en ,
         "semantic publishing"@en .
 
 scoro:ComputationalAgent a owl:Class ;
@@ -305,7 +305,7 @@ scoro:ComputationalAgent a owl:Class ;
         pro:withRole scoro:analyses-data .
     """ ;
     rdfs:comment "A computer system or software program whose action has an effect on external events, for example a laboratory robot that undertakes your experiments, or the financial control system that controls an institution's payrole, or that, following programmed business rules, prevents the principal investigator from placing an order for research equipment because there is insufficient money left in the project budget."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf foaf:Agent ;
     vs:term_status reg:statusStable .
 
@@ -320,7 +320,7 @@ scoro:access-provider a scoro:DataRole,
         pro:withRole scoro:access-provider .
     """ ;
     rdfs:comment "The role of an agent who provides access to a resource, for example an online data repository."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:accountant a scoro:FinancialRole,
@@ -334,7 +334,7 @@ scoro:accountant a scoro:FinancialRole,
         pro:withRole scoro:accountant .
     """ ;
     rdfs:comment "The role held by a person whose job is to manage financial accounts, for example the accounts of an organization, or of a particular funded project or activity of that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:administrator a scoro:OrganizationRole,
@@ -348,7 +348,7 @@ scoro:administrator a scoro:OrganizationRole,
         pro:withRole scoro:administrator .
     """ ;
     rdfs:comment "The role held by an agent responsible for the day-to-day management and running of an organization or activity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:affiliate a scoro:OrganizationRole,
@@ -362,7 +362,7 @@ scoro:affiliate a scoro:OrganizationRole,
         pro:withRole scoro:affiliate .
     """ ;
     rdfs:comment "The role an agent has of being affiliated to some organization or institution in a context of some entity or activity, for example a document, a project or an internship."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 The affiliation of a person to an organization or institution can be specified by using the property `pro:relatesToEntity`.
@@ -379,7 +379,7 @@ scoro:agent a scoro:OrganizationRole,
         pro:withRole scoro:agent .
     """ ;
     rdfs:comment "An agent that acts on behalf of another agent."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:analyses-data a scoro:IntellectualContribution,
@@ -393,7 +393,7 @@ scoro:analyses-data a scoro:IntellectualContribution,
         scoro:withContribution scoro:analyses-data .
     """ ;
     rdfs:comment "The contribution of data analysis. This might include statistical analysis, bioinformatics analysis, or image analysis."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:approves-final-manuscript a scoro:AuthorshipContribution,
@@ -407,7 +407,7 @@ scoro:approves-final-manuscript a scoro:AuthorshipContribution,
         scoro:withContribution scoro:approves-final-manuscript .
     """ ;
     rdfs:comment "The contribution of approving the final version of the manuscript, prior to submission for publication."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:auditor a scoro:FinancialRole,
@@ -421,7 +421,7 @@ scoro:auditor a scoro:FinancialRole,
         pro:withRole scoro:auditor .
     """ ;
     rdfs:comment "The role held by a person who conducts a formal audit of financial accounts."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:builds-and-or-maintains-instruments a scoro:ExperimentalContribution,
@@ -435,7 +435,7 @@ scoro:builds-and-or-maintains-instruments a scoro:ExperimentalContribution,
         scoro:withContribution scoro:builds-and-or-maintains-instruments .
     """ ;
     rdfs:comment "The contribution of building instruments, equipment or scientific apparatus and/or maintaining the same in a workable condition for use in experiments."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:chief-executive-officer a scoro:OrganizationRole,
@@ -450,7 +450,7 @@ scoro:chief-executive-officer a scoro:OrganizationRole,
         pro:withRole scoro:chief-executive-officer .
     """ ;
     rdfs:comment "The role held by a person who is the chief executive officer of an organization, responsible for directing and managing the business of that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:chief-scientist a scoro:InvestigationRole,
@@ -464,7 +464,7 @@ scoro:chief-scientist a scoro:InvestigationRole,
         pro:withRole scoro:chief-scientist .
     """ ;
     rdfs:comment "A senior scientist who takes a leadership role in an organization or group."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:chief-technology-officer a scoro:OrganizationRole,
@@ -479,7 +479,7 @@ scoro:chief-technology-officer a scoro:OrganizationRole,
         pro:withRole scoro:chief-technology-officer .
     """ ;
     rdfs:comment "The role held by a person who is the chief technology officer of an organization, responsible for directing and managing technical developments for that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:claimant a scoro:FinancialRole,
@@ -493,7 +493,7 @@ scoro:claimant a scoro:FinancialRole,
         pro:withRole scoro:claimant .
     """ ;
     rdfs:comment "The role held by a person making a financial claim, for example for refund of travel expenses from a project grant."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:co-applicant a scoro:ProjectRole,
@@ -507,7 +507,7 @@ scoro:co-applicant a scoro:ProjectRole,
         pro:withRole scoro:co-applicant .
     """ ;
     rdfs:comment "The role a person has of being a co-applicant on the grant application to obtain funding to fund an endeavour such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:co-investigator a scoro:InvestigationRole,
@@ -521,7 +521,7 @@ scoro:co-investigator a scoro:InvestigationRole,
         pro:withRole scoro:co-investigator .
     """ ;
     rdfs:comment "The role a person has of being a co-investigator for a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:collaborator a scoro:InvestigationRole,
@@ -535,7 +535,7 @@ scoro:collaborator a scoro:InvestigationRole,
         pro:withRole scoro:collaborator .
     """ ;
     rdfs:comment "The role a person, typically from another research group or institution, who collaborates with the team undertaking a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:collects-data a scoro:ExperimentalContribution,
@@ -549,7 +549,7 @@ scoro:collects-data a scoro:ExperimentalContribution,
         scoro:withContribution scoro:collects-data .
     """ ;
     rdfs:comment "The contribution of making experimental observations and collecting data, for example using a telescope, a microscope or an analytical instrument."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:college-fellow a scoro:OrganizationRole,
@@ -563,7 +563,7 @@ scoro:college-fellow a scoro:OrganizationRole,
         pro:withRole scoro:college-fellow .
     """ ;
     rdfs:comment "The role held by an academic as a senior member of a college."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:college-head a scoro:OrganizationRole,
@@ -577,7 +577,7 @@ scoro:college-head a scoro:OrganizationRole,
         pro:withRole scoro:college-head .
     """ ;
     rdfs:comment "The role held by a senior academic who heads a college and acts as its CEO. Among the many alternative titles give to this role, the most common are President or Master of the college."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:computer-programmer a scoro:InvestigationRole,
@@ -591,7 +591,7 @@ scoro:computer-programmer a scoro:InvestigationRole,
         pro:withRole scoro:computer-programmer .
     """ ;
     rdfs:comment "The role a person has of being someone who develops computer software."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:conceives-project a scoro:IntellectualContribution,
@@ -607,7 +607,7 @@ scoro:conceives-project a scoro:IntellectualContribution,
     rdfs:comment """
 The contribution of conceiving the research project in the first place.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the lead applicant and the co-applicants on a grant application may make considerable contributions to conceiving a research project, but may be prevented from being a formal applicant by reason of affiliation or status (e.g. as a non-academic partner, or a research student).
@@ -624,7 +624,7 @@ scoro:consortium-author a scoro:AuthorshipRole,
         pro:withRole scoro:consortium-author .
     """ ;
     rdfs:comment "The authorship role of an organisation or consortium that has contributed collectively to the work described in the publication and is named in the list of authors, e.g. 'Wellcome Trust Case Control Consortium' or 'Malaria Genomic Epidemiology Network'."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:consultant a scoro:InvestigationRole,
@@ -638,7 +638,7 @@ scoro:consultant a scoro:InvestigationRole,
         pro:withRole scoro:consultant .
     """ ;
     rdfs:comment "The role a person has of being a consultant who is providing expertise or services."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:contact-person a scoro:OrganizationRole,
@@ -652,7 +652,7 @@ scoro:contact-person a scoro:OrganizationRole,
         pro:withRole scoro:contact-person .
     """ ;
     rdfs:comment "The role of a person who serves as the primary contact and information provider for third parties wishing to find out more about an organization or an activity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:contractor a scoro:FinancialRole,
@@ -666,7 +666,7 @@ scoro:contractor a scoro:FinancialRole,
         pro:withRole scoro:contractor .
     """ ;
     rdfs:comment "The role held by an agent who enters into a contract to undertake specified work or to supply specified services in return for payment."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:controls-project-finances a scoro:OrganizationalContribution,
@@ -680,7 +680,7 @@ scoro:controls-project-finances a scoro:OrganizationalContribution,
         scoro:withContribution scoro:controls-project-finances .
     """ ;
     rdfs:comment "The contribution of controlling the financial aspects of the research project, including authorizing expenditure, creating and managing budgets, and submitting financial reports to the funding agency."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:corresponding-author a scoro:AuthorshipRole,
@@ -694,7 +694,7 @@ scoro:corresponding-author a scoro:AuthorshipRole,
         pro:withRole scoro:corresponding-author .
     """ ;
     rdfs:comment "The role an author has of being the corresponding author of the document, with whom editors and readers should correspond concerning it."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:creates-novel-organisms-or-cells a scoro:ExperimentalContribution,
@@ -708,7 +708,7 @@ scoro:creates-novel-organisms-or-cells a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-novel-organisms-or-cells .
     """ ;
     rdfs:comment "The contribution of creating novel organisms (e.g. mouse mutants) or cells (e.g. transformed cell lines), either for use in the research, or as a research output of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:creates-novel-reagents a scoro:ExperimentalContribution,
@@ -722,7 +722,7 @@ scoro:creates-novel-reagents a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-novel-reagents .
     """ ;
     rdfs:comment "The contribution of creating novel physical or chemical compounds, or molecular biology constructs, either for use in the research, or as a research output of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:creates-software a scoro:ExperimentalContribution,
@@ -736,7 +736,7 @@ scoro:creates-software a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-software .
     """ ;
     rdfs:comment "The contribution of creating computer software, including software for experimental control, analytical tools, mathematical model and computational simulations for use in the research, or of creating an IT service (e.g. a bioinformatics database or Web service) of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:curator a scoro:DataRole,
@@ -750,7 +750,7 @@ scoro:curator a scoro:DataRole,
         pro:withRole scoro:curator .
     """ ;
     rdfs:comment "The role of an agent that documents, cares for and manages collections of objects (for example in a museum) or of data (as in a data repository or database)."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:data-creator a scoro:DataRole,
@@ -764,7 +764,7 @@ scoro:data-creator a scoro:DataRole,
         pro:withRole scoro:data-creator .
     """ ;
     rdfs:comment "The role a person has of being a creator, originator, gatherer or collector of new data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:data-curator a scoro:DataRole,
@@ -778,7 +778,7 @@ scoro:data-curator a scoro:DataRole,
         pro:withRole scoro:data-curator .
     """ ;
     rdfs:comment "The role a person has of being a data curator, responsible reviewing, enhancing, cleaning, or standardizing data and their associated metadata, for example those arising from the research project, and for their long-term preservation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:data-manager a scoro:DataRole,
@@ -792,7 +792,7 @@ scoro:data-manager a scoro:DataRole,
         pro:withRole scoro:data-manager .
     """ ;
     rdfs:comment "The role a person has of being a data manager, responsible for day-to-day management, maintenance and back-up of data, for example those arising from the research project or held in a repository."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:data-publisher a scoro:DataRole,
@@ -806,7 +806,7 @@ scoro:data-publisher a scoro:DataRole,
         pro:withRole scoro:data-publisher .
     """ ;
     rdfs:comment "The role of an agent who publishes data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:data-user a scoro:DataRole,
@@ -820,7 +820,7 @@ scoro:data-user a scoro:DataRole,
         pro:withRole scoro:data-user .
     """ ;
     rdfs:comment "The role a person has of being a user or re-user of existing data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:departmental-administrator a scoro:OrganizationRole,
@@ -834,7 +834,7 @@ scoro:departmental-administrator a scoro:OrganizationRole,
         pro:withRole scoro:departmental-administrator .
     """ ;
     rdfs:comment "The role held by a person who is the administrator of a department within a larger organization, for example of a university academic department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:designs-experiments a scoro:IntellectualContribution,
@@ -848,7 +848,7 @@ scoro:designs-experiments a scoro:IntellectualContribution,
         scoro:withContribution scoro:designs-experiments .
     """ ;
     rdfs:comment "The contribution of experimental design and planning."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:develops-methodology a scoro:ExperimentalContribution,
@@ -862,7 +862,7 @@ scoro:develops-methodology a scoro:ExperimentalContribution,
         scoro:withContribution scoro:develops-methodology .
     """ ;
     rdfs:comment "The contribution of developing experimental methodology that enables research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:director a scoro:OrganizationRole,
@@ -876,7 +876,7 @@ scoro:director a scoro:OrganizationRole,
         pro:withRole scoro:director .
     """ ;
     rdfs:comment "The role held by a person who is in charge of an organization or activity, for example a research institute or a dramatic performance."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:doctoral-student a scoro:EducationalRole,
@@ -890,7 +890,7 @@ scoro:doctoral-student a scoro:EducationalRole,
         pro:withRole scoro:doctoral-student .
     """ ;
     rdfs:comment "The role of a person registered for a Ph.D. degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:embargo-controller a scoro:DataRole,
@@ -904,7 +904,7 @@ scoro:embargo-controller a scoro:DataRole,
         pro:withRole scoro:embargo-controller .
     """ ;
     rdfs:comment "The role of the person who has responsibility for setting and lifting embargoes that restrict access to a dataset (or a document) for a specified period of time."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:employee a scoro:OrganizationRole,
@@ -918,7 +918,7 @@ scoro:employee a scoro:OrganizationRole,
         pro:withRole scoro:employee .
     """ ;
     rdfs:comment "The role held by a person employed for wages or a salary by an organization, to undertake work for that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:employer a scoro:OrganizationRole,
@@ -932,7 +932,7 @@ scoro:employer a scoro:OrganizationRole,
         pro:withRole scoro:employer .
     """ ;
     rdfs:comment "The role held by an agent that employs one or more people to undertake work on that agent's behalf."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:ensures-regulatory-compliance a scoro:OrganizationalContribution,
@@ -946,7 +946,7 @@ scoro:ensures-regulatory-compliance a scoro:OrganizationalContribution,
         scoro:withContribution scoro:ensures-reguloratory-compliance .
     """ ;
     rdfs:comment "The contribution of ensuring regulatory compliance for the research undertaken, for example in obtaining informed consent from patients, approval from research ethics or radiation safety committees, or a license for animal experimentation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:faculty-member a scoro:EducationalRole,
@@ -960,7 +960,7 @@ scoro:faculty-member a scoro:EducationalRole,
         pro:withRole scoro: .faculty-member
     """ ;
     rdfs:comment "The role of an academic employed to undertake research and teaching within a university department, school or institute."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:financial-controller a scoro:FinancialRole,
@@ -974,7 +974,7 @@ scoro:financial-controller a scoro:FinancialRole,
         pro:withRole scoro:financial-controller .
     """ ;
     rdfs:comment "The role held by an agent of controlling the finances, for example the finances of an organization, a building project or a research project. This role extends to the control of or the authorisation of expenditure from a budget, and may be undertaken by a computational agent."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:formulates-research-questions a scoro:IntellectualContribution,
@@ -988,7 +988,7 @@ scoro:formulates-research-questions a scoro:IntellectualContribution,
         scoro:withContribution scoro:formulates-research-questions .
     """ ;
     rdfs:comment "The contribution of formulating the questions to be answered and the hypotheses to be tested by the research to be undertaken."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:funder a scoro:FinancialRole,
@@ -1002,7 +1002,7 @@ scoro:funder a scoro:FinancialRole,
         pro:withRole scoro:funder .
     """ ;
     rdfs:comment "The role held by an agent of providing funds, for example for a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:funding-recipient a scoro:FinancialRole,
@@ -1016,7 +1016,7 @@ scoro:funding-recipient a scoro:FinancialRole,
         pro:withRole scoro:funding-recipient .
     """ ;
     rdfs:comment "The role held by an agent who is the official recipient of funding, for example the university of which a funded research project leader is a member."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:hasContributionContext a owl:ObjectProperty ;
@@ -1031,7 +1031,7 @@ scoro:hasContributionContext a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a contribution situation and an entity representing the context for that situation."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subPropertyOf tvc:withinContext ;
     owl:inverseOf scoro:isRelatedToContributionSituation ;
     vs:term_status reg:statusStable .
@@ -1048,7 +1048,7 @@ scoro:hasORCID a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "A relation between an individual and their Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en ;
     rdfs:domain foaf:Person ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subPropertyOf scoro:hasPersonalIdentifier ;
     owl:equivalentProperty frapo:hasORCID ;
     vs:term_status reg:statusStable .
@@ -1064,7 +1064,7 @@ scoro:head-of-department a scoro:OrganizationRole,
         pro:withRole scoro:head-of-department .
     """ ;
     rdfs:comment "The role held by a person who is the chief executive officer of a department within a larger organization, for example a senior academic who is head of a university academic department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:host-institution a scoro:OrganizationRole,
@@ -1078,7 +1078,7 @@ scoro:host-institution a scoro:OrganizationRole,
         pro:withRole scoro:host-institution .
     """ ;
     rdfs:comment "The role held by a institution of hosting some initiative, people, or event."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:illustrator a scoro:AuthorshipRole,
@@ -1092,7 +1092,7 @@ scoro:illustrator a scoro:AuthorshipRole,
         pro:withRole scoro:illustrator .
     """ ;
     rdfs:comment "The role a person has of being an illustrator of, or for, some entity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:interprets-results a scoro:IntellectualContribution,
@@ -1106,7 +1106,7 @@ scoro:interprets-results a scoro:IntellectualContribution,
         scoro:withContribution scoro:interprets-results .
     """ ;
     rdfs:comment "The contribution of interpretation of experimental results."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:inventor a scoro:InvestigationRole,
@@ -1120,7 +1120,7 @@ scoro:inventor a scoro:InvestigationRole,
         pro:withRole scoro:inventor .
     """ ;
     rdfs:comment "The role a person has of being the inventor or some entity (for example, a computer algorithm, or an experimental procedure)."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:isContributionIn a owl:ObjectProperty ;
@@ -1136,7 +1136,7 @@ scoro:isContributionIn a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a specific contribution and the contribution situation of an agent making that contribution."@en ;
     rdfs:domain scoro:Contribution ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     owl:inverseOf scoro:withContribution ;
@@ -1161,7 +1161,7 @@ scoro:isEqualToContributionSituation a owl:ObjectProperty,
     """ ;
     rdfs:comment "The relation between two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     vs:term_status reg:statusStable .
 
@@ -1182,7 +1182,7 @@ scoro:isEqualToRoleInTime a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between two roles in time as being equal, and is particularly useful for specifying that two principal authorship roles are equal."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range pro:RoleInTime ;
     vs:term_status reg:statusStable .
 
@@ -1197,7 +1197,7 @@ scoro:isMadeBy a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a contribution situation that an agent makes, and that agent."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range foaf:Agent ;
     rdfs:subPropertyOf tisit:forEntity ;
     owl:inverseOf scoro:makesContribution ;
@@ -1214,7 +1214,7 @@ scoro:lead-applicant a scoro:ProjectRole,
         pro:withRole scoro:lead-applicant .
     """ ;
     rdfs:comment "The role a person has of being the lead applicant on the grant application to obtain funding to fund an endeavour such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:leads-investigation a scoro:IntellectualContribution,
@@ -1230,7 +1230,7 @@ scoro:leads-investigation a scoro:IntellectualContribution,
     rdfs:comment """
 The contribution of providing intellectual leadership and direction for the research.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the principal investigator and the co-investigators may make considerable leadership contributions to a research investigation.
@@ -1247,7 +1247,7 @@ scoro:maintains-IT-Infrastructure a scoro:ExperimentalContribution,
         scoro:withContribution scoro:maintains-IT-infrastructure .
     """ ;
     rdfs:comment "The contribution of maintaining the IT infrastructure required for the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:maintains-organisms-or-cells a scoro:ExperimentalContribution,
@@ -1263,7 +1263,7 @@ scoro:maintains-organisms-or-cells a scoro:ExperimentalContribution,
     rdfs:comment """
 The contribution of maintaining multicellular organisms (plants, animals or fungi) or cell cultures used as experimental subjects, and of breeding these where appropriate.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that there may be occasions when it is inappropriate to acknowledge such contributions, for fear of personal reprisals on the individuals involved from animal rights activists.
@@ -1280,7 +1280,7 @@ scoro:maintains-research-facility a scoro:ExperimentalContribution,
         scoro:withContribution scoro:maintains-research-facility .
     """ ;
     rdfs:comment "The contribution of managing and operating a research facility, for example a confocal microscopy facility."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:major-effort a scoro:ContributionEffort,
@@ -1295,7 +1295,7 @@ scoro:major-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:major-effort .
     """ ;
     rdfs:comment "The contributor provided a major effort towards achieving this contribution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:manager a scoro:OrganizationRole,
@@ -1309,7 +1309,7 @@ scoro:manager a scoro:OrganizationRole,
         pro:withRole scoro:manager .
     """ ;
     rdfs:comment "The role held by a person responsible for managing the day-to-day activities of an activity, enterprise or organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:manages-project a scoro:OrganizationalContribution,
@@ -1325,7 +1325,7 @@ scoro:manages-project a scoro:OrganizationalContribution,
     rdfs:comment """
 The contribution of project management.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the person holding the formal role of project manager may make considerable contributions to the management of a research project.
@@ -1342,7 +1342,7 @@ scoro:master-student a scoro:EducationalRole,
         pro:withRole scoro:master-student .
     """ ;
     rdfs:comment "The role of a person registered for a master degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:member a scoro:OrganizationRole,
@@ -1356,7 +1356,7 @@ scoro:member a scoro:OrganizationRole,
         pro:withRole scoro:member .
     """ ;
     rdfs:comment "The role held by an agent of belonging to a group or organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:minor-effort a scoro:ContributionEffort,
@@ -1371,7 +1371,7 @@ scoro:minor-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:minor-effort .
     """ ;
     rdfs:comment "The contributor provided a minor effort towards achieving this contribution. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:non-academic-staff-member a scoro:OrganizationRole,
@@ -1385,7 +1385,7 @@ scoro:non-academic-staff-member a scoro:OrganizationRole,
         pro:withRole scoro:non-academic-staff-member .
     """ ;
     rdfs:comment "The role of a person employed within a university department, school or institute who is not a member of the academic faculty."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:obtains-and-or-prepares-specimens a scoro:ExperimentalContribution,
@@ -1399,7 +1399,7 @@ scoro:obtains-and-or-prepares-specimens a scoro:ExperimentalContribution,
         scoro:withContribution scoro:obtains-and-or-prepares-specimens .
     """ ;
     rdfs:comment "The contribution of obtaining and/or preparing specimens in a manner requiring research expertise or skill, for example collecting and preparing fossils, or preparing electron microscope specimens for examination."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:organizer a scoro:OrganizationRole,
@@ -1413,7 +1413,7 @@ scoro:organizer a scoro:OrganizationRole,
         pro:withRole scoro:organizer .
     """ ;
     rdfs:comment "The role held by an agent who organizes something, such as a conference, a private meeting or a public event."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:owner a scoro:FinancialRole,
@@ -1427,7 +1427,7 @@ scoro:owner a scoro:FinancialRole,
         pro:withRole scoro:owner .
     """ ;
     rdfs:comment "The role held by an agent who is the owner of something with actual or potential financial value, for example a building, a piece of equipment, the copyright of a document, or the intellectual property rights relating to an idea or discovery."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:participant a scoro:OrganizationRole,
@@ -1441,7 +1441,7 @@ scoro:participant a scoro:OrganizationRole,
         pro:withRole scoro:participant .
     """ ;
     rdfs:comment "The role held by an agent who takes part in something, for example a conference, a private meeting or a public event."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:partner a scoro:OrganizationRole,
@@ -1455,7 +1455,7 @@ scoro:partner a scoro:OrganizationRole,
         pro:withRole scoro:partner .
     """ ;
     rdfs:comment "The role held by a person who is a partner with one or more other people in an organization, project, endeavour, activity or sphere of common interest."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:percentageFTE a owl:DatatypeProperty ;
@@ -1470,7 +1470,7 @@ scoro:percentageFTE a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "The proportion of a person's full time activity that is dedicated to a particular role (e.g. for part-time employment, 50% FTE)."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:performs-experiments a scoro:ExperimentalContribution,
@@ -1484,7 +1484,7 @@ scoro:performs-experiments a scoro:ExperimentalContribution,
         scoro:withContribution scoro:performs-experiments .
     """ ;
     rdfs:comment "The contribution of performing experiments."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:photographer a scoro:AuthorshipRole,
@@ -1498,7 +1498,7 @@ scoro:photographer a scoro:AuthorshipRole,
         pro:withRole scoro:photographer .
     """ ;
     rdfs:comment "The role a person has of being a photographer of, or for, some entity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:possessor a scoro:OrganizationRole,
@@ -1512,7 +1512,7 @@ scoro:possessor a scoro:OrganizationRole,
         pro:withRole scoro:possessor .
     """ ;
     rdfs:comment "The role held by an agent as possessor or owner of some entity such as an address or a telephone number."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:postdoctoral-researcher a scoro:InvestigationRole,
@@ -1526,7 +1526,7 @@ scoro:postdoctoral-researcher a scoro:InvestigationRole,
         pro:withRole scoro:postdoctoral-researcher .
     """ ;
     rdfs:comment "The role a person has of being a post-doctoral researcher involved in a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:postgraduate-student a scoro:EducationalRole,
@@ -1540,7 +1540,7 @@ scoro:postgraduate-student a scoro:EducationalRole,
         pro:withRole scoro:postgraduate-student .
     """ ;
     rdfs:comment "The role of a person registered for a graduate (masters or doctoral) degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:prepares-illustrations a scoro:AuthorshipContribution,
@@ -1554,7 +1554,7 @@ scoro:prepares-illustrations a scoro:AuthorshipContribution,
         scoro:withContribution scoro:prepares-illustrations .
     """ ;
     rdfs:comment "The contribution of selecting the data and preparing the figures and tables presenting these data for inclusion in the publication. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:prepares-supplementary-information a scoro:AuthorshipContribution,
@@ -1568,7 +1568,7 @@ scoro:prepares-supplementary-information a scoro:AuthorshipContribution,
         scoro:withContribution scoro:prepares-supplementary-information .
     """ ;
     rdfs:comment "The contribution of preparing the supplementary information files submitted with the manuscript. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:principal-author a scoro:AuthorshipRole,
@@ -1584,7 +1584,7 @@ scoro:principal-author a scoro:AuthorshipRole,
     rdfs:comment """
 The role an author has of being the principal or primary author of the document, who has contributed most to the work described.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 In some communities, but not all, the principal author is named first in the author list. 
@@ -1603,7 +1603,7 @@ scoro:principal-investigator a scoro:InvestigationRole,
         pro:withRole scoro:principal-investigator .
     """ ;
     rdfs:comment "The role a person has of being the principal investigator for a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:processes-data a scoro:ExperimentalContribution,
@@ -1617,7 +1617,7 @@ scoro:processes-data a scoro:ExperimentalContribution,
         scoro:withContribution scoro:processes-data .
     """ ;
     rdfs:comment "The contribution of processing, cleaning, assembling, condensing or refining the data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:programme-manager a scoro:OrganizationRole,
@@ -1631,7 +1631,7 @@ scoro:programme-manager a scoro:OrganizationRole,
         pro:withRole scoro:programme-manager .
     """ ;
     rdfs:comment "The role held by a person who is in charge of a programme of related activities or projects, for example on behalf of a funding agency."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:project-leader a scoro:ProjectRole,
@@ -1645,7 +1645,7 @@ scoro:project-leader a scoro:ProjectRole,
         pro:withRole scoro:project-leader .
     """ ;
     rdfs:comment "The role a person or an institution has of being project leader for a resource or a project such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:project-manager a scoro:ProjectRole,
@@ -1659,7 +1659,7 @@ scoro:project-manager a scoro:ProjectRole,
         pro:withRole scoro:project-manager .
     """ ;
     rdfs:comment "The role a person has of being project manager for a project such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:project-member a scoro:ProjectRole,
@@ -1673,7 +1673,7 @@ scoro:project-member a scoro:ProjectRole,
         pro:withRole scoro:project-member .
     """ ;
     rdfs:comment "The role a person has of being a member of a project such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:project-student a scoro:InvestigationRole,
@@ -1687,7 +1687,7 @@ scoro:project-student a scoro:InvestigationRole,
         pro:withRole scoro:project-student .
     """ ;
     rdfs:comment "The role a person has of being a project student, namely someone engaged in an undergraduate research project as part of studying for an undergraduate degree at a university, whose research will be presented in an undergraduate research project report, fulfilling in part the requirements of that degree."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-administrative-support a scoro:OrganizationalContribution,
@@ -1701,7 +1701,7 @@ scoro:provides-administrative-support a scoro:OrganizationalContribution,
         scoro:withContribution scoro:provides-administrative-support .
     """ ;
     rdfs:comment "The contribution of providing administrative support for the research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-advice a scoro:IntellectualContribution,
@@ -1715,7 +1715,7 @@ scoro:provides-advice a scoro:IntellectualContribution,
         scoro:withContribution scoro:provides-advice .
     """ ;
     rdfs:comment "The contribution of providing advice to facilitate the research, while not actively participating in the work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-exising-data a scoro:ExperimentalContribution,
@@ -1729,7 +1729,7 @@ scoro:provides-exising-data a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-existing-data .
     """ ;
     rdfs:comment "The contribution of providing pre-existing data for reuse in the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-patients a scoro:ExperimentalContribution,
@@ -1743,7 +1743,7 @@ scoro:provides-patients a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-patients .
     """ ;
     rdfs:comment "The contribution of providing access to medical or veterinary patients, to make possible the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-reagents-specimens-or-materials a scoro:ExperimentalContribution,
@@ -1757,7 +1757,7 @@ scoro:provides-reagents-specimens-or-materials a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-reagents-specimens-or-materials .
     """ ;
     rdfs:comment "The contribution of providing reagents, specimens or materials, including living organisms and cells, for example those not readily obtainable from commercial sources, to make possible the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-service a scoro:ExperimentalContribution,
@@ -1771,7 +1771,7 @@ scoro:provides-service a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-service .
     """ ;
     rdfs:comment "The contribution of providing a research service, for example a DNA sequencing service or a custom peptide synthesis service."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-software a scoro:ExperimentalContribution,
@@ -1785,7 +1785,7 @@ scoro:provides-software a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-software .
     """ ;
     rdfs:comment "The contribution of providing software to facilitate the research, while not actively participating in the work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-technical-support a scoro:ExperimentalContribution,
@@ -1799,7 +1799,7 @@ scoro:provides-technical-support a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-technical-support .
     """ ;
     rdfs:comment "The contribution of providing technical support that facilitates research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:provides-tools-equipment-or-facilities a scoro:ExperimentalContribution,
@@ -1813,7 +1813,7 @@ scoro:provides-tools-equipment-or-facilities a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-tools-equipment-or-facilities .
     """ ;
     rdfs:comment "The contribution of providing tools, equipment or facilities for the research, while not actively participating in the work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:publishes-data a scoro:AuthorshipContribution,
@@ -1829,7 +1829,7 @@ scoro:publishes-data a scoro:AuthorshipContribution,
     rdfs:comment """
 The contribution of publishing in a public database or data repository data arising from the research.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that this activity is distinct from that of publishing a journal article containing a selection of these data.
@@ -1846,7 +1846,7 @@ scoro:purchaser a scoro:FinancialRole,
         pro:withRole scoro:purchaser .
     """ ;
     rdfs:comment "The role held by an agent of making purchases of goods or services, the cost of which is typically charged to a particular academic budget, for example a project manager placing an order to purchase equipment funded from a research grant."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:registrar a scoro:OrganizationRole,
@@ -1860,7 +1860,7 @@ scoro:registrar a scoro:OrganizationRole,
         pro:withRole scoro:registrar .
     """ ;
     rdfs:comment "The role held by an agent responsible for maintaining official records, for example the records of student enrollment and academic standing held by a college or university, or the records of securities owned by a financial institution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:registration-agency a scoro:OrganizationRole,
@@ -1874,7 +1874,7 @@ scoro:registration-agency a scoro:OrganizationRole,
         pro:withRole scoro:registration-agency .
     """ ;
     rdfs:comment "The role of an agent officially appointed by a Registration Authority that acts to register things. For example, CrossRef is a registration agency for DOIs relating to documents, while DataCite is a registration agency for DOIs relating to datasets, both acting for the Registration Authority for DOIs, namely the International DOI Foundation (IDF)."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:registration-authority a scoro:OrganizationRole,
@@ -1888,7 +1888,7 @@ scoro:registration-authority a scoro:OrganizationRole,
         pro:withRole scoro:registration-authority .
     """ ;
     rdfs:comment "The role of an agent with responsibility for registering and maintaining international standards, internet domain names, patents, controlled vocabularies and other similar entities required for reliable international cooperatative activities. For example, the International DOI Foundation (IDF) is the Registration Authority for DOIs."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:repository-manager a scoro:DataRole,
@@ -1902,7 +1902,7 @@ scoro:repository-manager a scoro:DataRole,
         pro:withRole scoro:repository-manager .
     """ ;
     rdfs:comment "The role a person has of being a manager of a repository where entities are given secure long-term storage, typically digital repository for information objects, for example a data repository."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:research-assistant a scoro:InvestigationRole,
@@ -1916,7 +1916,7 @@ scoro:research-assistant a scoro:InvestigationRole,
         pro:withRole scoro:research-assistant .
     """ ;
     rdfs:comment "The role a person has of being a research assistant involved in a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:research-student a scoro:InvestigationRole,
@@ -1930,7 +1930,7 @@ scoro:research-student a scoro:InvestigationRole,
         pro:withRole scoro:research-student .
     """ ;
     rdfs:comment "The role a person has of being a research student, namely someone engaged in research as part of studying for a higher degree at a university or research institute, whose research will be presented in a thesis, fulfilling in part the requirements of that degree."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:researcher a scoro:InvestigationRole,
@@ -1944,7 +1944,7 @@ scoro:researcher a scoro:InvestigationRole,
         pro:withRole scoro:researcher .
     """ ;
     rdfs:comment "The role a person has of being a researcher involved in a research investigation, for example by conducting experiments, collecting and analyzing data, or undertaking formal study."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:revises-manuscript a scoro:AuthorshipContribution,
@@ -1958,7 +1958,7 @@ scoro:revises-manuscript a scoro:AuthorshipContribution,
         scoro:withContribution scoro:revises-manuscript .
     """ ;
     rdfs:comment "The contribution of critically reviewing and revising drafts of the manuscript of the research paper."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:scholar a scoro:InvestigationRole,
@@ -1972,7 +1972,7 @@ scoro:scholar a scoro:InvestigationRole,
         pro:withRole scoro:scholar .
     """ ;
     rdfs:comment "The role of an academic who undertakes scholarly activities, including research investigations. This role is particularly used to describe endeavours in the arts and humanites that are frequently undertaken without financial support from a particular funded project dedicated to these scholarly activities."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:secures-funding a scoro:OrganizationalContribution,
@@ -1988,7 +1988,7 @@ scoro:secures-funding a scoro:OrganizationalContribution,
     rdfs:comment """
 The contribution of securing funding for the research project.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that an individual other than the lead applicant and the co-applicants on a grant application may make contributions to securing funding for a research project, for example by assisting in writing the grant application.
@@ -2005,7 +2005,7 @@ scoro:senior-author a scoro:AuthorshipRole,
         pro:withRole scoro:senior-author .
     """ ;
     rdfs:comment "The role an author has of being the senior author of the document."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:service-engineer a scoro:InvestigationRole,
@@ -2019,7 +2019,7 @@ scoro:service-engineer a scoro:InvestigationRole,
         pro:withRole scoro:service-engineer .
     """ ;
     rdfs:comment "The role held by a person who services, maintains and repairs equipment, facilities or technical infrastructure. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:solo-effort a scoro:ContributionEffort,
@@ -2034,7 +2034,7 @@ scoro:solo-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:solo-effort .
     """ ;
     rdfs:comment "The contributor was the only person who provided effort in achieving this contribution, which was entirely due to this contributor."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:spokesperson a scoro:OrganizationRole,
@@ -2048,7 +2048,7 @@ scoro:spokesperson a scoro:OrganizationRole,
         pro:withRole scoro:spokesperson .
     """ ;
     rdfs:comment "The role held by a person who makes statements on behalf of another individual, a group, a project or an institution"@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:sponsor a scoro:FinancialRole,
@@ -2064,7 +2064,7 @@ scoro:sponsor a scoro:FinancialRole,
     rdfs:comment """
 The role held by an agent that provides funds or support for a person, project or activity, often in return for access to the exploitable commercial potential associated with that person’s work, or that project or activity’s output, for example through equity sharing or publicity.
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:stakeholder a scoro:OrganizationRole,
@@ -2078,7 +2078,7 @@ scoro:stakeholder a scoro:OrganizationRole,
         pro:withRole scoro:stakeholder .
     """ ;
     rdfs:comment "The role held by an agent with an interest or concern in something, for example the creation of a new university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:sub-contractor a scoro:FinancialRole,
@@ -2092,7 +2092,7 @@ scoro:sub-contractor a scoro:FinancialRole,
         pro:withRole scoro:sub-contractor .
     """ ;
     rdfs:comment "The role held by an agent who enters into a contract to take over part of another contractor's obligation to undertake specified work or supply specified services in return for payment."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:successor a scoro:OrganizationRole,
@@ -2106,7 +2106,7 @@ scoro:successor a scoro:OrganizationRole,
         pro:withRole scoro:successor .
     """ ;
     rdfs:comment "The relationship held by an entity that succeeds another, for example a new electron microscope that replaces an out-dated one, a research project that follows on from a preceding project, or a faculty member who succeeds a colleague as head of department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:supervises-colleagues a scoro:OrganizationalContribution,
@@ -2120,7 +2120,7 @@ scoro:supervises-colleagues a scoro:OrganizationalContribution,
         scoro:withContribution scoro:supervises-colleagues .
     """ ;
     rdfs:comment "The contribution of supervising, mentoring, instructing or training colleagues, particularly junior research assistants and research students, in aspects of the research or its methodologies."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:supervisor a scoro:EducationalRole,
@@ -2134,7 +2134,7 @@ scoro:supervisor a scoro:EducationalRole,
         pro:withRole scoro:supervisor .
     """ ;
     rdfs:comment "The role of a person who guides and oversees the research activities of a team member, or who formally supervises a student during that student's research project undertaken as part of a degree course at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:supplier a scoro:FinancialRole,
@@ -2148,7 +2148,7 @@ scoro:supplier a scoro:FinancialRole,
         pro:withRole scoro:supplier .
     """ ;
     rdfs:comment "The role held by an agent of providing goods or services in exchange for payment."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:technician a scoro:InvestigationRole,
@@ -2162,7 +2162,7 @@ scoro:technician a scoro:InvestigationRole,
         pro:withRole scoro:technician .
     """ ;
     rdfs:comment "The role a person has of being a technician, providing technical assistance in some endeavour such as a research investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:undergraduate-student a scoro:EducationalRole,
@@ -2176,7 +2176,7 @@ scoro:undergraduate-student a scoro:EducationalRole,
         pro:withRole scoro:undergraduate-student .
     """ ;
     rdfs:comment "The role of a person registered for an undergraduate degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:undertakes-modelling a scoro:IntellectualContribution,
@@ -2190,7 +2190,7 @@ scoro:undertakes-modelling a scoro:IntellectualContribution,
         scoro:withContribution scoro:undertakes-modelling .
     """ ;
     rdfs:comment "The contribution of design, implementation and analysis of mathematical models or computer simulations."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:vice-chancellor a scoro:OrganizationRole,
@@ -2204,7 +2204,7 @@ scoro:vice-chancellor a scoro:OrganizationRole,
         pro:withRole scoro:vice-chancellor .
     """ ;
     rdfs:comment "The role held by the chief executive officer of a university, responsible for directing and managing its business and academic activities."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:web-master a scoro:DataRole,
@@ -2218,7 +2218,7 @@ scoro:web-master a scoro:DataRole,
         pro:withRole scoro:web-master .
     """ ;
     rdfs:comment "The role of a person responsible for maintaining a web site and its content."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:withEffort a owl:ObjectProperty ;
@@ -2233,7 +2233,7 @@ scoro:withEffort a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between an agent's contribution with respect to a particular entity and the amount of effort exerted by this agent in making that contribution, defined by individuals of the class scoro:ContributionEffort."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionEffort ;
     rdfs:subPropertyOf tisit:forEntity ;
     vs:term_status reg:statusStable .
@@ -2250,7 +2250,7 @@ scoro:withJobTitle a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "A job title that characterizes an agent's role in time."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 This data property complements the definition of that role in time specified by `scoro:Role`. For example, for the `scoro:OrganizationRole` 'Head of Department', the specific Job Title might be 'Linacre Professor of Zoology' or 'Regius Professor of Moral Philosophy'.
@@ -2267,7 +2267,7 @@ scoro:workpackage-leader a scoro:ProjectRole,
         pro:withRole scoro:workpackage-leader .
     """ ;
     rdfs:comment "The role a person or institution has of being leader for a workpackage or sub-project within a project such as a research project, with responsibility for ensuring that the proposed work is undertaken and documented, the generated data are properly curated and archived, and the results are published and reported to the funding agency."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:writes-manuscript-draft a scoro:AuthorshipContribution,
@@ -2281,7 +2281,7 @@ scoro:writes-manuscript-draft a scoro:AuthorshipContribution,
         scoro:withContribution scoro:writes-manuscript-draft .
     """ ;
     rdfs:comment "The contribution of writing the initial draft of the manuscript of the research paper."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 rdfs:comment a owl:AnnotationProperty .
@@ -2292,15 +2292,57 @@ rdfs:seeAlso a owl:AnnotationProperty .
 
 owl:versionInfo a owl:AnnotationProperty .
 
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+dc:language a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:image a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+schema:keywords a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+vann:changes a owl:AnnotationProperty .
+
+vann:example a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
 frapo:hasORCID a owl:DatatypeProperty ;
     rdfs:label "has orcid"@en ;
     rdfs:comment "An individual's Open Researcher and Contributor ID (ORCID), an alphanumeric identifier for individual scholars described at http://about.orcid.org/."@en ;
-    rdfs:isDefinedBy frapo: .
+    rdfs:isDefinedBy <http://purl.org/cerif/frapo> .
 
 frapo:hasPersonalIdentifier a owl:DatatypeProperty ;
     rdfs:label "has personal identifier"@en ;
     rdfs:comment "A unique and unambiguous identifier for an individual person within a given context."@en ;
-    rdfs:isDefinedBy frapo: .
+    rdfs:isDefinedBy <http://purl.org/cerif/frapo> .
 
 scoro:article-guarantor a scoro:AuthorshipRole,
         owl:NamedIndividual ;
@@ -2313,7 +2355,7 @@ scoro:article-guarantor a scoro:AuthorshipRole,
         pro:withRole scoro:article-guarantor .
     """ ;
     rdfs:comment "The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 scoro:hasPersonalIdentifier a owl:DatatypeProperty ;
@@ -2325,7 +2367,7 @@ scoro:hasPersonalIdentifier a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "A unique and unambiguous identifier for an individual person within a given context."@en ;
     rdfs:domain foaf:Person ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     owl:equivalentProperty frapo:hasPersonalIdentifier ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2345,7 +2387,7 @@ scoro:isRelatedToContributionSituation a owl:ObjectProperty ;
         scoro:isRelatedToContributionSituation :my-person-contribution .
     """ ;
     rdfs:comment "A relation between an entity and the contribution situation for which that entity provides the context."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     vs:term_status reg:statusStable .
@@ -2361,7 +2403,7 @@ scoro:makesContribution a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between an agent and a contribution."@en ;
     rdfs:domain foaf:Agent ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tvc:hasValue ;
     vs:term_status reg:statusStable .
@@ -2379,7 +2421,7 @@ scoro:patent-holder a scoro:OrganizationRole,
     rdfs:comment """
 The role held by an agent who holds a patent.
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:seeAlso pro:copyright-owner,
         scoro:rights-holder ;
     vs:term_status reg:statusStable .
@@ -2397,7 +2439,7 @@ scoro:rights-holder a scoro:OrganizationRole,
     rdfs:comment """
 The role held by an agent who holds, owns and manages the legal rights to a project or activity and its products and outcomes, for example the exploitation, licensing and intellectual property rights.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:seeAlso pro:copyright-owner,
         scoro:patent-holder ;
     vs:term_status reg:statusStable .
@@ -2405,14 +2447,14 @@ The role held by an agent who holds, owns and manages the legal rights to a proj
 tvc:hasValue a owl:ObjectProperty ;
     rdfs:label "has value"@en ;
     rdfs:comment "The relation between an entity and a value in time situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting .
 
 tvc:withValue a owl:ObjectProperty ;
     rdfs:label "with value"@en ;
     rdfs:comment "The relation between the value in time situation and the actual value held by the entity partaking in that situation."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:range tvc:ValueInTime ;
     rdfs:subPropertyOf tisit:forEntity .
 
@@ -2420,7 +2462,7 @@ tvc:withinContext a owl:ObjectProperty ;
     rdfs:label "within context"@en ;
     rdfs:comment "The specific context within which the fact of the entity having the value is relevant."@en ;
     rdfs:domain tvc:ValueInTime ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:subPropertyOf tisit:forEntity .
 
 scoro:withContribution a owl:FunctionalProperty,
@@ -2435,7 +2477,7 @@ scoro:withContribution a owl:FunctionalProperty,
     """ ;
     rdfs:comment "A relation between an agent's contribution situation and a definition of the contribution made by this agent."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:Contribution ;
     rdfs:subPropertyOf tvc:withValue ;
     vs:term_status reg:statusStable ;
@@ -2446,41 +2488,41 @@ This is specified as an instance of the class `scoro:Contribution` or of one of 
 foaf:Person a owl:Class ;
     rdfs:label "person"@en ;
     rdfs:comment "A person."@en ;
-    rdfs:isDefinedBy foaf: ;
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1> ;
     rdfs:subClassOf foaf:Agent .
 
 tisit:TimeIndexedSituation a owl:Class ;
     rdfs:label "time indexed situation"@en ;
     rdfs:comment "A situation that is explicitly indexed at some time for at least one entity." ;
-    rdfs:isDefinedBy tisit: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
 
 tisit:hasTimeIndexedSetting a owl:ObjectProperty ;
     rdfs:label "has time indexed setting"@en ;
     rdfs:comment "The relation between an entity and a time-indexed situation it is involved in."@en ;
-    rdfs:isDefinedBy tisit: ;
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> ;
     rdfs:range tisit:TimeIndexedSituation .
 
 pro:RoleInTime a owl:Class ;
     rdfs:label "role in time"@en ;
     rdfs:comment "A particular situation that describe a role an agent may have, that can be restricted to a particular time interval."@en ;
-    rdfs:isDefinedBy pro: .
+    rdfs:isDefinedBy <http://purl.org/spar/pro> .
 
 tvc:ValueInTime a owl:Class ;
     rdfs:label "value in time"@en ;
     rdfs:comment "A particular kind of time-indexed situation that represents a hub linking the entity having a particular value, the value itself and the temporal and contextual extents from which the entity-value relationship depends."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/tvc/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/tvc> ;
     rdfs:subClassOf tisit:TimeIndexedSituation .
 
 tisit:forEntity a owl:ObjectProperty ;
     rdfs:label "for entity"@en ;
     rdfs:comment "The relation between a time-indexed situation and an entity involved in it."@en ;
     rdfs:domain tisit:TimeIndexedSituation ;
-    rdfs:isDefinedBy tisit: .
+    rdfs:isDefinedBy <http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl> .
 
 foaf:Agent a owl:Class ;
     rdfs:label "agent"@en ;
     rdfs:comment "Any kind of agents, such as a person, a group, an organization or a software agent."@en ;
-    rdfs:isDefinedBy foaf: .
+    rdfs:isDefinedBy <http://xmlns.com/foaf/0.1> .
 
 scoro:ContributionEffort a owl:Class ;
     rdfs:label "contribution effort"@en ;
@@ -2495,7 +2537,7 @@ scoro:ContributionEffort a owl:Class ;
     scoro:major-effort a ContributionEffort .
     """ ;
     rdfs:comment "The effort expended in making a contribution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf owl:Thing ;
     vs:term_status reg:statusStable .
 
@@ -2511,7 +2553,7 @@ scoro:EducationalRole a owl:Class ;
     scoro:master-student a scoro:EducationalRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to an educational organization or activity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2521,7 +2563,7 @@ Individual members of this class are used to specify particular roles.
 pro:Role a owl:Class ;
     rdfs:label "role"@en ;
     rdfs:comment "A role an agent may have. Individual members of this class or its sub-classes are used to specify particular roles."@en ;
-    rdfs:isDefinedBy pro: .
+    rdfs:isDefinedBy <http://purl.org/spar/pro> .
 
 scoro:AuthorshipContribution a owl:Class ;
     rdfs:label "authorship contribution"@en ;
@@ -2535,7 +2577,7 @@ scoro:AuthorshipContribution a owl:Class ;
     scoro:prepares-illustrations a scoro:AuthorshipContribution .
     """ ;
     rdfs:comment "The type or nature of a contribution made with respect to the authorship of a publication such as a journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2554,7 +2596,7 @@ scoro:Contribution a owl:Class ;
     scoro:prepares-illustrations a scoro:Contribution .
     """ ;
     rdfs:comment "The type or nature of a contribution made by an agent. Individual members of this class or its sub-classes are used to specify particular contributions."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf owl:Thing ;
     owl:disjointWith scoro:ContributionEffort ;
     vs:term_status reg:statusStable .
@@ -2571,7 +2613,7 @@ scoro:OrganizationalContribution a owl:Class ;
     scoro:provides-administrative-support a scoro:OrganizationalContribution .
     """ ;
     rdfs:comment "The type or nature of an organizational or administrative contribution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2590,7 +2632,7 @@ scoro:ProjectRole a owl:Class ;
     scoro:workpackage-leader a scoro:ProjectRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to a project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2609,7 +2651,7 @@ scoro:AuthorshipRole a owl:Class ;
     scoro:illustrator a scoro:AuthorshipRole .
     """ ;
     rdfs:comment "A role that a person might hold as an author of a publication or the creator of a work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2626,7 +2668,7 @@ scoro:ContributionSituation a owl:Class ;
         scoro:withContribution scoro:interprets-results .
     """ ;
     rdfs:comment "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty scoro:withContribution ;
             owl:someValuesFrom scoro:Contribution ],
@@ -2656,7 +2698,7 @@ scoro:IntellectualContribution a owl:Class ;
     scoro:leads-investigation a scoro:IntellectualContribution .
     """ ;
     rdfs:comment "The type or nature of an intellectual contribution made to the research described in a journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2675,7 +2717,7 @@ scoro:DataRole a owl:Class ;
     scoro:repository-manager a scoro:DataRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2694,7 +2736,7 @@ scoro:FinancialRole a owl:Class ;
     scoro:sponsor a scoro:FinancialRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to academic and project finance."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2713,7 +2755,7 @@ scoro:InvestigationRole a owl:Class ;
     scoro:technician a scoro:InvestigationRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to an investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2732,7 +2774,7 @@ scoro:ExperimentalContribution a owl:Class ;
     scoro:collects-data a scoro:ExperimentalContribution .
     """ ;
     rdfs:comment "The type or nature of a practical or experimental contribution made to the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """
@@ -2751,7 +2793,7 @@ scoro:OrganizationRole a owl:Class ;
     scoro:contact-person a scoro:OrganizationRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to an organization and its administration, particularly within an academic context."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """

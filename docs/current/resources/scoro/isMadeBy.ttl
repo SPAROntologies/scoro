@@ -18,7 +18,7 @@ scoro:isMadeBy a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a contribution situation that an agent makes, and that agent."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range foaf:Agent ;
     rdfs:subPropertyOf tisit:forEntity ;
     owl:inverseOf scoro:makesContribution ;

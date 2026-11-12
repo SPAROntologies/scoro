@@ -16,6 +16,6 @@ scoro:formulates-research-questions a scoro:IntellectualContribution,
         scoro:withContribution scoro:formulates-research-questions .
     """ ;
     rdfs:comment "The contribution of formulating the questions to be answered and the hypotheses to be tested by the research to be undertaken."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

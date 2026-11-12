@@ -16,6 +16,6 @@ scoro:obtains-and-or-prepares-specimens a scoro:ExperimentalContribution,
         scoro:withContribution scoro:obtains-and-or-prepares-specimens .
     """ ;
     rdfs:comment "The contribution of obtaining and/or preparing specimens in a manner requiring research expertise or skill, for example collecting and preparing fossils, or preparing electron microscope specimens for examination."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

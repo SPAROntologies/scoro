@@ -16,6 +16,6 @@ scoro:service-engineer a scoro:InvestigationRole,
         pro:withRole scoro:service-engineer .
     """ ;
     rdfs:comment "The role held by a person who services, maintains and repairs equipment, facilities or technical infrastructure. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

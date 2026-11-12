@@ -19,7 +19,7 @@ scoro:rights-holder a scoro:OrganizationRole,
     rdfs:comment """
 The role held by an agent who holds, owns and manages the legal rights to a project or activity and its products and outcomes, for example the exploitation, licensing and intellectual property rights.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:seeAlso pro:copyright-owner,
         scoro:patent-holder ;
     vs:term_status reg:statusStable .

@@ -18,6 +18,6 @@ scoro:percentageFTE a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "The proportion of a person's full time activity that is dedicated to a particular role (e.g. for part-time employment, 50% FTE)."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

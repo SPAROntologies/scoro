@@ -5,5 +5,5 @@
 frapo:hasPersonalIdentifier a owl:DatatypeProperty ;
     rdfs:label "has personal identifier"@en ;
     rdfs:comment "A unique and unambiguous identifier for an individual person within a given context."@en ;
-    rdfs:isDefinedBy frapo: .
+    rdfs:isDefinedBy <http://purl.org/cerif/frapo> .
 

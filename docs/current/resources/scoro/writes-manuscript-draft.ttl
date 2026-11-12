@@ -16,6 +16,6 @@ scoro:writes-manuscript-draft a scoro:AuthorshipContribution,
         scoro:withContribution scoro:writes-manuscript-draft .
     """ ;
     rdfs:comment "The contribution of writing the initial draft of the manuscript of the research paper."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

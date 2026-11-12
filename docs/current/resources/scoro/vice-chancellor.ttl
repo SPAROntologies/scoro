@@ -16,6 +16,6 @@ scoro:vice-chancellor a scoro:OrganizationRole,
         pro:withRole scoro:vice-chancellor .
     """ ;
     rdfs:comment "The role held by the chief executive officer of a university, responsible for directing and managing its business and academic activities."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

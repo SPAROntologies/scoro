@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/scoro/"
+        "@id": "http://purl.org/spar/scoro"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "@id": "_:nbebde1d080f14e2f928ceb53b7f89d95b2",
+    "@id": "_:n052048f53e85452b9f9f97bd4254dd6fb2",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],

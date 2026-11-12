@@ -1,22 +1,22 @@
-_:nbebde1d080f14e2f928ceb53b7f89d95b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipRole> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationRole> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/InvestigationRole> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b14 .
-_:nbebde1d080f14e2f928ceb53b7f89d95b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ProjectRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/InvestigationRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb11 .
+_:n052048f53e85452b9f9f97bd4254dd6fb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/ProjectRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n052048f53e85452b9f9f97bd4254dd6fb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb14 .
+<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro> .
 <http://purl.org/spar/scoro/OrganizationRole> <http://purl.org/vocab/vann/example> "\n    :my-person a foaf:Person ;\n        pro:holdsRoleInTime :my-person-role .\n\n    :my-person-role a pro:RoleInTime ;\n        pro:withRole scoro:contact-person .\n    \n    scoro:contact-person a scoro:OrganizationRole .\n    " .
-<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/scoro/> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b13 .
-_:nbebde1d080f14e2f928ceb53b7f89d95b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b12 .
-_:nbebde1d080f14e2f928ceb53b7f89d95b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en .
 <http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/pro/Role> .
-<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#label> "organizational role"@en .
-_:nbebde1d080f14e2f928ceb53b7f89d95b9 <http://www.w3.org/2002/07/owl#members> _:nbebde1d080f14e2f928ceb53b7f89d95b10 .
-_:nbebde1d080f14e2f928ceb53b7f89d95b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b11 .
-_:nbebde1d080f14e2f928ceb53b7f89d95b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/FinancialRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb9 <http://www.w3.org/2002/07/owl#members> _:n052048f53e85452b9f9f97bd4254dd6fb10 .
+_:n052048f53e85452b9f9f97bd4254dd6fb10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/AuthorshipRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb13 .
+_:n052048f53e85452b9f9f97bd4254dd6fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/DataRole> .
+<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2004/02/skos/core#note> "\nIndividual members of this class are used to specify particular roles.\n    "@en .
+_:n052048f53e85452b9f9f97bd4254dd6fb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/OrganizationRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb12 .
 <http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n052048f53e85452b9f9f97bd4254dd6fb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n052048f53e85452b9f9f97bd4254dd6fb15 .
+<http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#label> "organizational role"@en .
+_:n052048f53e85452b9f9f97bd4254dd6fb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:nbebde1d080f14e2f928ceb53b7f89d95b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:nbebde1d080f14e2f928ceb53b7f89d95b15 .
 <http://purl.org/spar/scoro/OrganizationRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A role that an agent might hold with respect to an organization and its administration, particularly within an academic context."@en .
-_:nbebde1d080f14e2f928ceb53b7f89d95b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/DataRole> .
+_:n052048f53e85452b9f9f97bd4254dd6fb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/scoro/FinancialRole> .

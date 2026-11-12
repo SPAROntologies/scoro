@@ -16,6 +16,6 @@ scoro:host-institution a scoro:OrganizationRole,
         pro:withRole scoro:host-institution .
     """ ;
     rdfs:comment "The role held by a institution of hosting some initiative, people, or event."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

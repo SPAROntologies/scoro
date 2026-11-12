@@ -16,6 +16,6 @@ scoro:departmental-administrator a scoro:OrganizationRole,
         pro:withRole scoro:departmental-administrator .
     """ ;
     rdfs:comment "The role held by a person who is the administrator of a department within a larger organization, for example of a university academic department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

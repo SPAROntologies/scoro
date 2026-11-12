@@ -16,6 +16,6 @@ scoro:performs-experiments a scoro:ExperimentalContribution,
         scoro:withContribution scoro:performs-experiments .
     """ ;
     rdfs:comment "The contribution of performing experiments."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

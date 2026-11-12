@@ -16,6 +16,6 @@ scoro:financial-controller a scoro:FinancialRole,
         pro:withRole scoro:financial-controller .
     """ ;
     rdfs:comment "The role held by an agent of controlling the finances, for example the finances of an organization, a building project or a research project. This role extends to the control of or the authorisation of expenditure from a budget, and may be undertaken by a computational agent."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
