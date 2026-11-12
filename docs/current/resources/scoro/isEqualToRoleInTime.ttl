@@ -23,7 +23,7 @@ scoro:isEqualToRoleInTime a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between two roles in time as being equal, and is particularly useful for specifying that two principal authorship roles are equal."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range pro:RoleInTime ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:senior-author a scoro:AuthorshipRole,
         pro:withRole scoro:senior-author .
     """ ;
     rdfs:comment "The role an author has of being the senior author of the document."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

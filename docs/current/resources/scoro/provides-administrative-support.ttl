@@ -16,6 +16,6 @@ scoro:provides-administrative-support a scoro:OrganizationalContribution,
         scoro:withContribution scoro:provides-administrative-support .
     """ ;
     rdfs:comment "The contribution of providing administrative support for the research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

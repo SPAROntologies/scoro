@@ -16,6 +16,6 @@ scoro:builds-and-or-maintains-instruments a scoro:ExperimentalContribution,
         scoro:withContribution scoro:builds-and-or-maintains-instruments .
     """ ;
     rdfs:comment "The contribution of building instruments, equipment or scientific apparatus and/or maintaining the same in a workable condition for use in experiments."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:lead-applicant a scoro:ProjectRole,
         pro:withRole scoro:lead-applicant .
     """ ;
     rdfs:comment "The role a person has of being the lead applicant on the grant application to obtain funding to fund an endeavour such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -18,7 +18,7 @@ scoro:hasContributionContext a owl:ObjectProperty ;
     """ ;
     rdfs:comment "A relation between a contribution situation and an entity representing the context for that situation."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subPropertyOf tvc:withinContext ;
     owl:inverseOf scoro:isRelatedToContributionSituation ;
     vs:term_status reg:statusStable .

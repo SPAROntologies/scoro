@@ -16,6 +16,6 @@ scoro:registration-authority a scoro:OrganizationRole,
         pro:withRole scoro:registration-authority .
     """ ;
     rdfs:comment "The role of an agent with responsibility for registering and maintaining international standards, internet domain names, patents, controlled vocabularies and other similar entities required for reliable international cooperatative activities. For example, the International DOI Foundation (IDF) is the Registration Authority for DOIs."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

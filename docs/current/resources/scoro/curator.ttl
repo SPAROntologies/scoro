@@ -16,6 +16,6 @@ scoro:curator a scoro:DataRole,
         pro:withRole scoro:curator .
     """ ;
     rdfs:comment "The role of an agent that documents, cares for and manages collections of objects (for example in a museum) or of data (as in a data repository or database)."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

@@ -16,6 +16,6 @@ scoro:researcher a scoro:InvestigationRole,
         pro:withRole scoro:researcher .
     """ ;
     rdfs:comment "The role a person has of being a researcher involved in a research investigation, for example by conducting experiments, collecting and analyzing data, or undertaking formal study."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

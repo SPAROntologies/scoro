@@ -16,6 +16,6 @@ scoro:data-curator a scoro:DataRole,
         pro:withRole scoro:data-curator .
     """ ;
     rdfs:comment "The role a person has of being a data curator, responsible reviewing, enhancing, cleaning, or standardizing data and their associated metadata, for example those arising from the research project, and for their long-term preservation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

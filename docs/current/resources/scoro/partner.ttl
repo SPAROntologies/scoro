@@ -16,6 +16,6 @@ scoro:partner a scoro:OrganizationRole,
         pro:withRole scoro:partner .
     """ ;
     rdfs:comment "The role held by a person who is a partner with one or more other people in an organization, project, endeavour, activity or sphere of common interest."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

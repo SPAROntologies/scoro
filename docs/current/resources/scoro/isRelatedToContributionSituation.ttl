@@ -19,7 +19,7 @@ scoro:isRelatedToContributionSituation a owl:ObjectProperty ;
         scoro:isRelatedToContributionSituation :my-person-contribution .
     """ ;
     rdfs:comment "A relation between an entity and the contribution situation for which that entity provides the context."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     vs:term_status reg:statusStable .

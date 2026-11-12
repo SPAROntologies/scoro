@@ -16,6 +16,6 @@ scoro:provides-service a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-service .
     """ ;
     rdfs:comment "The contribution of providing a research service, for example a DNA sequencing service or a custom peptide synthesis service."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

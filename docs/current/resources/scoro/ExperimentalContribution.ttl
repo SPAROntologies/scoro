@@ -19,7 +19,7 @@ scoro:ExperimentalContribution a owl:Class ;
     scoro:collects-data a scoro:ExperimentalContribution .
     """ ;
     rdfs:comment "The type or nature of a practical or experimental contribution made to the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf scoro:Contribution ;
     vs:term_status reg:statusStable ;
     skos:note """

@@ -16,6 +16,6 @@ scoro:project-leader a scoro:ProjectRole,
         pro:withRole scoro:project-leader .
     """ ;
     rdfs:comment "The role a person or an institution has of being project leader for a resource or a project such as a research project."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

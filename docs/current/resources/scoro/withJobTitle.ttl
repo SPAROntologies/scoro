@@ -19,7 +19,7 @@ scoro:withJobTitle a owl:DatatypeProperty ;
     """ ;
     rdfs:comment "A job title that characterizes an agent's role in time."@en ;
     rdfs:domain pro:RoleInTime ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 This data property complements the definition of that role in time specified by `scoro:Role`. For example, for the `scoro:OrganizationRole` 'Head of Department', the specific Job Title might be 'Linacre Professor of Zoology' or 'Regius Professor of Moral Philosophy'.

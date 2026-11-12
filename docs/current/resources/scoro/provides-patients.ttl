@@ -16,6 +16,6 @@ scoro:provides-patients a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-patients .
     """ ;
     rdfs:comment "The contribution of providing access to medical or veterinary patients, to make possible the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

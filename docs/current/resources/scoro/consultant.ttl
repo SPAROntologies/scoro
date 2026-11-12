@@ -16,6 +16,6 @@ scoro:consultant a scoro:InvestigationRole,
         pro:withRole scoro:consultant .
     """ ;
     rdfs:comment "The role a person has of being a consultant who is providing expertise or services."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

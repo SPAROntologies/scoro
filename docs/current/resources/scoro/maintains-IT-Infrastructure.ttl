@@ -16,6 +16,6 @@ scoro:maintains-IT-Infrastructure a scoro:ExperimentalContribution,
         scoro:withContribution scoro:maintains-IT-infrastructure .
     """ ;
     rdfs:comment "The contribution of maintaining the IT infrastructure required for the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

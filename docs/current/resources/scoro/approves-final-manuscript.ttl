@@ -16,6 +16,6 @@ scoro:approves-final-manuscript a scoro:AuthorshipContribution,
         scoro:withContribution scoro:approves-final-manuscript .
     """ ;
     rdfs:comment "The contribution of approving the final version of the manuscript, prior to submission for publication."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

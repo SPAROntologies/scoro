@@ -16,6 +16,6 @@ scoro:provides-advice a scoro:IntellectualContribution,
         scoro:withContribution scoro:provides-advice .
     """ ;
     rdfs:comment "The contribution of providing advice to facilitate the research, while not actively participating in the work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

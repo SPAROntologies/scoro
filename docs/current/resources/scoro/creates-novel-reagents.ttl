@@ -16,6 +16,6 @@ scoro:creates-novel-reagents a scoro:ExperimentalContribution,
         scoro:withContribution scoro:creates-novel-reagents .
     """ ;
     rdfs:comment "The contribution of creating novel physical or chemical compounds, or molecular biology constructs, either for use in the research, or as a research output of use to others."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

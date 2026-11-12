@@ -24,7 +24,7 @@ scoro:isEqualToContributionSituation a owl:ObjectProperty,
     """ ;
     rdfs:comment "The relation between two contribution situations that are equals for particular aspects (i.e. for type of contribution, contribution effort and context)."@en ;
     rdfs:domain scoro:ContributionSituation ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     vs:term_status reg:statusStable .
 

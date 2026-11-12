@@ -16,6 +16,6 @@ scoro:undergraduate-student a scoro:EducationalRole,
         pro:withRole scoro:undergraduate-student .
     """ ;
     rdfs:comment "The role of a person registered for an undergraduate degree at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

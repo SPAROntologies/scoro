@@ -16,6 +16,6 @@ scoro:college-fellow a scoro:OrganizationRole,
         pro:withRole scoro:college-fellow .
     """ ;
     rdfs:comment "The role held by an academic as a senior member of a college."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

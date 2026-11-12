@@ -20,7 +20,7 @@ scoro:AuthorshipRole a owl:Class ;
     scoro:illustrator a scoro:AuthorshipRole .
     """ ;
     rdfs:comment "A role that a person might hold as an author of a publication or the creator of a work."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """

@@ -16,6 +16,6 @@ scoro:administrator a scoro:OrganizationRole,
         pro:withRole scoro:administrator .
     """ ;
     rdfs:comment "The role held by an agent responsible for the day-to-day management and running of an organization or activity."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

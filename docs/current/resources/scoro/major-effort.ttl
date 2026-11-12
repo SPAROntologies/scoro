@@ -17,6 +17,6 @@ scoro:major-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:major-effort .
     """ ;
     rdfs:comment "The contributor provided a major effort towards achieving this contribution."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

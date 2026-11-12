@@ -17,6 +17,6 @@ scoro:minor-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:minor-effort .
     """ ;
     rdfs:comment "The contributor provided a minor effort towards achieving this contribution. "@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

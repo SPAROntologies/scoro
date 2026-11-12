@@ -16,6 +16,6 @@ scoro:data-user a scoro:DataRole,
         pro:withRole scoro:data-user .
     """ ;
     rdfs:comment "The role a person has of being a user or re-user of existing data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

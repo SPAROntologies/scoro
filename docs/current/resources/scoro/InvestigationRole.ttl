@@ -20,7 +20,7 @@ scoro:InvestigationRole a owl:Class ;
     scoro:technician a scoro:InvestigationRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to an investigation."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """

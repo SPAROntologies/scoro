@@ -16,6 +16,6 @@ scoro:processes-data a scoro:ExperimentalContribution,
         scoro:withContribution scoro:processes-data .
     """ ;
     rdfs:comment "The contribution of processing, cleaning, assembling, condensing or refining the data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

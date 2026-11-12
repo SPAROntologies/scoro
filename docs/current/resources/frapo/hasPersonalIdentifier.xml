@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/cerif/frapo/hasPersonalIdentifier">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:label xml:lang="en">has personal identifier</rdfs:label>
     <rdfs:comment xml:lang="en">A unique and unambiguous identifier for an individual person within a given context.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/cerif/frapo/"/>
   </rdf:Description>
 </rdf:RDF>

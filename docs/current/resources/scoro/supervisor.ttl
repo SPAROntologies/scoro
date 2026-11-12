@@ -16,6 +16,6 @@ scoro:supervisor a scoro:EducationalRole,
         pro:withRole scoro:supervisor .
     """ ;
     rdfs:comment "The role of a person who guides and oversees the research activities of a team member, or who formally supervises a student during that student's research project undertaken as part of a degree course at a university."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

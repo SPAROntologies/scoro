@@ -19,7 +19,7 @@ scoro:isContributionIn a owl:ObjectProperty ;
     """ ;
     rdfs:comment "The relation between a specific contribution and the contribution situation of an agent making that contribution."@en ;
     rdfs:domain scoro:Contribution ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:range scoro:ContributionSituation ;
     rdfs:subPropertyOf tisit:hasTimeIndexedSetting ;
     owl:inverseOf scoro:withContribution ;

@@ -17,7 +17,7 @@ scoro:affiliate a scoro:OrganizationRole,
         pro:withRole scoro:affiliate .
     """ ;
     rdfs:comment "The role an agent has of being affiliated to some organization or institution in a context of some entity or activity, for example a document, a project or an internship."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 The affiliation of a person to an organization or institution can be specified by using the property `pro:relatesToEntity`.

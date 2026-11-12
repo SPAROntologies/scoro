@@ -16,6 +16,6 @@ scoro:interprets-results a scoro:IntellectualContribution,
         scoro:withContribution scoro:interprets-results .
     """ ;
     rdfs:comment "The contribution of interpretation of experimental results."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

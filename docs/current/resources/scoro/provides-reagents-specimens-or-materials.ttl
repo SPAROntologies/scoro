@@ -16,6 +16,6 @@ scoro:provides-reagents-specimens-or-materials a scoro:ExperimentalContribution,
         scoro:withContribution scoro:provides-reagents-specimens-or-materials .
     """ ;
     rdfs:comment "The contribution of providing reagents, specimens or materials, including living organisms and cells, for example those not readily obtainable from commercial sources, to make possible the research."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

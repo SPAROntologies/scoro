@@ -19,7 +19,7 @@ scoro:publishes-data a scoro:AuthorshipContribution,
     rdfs:comment """
 The contribution of publishing in a public database or data repository data arising from the research.  
 """@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable ;
     skos:note """
 Note that this activity is distinct from that of publishing a journal article containing a selection of these data.

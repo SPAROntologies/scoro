@@ -16,6 +16,6 @@ scoro:organizer a scoro:OrganizationRole,
         pro:withRole scoro:organizer .
     """ ;
     rdfs:comment "The role held by an agent who organizes something, such as a conference, a private meeting or a public event."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

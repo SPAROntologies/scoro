@@ -16,6 +16,6 @@ scoro:analyses-data a scoro:IntellectualContribution,
         scoro:withContribution scoro:analyses-data .
     """ ;
     rdfs:comment "The contribution of data analysis. This might include statistical analysis, bioinformatics analysis, or image analysis."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

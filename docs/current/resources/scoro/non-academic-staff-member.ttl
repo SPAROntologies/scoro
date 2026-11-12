@@ -16,6 +16,6 @@ scoro:non-academic-staff-member a scoro:OrganizationRole,
         pro:withRole scoro:non-academic-staff-member .
     """ ;
     rdfs:comment "The role of a person employed within a university department, school or institute who is not a member of the academic faculty."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

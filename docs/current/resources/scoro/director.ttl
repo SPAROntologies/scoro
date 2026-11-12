@@ -16,6 +16,6 @@ scoro:director a scoro:OrganizationRole,
         pro:withRole scoro:director .
     """ ;
     rdfs:comment "The role held by a person who is in charge of an organization or activity, for example a research institute or a dramatic performance."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

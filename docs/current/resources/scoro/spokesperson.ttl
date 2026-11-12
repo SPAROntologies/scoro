@@ -16,6 +16,6 @@ scoro:spokesperson a scoro:OrganizationRole,
         pro:withRole scoro:spokesperson .
     """ ;
     rdfs:comment "The role held by a person who makes statements on behalf of another individual, a group, a project or an institution"@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

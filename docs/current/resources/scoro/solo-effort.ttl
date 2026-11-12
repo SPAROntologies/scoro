@@ -17,6 +17,6 @@ scoro:solo-effort a scoro:ContributionEffort,
         scoro:withEffort scoro:solo-effort .
     """ ;
     rdfs:comment "The contributor was the only person who provided effort in achieving this contribution, which was entirely due to this contributor."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

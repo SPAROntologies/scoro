@@ -17,6 +17,6 @@ scoro:chief-executive-officer a scoro:OrganizationRole,
         pro:withRole scoro:chief-executive-officer .
     """ ;
     rdfs:comment "The role held by a person who is the chief executive officer of an organization, responsible for directing and managing the business of that organization."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

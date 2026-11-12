@@ -17,7 +17,7 @@ scoro:ContributionSituation a owl:Class ;
         scoro:withContribution scoro:interprets-results .
     """ ;
     rdfs:comment "The situation an agent has of making a contribution to realizing a goal or completing a task relating to a scholarly activity or entity such as journal article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty scoro:withContribution ;
             owl:someValuesFrom scoro:Contribution ],

@@ -16,6 +16,6 @@ scoro:chief-scientist a scoro:InvestigationRole,
         pro:withRole scoro:chief-scientist .
     """ ;
     rdfs:comment "A senior scientist who takes a leadership role in an organization or group."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

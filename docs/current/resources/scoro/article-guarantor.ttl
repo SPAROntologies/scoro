@@ -17,7 +17,7 @@ scoro:article-guarantor a scoro:AuthorshipRole,
         pro:withRole scoro:article-guarantor .
     """ ;
     rdfs:comment "The role of a person who takes responsibility for the integrity of the work as a whole, from the inception of the research investigation to the published research article."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 
 [] a owl:AllDifferent ;

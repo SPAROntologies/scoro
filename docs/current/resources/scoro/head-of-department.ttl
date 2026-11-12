@@ -16,6 +16,6 @@ scoro:head-of-department a scoro:OrganizationRole,
         pro:withRole scoro:head-of-department .
     """ ;
     rdfs:comment "The role held by a person who is the chief executive officer of a department within a larger organization, for example a senior academic who is head of a university academic department."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

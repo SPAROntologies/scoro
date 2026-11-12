@@ -16,6 +16,6 @@ scoro:supplier a scoro:FinancialRole,
         pro:withRole scoro:supplier .
     """ ;
     rdfs:comment "The role held by an agent of providing goods or services in exchange for payment."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     vs:term_status reg:statusStable .
 

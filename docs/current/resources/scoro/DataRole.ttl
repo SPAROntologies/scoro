@@ -20,7 +20,7 @@ scoro:DataRole a owl:Class ;
     scoro:repository-manager a scoro:DataRole .
     """ ;
     rdfs:comment "A role that an agent might hold with respect to data."@en ;
-    rdfs:isDefinedBy scoro: ;
+    rdfs:isDefinedBy <http://purl.org/spar/scoro> ;
     rdfs:subClassOf pro:Role ;
     vs:term_status reg:statusStable ;
     skos:note """
