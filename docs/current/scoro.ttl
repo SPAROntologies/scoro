@@ -48,7 +48,7 @@ pro:author a scoro:AuthorshipRole,
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)"^^xsd:string ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)"^^xsd:string,
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)"^^xsd:string ;
-    dc:date "2026-10-05" ;
+    dc:date "2026-11-12" ;
     dc:description """
 The **_Scholarly Contributions and Roles Ontology (SCoRO)_** is an ontology for use by authors and publishers for describing the contributions that may be made and the roles that may be held by a person with respect to a journal article or other publication, and by research administrators for describing contributions and roles with respect to other aspects of scholarly research.
 
@@ -266,7 +266,7 @@ Which persons hold equal roles in time with respect to the same document?
     dcterms:created "2016-01-19" ;
     dcterms:issued "2017-09-04" ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:modified "2026-10-05" ;
+    dcterms:modified "2026-11-12" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/sparontologies/scoro/docs/cq.md> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.c86b48" ;
@@ -275,11 +275,11 @@ Which persons hold equal roles in time with respect to the same document?
     vann:preferredNamespacePrefix "scoro"@en ;
     vann:preferredNamespaceUri "http://purl.org/spar/scoro"@en ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/scoro> ;
-    owl:backwardCompatibleWith scoro:2026-08-14 ;
+    owl:backwardCompatibleWith scoro:2026-10-05 ;
     owl:imports <http://purl.org/spar/pro> ;
-    owl:priorVersion scoro:2026-08-14 ;
-    owl:versionIRI scoro:2026-10-05 ;
-    owl:versionInfo "1.10.2"^^xsd:string ;
+    owl:priorVersion scoro:2026-10-05 ;
+    owl:versionIRI scoro:2026-11-12 ;
+    owl:versionInfo "1.10.3"^^xsd:string ;
     foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/scoro> ;
     schema:image <https://github.com/SPAROntologies/scoro/blob/master/docs/current/scoro.png> ;
@@ -287,12 +287,12 @@ Which persons hold equal roles in time with respect to the same document?
     dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
     schema:keywords 
         "SPAR Ontologies"@en ,
-        "Semantic Publishing and Referencing Ontologies"@en ,
-        "bibliometrics"@en,
-        "scholarly contributions"@en,
-        "scholarly publishing"@en,
-        "scholarly roles"@en,
-        "scientometrics"@en,
+        "OWL ontology"@en ,
+        "bibliometrics"@en ,
+        "scholarly contributions"@en ,
+        "scholarly communication"@en ,
+        "scholarly roles"@en ,
+        "scientometrics"@en ,
         "semantic publishing"@en .
 
 scoro:ComputationalAgent a owl:Class ;
